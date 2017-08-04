@@ -389,7 +389,7 @@
 		</section>
 		<!-- thống kê số lượng khóa học, học viên -->
 		<section>
-			<div class="fact-block" id="fact">
+			<div class="fact-block" id="fact" >
 				<div class="container">
 					<div class="row fact-timer" data-appear="no">
 						<div class="col-sm-4 col-md-4 text-center">
@@ -1030,27 +1030,7 @@
 	<script type="text/javascript" src="Counter-Up/jquery.counterup.js"></script>
 	<script type="text/javascript" src="js/customer.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			/*count*/
-			$('.counter-select-number').each(function() {
-					  	var $this = $(this),
-					     	countTo = $this.attr('data-count');
-					  		$({ countNum: $this.text()}).animate({
-					    	countNum: countTo
-					  	},
-
-					  	{
-						    duration: 4000,
-						    easing:'linear',
-						    step: function() {
-						      	$this.text(Math.floor(this.countNum));
-						    },
-						    complete: function() {
-						     $this.text(this.countNum);
-						      //alert('finished');
-					    }
-					  });  
-					});
+		$(document).ready(function(){			
 			//back to top
 			if($(".btn-back-to-top").length > 0){
 				$(window).scroll(function () {

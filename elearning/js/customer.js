@@ -241,68 +241,68 @@ $('.owl-carousel').owlCarousel({
 });
 //điều chỉnh menu của page các nhân hợp tác
 $(document).ready(function() {
-  navbar_teach_spy();
-  $(window).resize(function() {
-    navbar_teach_spy();
-  });
+	navbar_teach_spy();
+	$(window).resize(function() {
+		navbar_teach_spy();
+	});
 });
 function navbar_teach_spy() {
-  if ($('#navbar_teach_spy').length == 0)
-    return;
-  $('body').scrollspy({
-    target: '#navbar_teach_spy',
-    offset: 190
-  });
-  ww = $(window).width();
-  $obj = $('#navbar_teach_spy');
-  if (ww < 768) {
-    $obj.removeAttr('style');
-    $obj.css('display', 'none');
-    return;
-  }
-  $pr = $obj.parents('.container:eq(0)');
-  $obj.parent().css({
-    'position': 'relative'
-  });
-  $(window).scroll(function() {
-    wtop = $(window).scrollTop();
-    $pr_top = $pr.offset().top - 55;
-    $pr_bot = $pr_top + $pr.height() - $obj.height() - 135;
-    if (wtop < $pr_top) {
-      $obj.removeAttr('style');
-      $('#navbar_teach_spy li:first-child').addClass('active');
-    } else if (wtop > $pr_top && wtop < $pr_bot) {
-      ttop = wtop - $pr_top + 60;
-      $obj.stop().css({
-        'position': 'absolute',
-        'top': ttop + 'px',
-        'left': '15px',
-        'display': 'block'
-      });
-    }
-  });
-  $obj.find('a').unbind('click').click(function(e) {
-    e.preventDefault();
-    index = $(this).parent().index() - 1;
-    id = $(this).attr('href');
-    otop = $(id).offset().top - 110 - index * 42;
-    ob = $(this);
-    $('html,body').stop().animate({
-      scrollTop: otop
-    }, 500, function() {
-      ob.parents('ul:eq(0)').children('.active').removeClass('active');
-      ob.parent().addClass('active');
-    });
-  });
+	if ($('#navbar_teach_spy').length == 0)
+		return;
+	$('body').scrollspy({
+		target: '#navbar_teach_spy',
+		offset: 190
+	});
+	ww = $(window).width();
+	$obj = $('#navbar_teach_spy');
+	if (ww < 768) {
+		$obj.removeAttr('style');
+		$obj.css('display', 'none');
+		return;
+	}
+	$pr = $obj.parents('.container:eq(0)');
+	$obj.parent().css({
+		'position': 'relative'
+	});
+	$(window).scroll(function() {
+		wtop = $(window).scrollTop();
+		$pr_top = $pr.offset().top - 55;
+		$pr_bot = $pr_top + $pr.height() - $obj.height() - 135;
+		if (wtop < $pr_top) {
+			$obj.removeAttr('style');
+			$('#navbar_teach_spy li:first-child').addClass('active');
+		} else if (wtop > $pr_top && wtop < $pr_bot) {
+			ttop = wtop - $pr_top + 60;
+			$obj.stop().css({
+				'position': 'absolute',
+				'top': ttop + 'px',
+				'left': '15px',
+				'display': 'block'
+			});
+		}
+	});
+	$obj.find('a').unbind('click').click(function(e) {
+		e.preventDefault();
+		index = $(this).parent().index() - 1;
+		id = $(this).attr('href');
+		otop = $(id).offset().top - 110 - index * 42;
+		ob = $(this);
+		$('html,body').stop().animate({
+			scrollTop: otop
+		}, 500, function() {
+			ob.parents('ul:eq(0)').children('.active').removeClass('active');
+			ob.parent().addClass('active');
+		});
+	});
 }
 //nút all trong all-course page
 $(function() {
   // kick hoat nut ALL
   $('.btn-checkall[data-result]').click(function() {
-    $($(this).data('result')).find('[type="checkbox"]').each(function() {
-    	$(this).prop('checked', true).parent().parent().addClass('active');
-    });
-    
+  	$($(this).data('result')).find('[type="checkbox"]').each(function() {
+  		$(this).prop('checked', true).parent().parent().addClass('active');
+  	});
+
   });
 });
 function call_cate_checked(obj) {
@@ -310,19 +310,60 @@ function call_cate_checked(obj) {
   index = $(obj).parents('.item:eq(0)').index();  
   //bo lua chon cua cac cate khac
   if($('.btn-checkall.active').length==0){  	
-  		
-  			($(obj).parent()).parent().toggleClass('active');
-  		
-  }else {
-	  	
-	  			($(obj).parent()).parent().toggleClass('active');
-	  			
-	  	
 
-  		}
+  	($(obj).parent()).parent().toggleClass('active');
+
+  }else {
+
+  	($(obj).parent()).parent().toggleClass('active');
+
+
+
+  }
 }
 //toggle ẩn hiện danh mục
 $('.btn-next-toggle').click(function() {
-    $(this).parent().next().toggleClass('hidden-xs hidden-sm');
-    $(this).toggleClass('glyphicon-chevron-up').toggleClass('glyphicon-chevron-down');
-  });
+	$(this).parent().next().toggleClass('hidden-xs hidden-sm');
+	$(this).toggleClass('glyphicon-chevron-up').toggleClass('glyphicon-chevron-down');
+});
+//kiểm tra xem đã đến nơi màn hình ta cần hay chưa
+$.fn.is_on_screen = function(){
+	var win = $(window);
+	var viewport = {
+		top : win.scrollTop(),
+		left : win.scrollLeft()
+	};
+	viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right ||    viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+//hàm chạy số khi đến nơi
+$(window).scroll(function(){ // bind window scroll event
+    if( $('.fact-timer').is_on_screen()) { // if target element is visible on screen after DOM loaded
+    	/*count*/
+    	$('.counter-select-number').each(function() {
+    		var $this = $(this),
+    		countTo = $this.attr('data-count');
+    		$({ countNum: $this.text()}).animate({
+    			countNum: countTo
+    		},
+
+    		{
+    			duration: 4000,
+    			easing:'linear',
+    			step: function() {
+    				$this.text(Math.floor(this.countNum));
+    			},
+    			complete: function() {
+    				$this.text(this.countNum);
+						      //alert('finished');
+						  }
+						});  
+    	});
+    } 
+});
