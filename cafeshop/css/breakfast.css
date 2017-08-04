@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333333;
+    overflow: scroll;
+    background-color: #dbc18e;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+#wrap{
+	width: 1296px;
+	height: auto;
+	margin: auto;
+}
+#wrap #header{
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+#wrap #header #logo{
+	width: 100%;
+	height: 130px;
+	text-align: center;
+	border-bottom: 1px dashed grey;
+
+}
+#wrap #header #logo h1{
+	font-size: 70px;
+	color: #527434;
+}
+#wrap #header #logo p{
+	color: #633333;
+}
+#wrap #header #logo h1::before{
+	content: "__";
+}
+#wrap #header #logo h1::after{
+	content: "__";
+}
+#wrap #navbar{
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+#wrap #navbar .menu{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px dashed grey; 
+}
+#wrap #navbar .menu ul{
+	width: auto;
+	height: auto;
+	list-style-type: none;
+    text-align: center;
+}
+#wrap #navbar .menu ul li{
+	display: inline-table;
+	height: 50px;
+	width: 150px;
+	line-height: 50px;
+	position: relative;
+}
+#wrap #navbar .menu ul li> .sub_menu{
+	display: none;
+	position: absolute;
+	background-color: white;
+	z-index: 1;		
+}
+#wrap #navbar .menu ul li> .sub_menu li{
+	border-bottom: 1px dashed grey;
+}
+#wrap #navbar .menu ul li:hover .sub_menu{
+	display: block;
+}
+#wrap #navbar .menu ul li a{
+	text-decoration: none;
+	color:black;
+	text-transform: uppercase;
+	line-height: 38px;
+}
+#wrap #navbar .menu ul li a:hover{
+	color:#527434;
+}
+
+#wrap .order{
+	width: 900px;
+	height: auto;
+	margin: auto;
+}
+#wrap .order .food{
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+#wrap .order .food .img_food{
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	
+}
+#wrap .order .food .img_food img{
+	width: 240px;
+	height: 160px;
+	padding: 1px;
+	border: 1px solid #527434;
+}
+#wrap .order .food .img_food span::after{
+	content: " VND";
+}
+#wrap .order .food .img_food span{
+	color:#633333;
+	font-family: Garamond;
+}
+#wrap .order .food .img_food p{
+	color:#633333;
+	font-family: Garamond;
+}
+#wrap .footer{
+	clear: both;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color: #ae9970;
+}
+#wrap .footer p{
+	color:#537535;
+	line-height: 50px;
+}

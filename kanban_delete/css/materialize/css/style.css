@@ -1,0 +1,37 @@
+.main{
+	margin-top: 50px;
+}
+.text-color1{
+	background-color: #a6264b;
+}
+.text-color1>h5{
+	padding: 15px;
+}
+.text-color2{
+	background-color: #26d524;
+}
+.text-color2>h5{
+	padding: 15px;
+}
+.text-color3{
+	background-color: #d5be24;
+}
+.text-color3>h5{
+	padding: 15px;
+}
+.ui-state-highlight{
+	background-color: #fafafa;
+	height:calc(1.5rem + 20px); 
+}
+.collection-item> .badge{
+	display: none;
+	float: right;
+	margin-right: -10px;
+	font-size: 17px;
+}
+.collection-item{
+	cursor: pointer;
+}
+.collection-item:hover .badge{
+	display: block;
+}

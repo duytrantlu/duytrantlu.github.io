@@ -1,0 +1,32 @@
+.main{
+	margin-top: 50px;
+}
+.col1{
+	width: 70%;
+	height: auto;
+	float: left;
+}
+.add-job{
+	float: right;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.text-color1{
+	background-color: #a6264b;
+	height: 50px;
+}
+.text-color1>h5{
+	padding: 15px;
+}
+.text-color2{
+	background-color: #26d524;
+}
+.text-color2>h5{
+	padding: 15px;
+}
+.text-color3{
+	background-color: #d5be24;
+}
+.text-color3>h5{
+	padding: 15px;
+}

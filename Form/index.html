@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<link href="bootstrap/css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">		
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>Sign up</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<h5>Đăng ký.</h5>
+					<form action="thongbao.html" method="get">						
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Họ Tên</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name" value=""  placeholder="Nhập họ tên của bạn"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="date" class="cols-sm-2 control-label">Ngày tháng năm sinh</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="date" class="form-control" name="date" id="date"  placeholder="Enter your Name" value="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="gioitinh" class="cols-sm-2 control-label">Giới tính</label>
+							<div class="cols-sm-10">
+								<label class="checkbox-inline">
+								    <input type="radio" name="gender" value="male"> Male										
+								</label>
+								<label class="checkbox-inline">
+								    <input type="radio" name="gender" value="female"> Female
+								</label>
+								<label class="checkbox-inline">
+								    <input type="radio" name="gender" value="other"> Other
+								</label>
+
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="address" class="cols-sm-2 control-label">Địa chỉ</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="address" id="address" value=""  placeholder="Nhập địa chỉ của bạn"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Số điện thoại</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" value="" name="phoneNumber" id="phoneNumber"  placeholder="Nhập số điện thoại của bạn"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" value="" id="email"  placeholder="Nhập địa chỉ mail của bạn"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="passWord" class="cols-sm-2 control-label">Mật Khẩu</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" value="" name="passWord" id="passWord"  placeholder="Nhập mật khẩu của bạn"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<input type="submit" name="submit" value="Đăng ký" class="btn btn-primary btn-lg btn-block login-button"/>
+						</div>					
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

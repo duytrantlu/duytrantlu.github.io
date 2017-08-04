@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333333;
+    overflow: scroll;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+#wrap{
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	margin-top: 15px;
+}
+#wrap .calculator{
+	width: 340px;
+	height: 350px;
+	margin:auto;
+	background-color: #ddb50c;
+}
+#wrap .calculator .result{
+	width: 300px;
+	height: 60px;
+	margin: auto;
+}
+#wrap .calculator .result .screen{
+	width: 290px;
+	height: 50px;
+	text-align: right;
+	font-size: 40px;
+	color: red;
+	border: 5px double #cccccc;
+	border-radius: 5%;
+	margin-left: 5px;
+	margin-top: 15px;
+}
+#wrap .calculator .number{
+	width: 180px;
+	height: auto;
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	text-align: center;
+}
+#wrap .calculator .number span{
+	width: 50px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: Garamond;
+	background-color: #16f6ff;
+	margin: 5px;
+	border: 1px double black;
+	cursor: pointer;
+	border-radius: 5%;
+	margin-bottom: 20px;
+}
+#wrap .calculator .feature{
+	width: 140px;
+	height: auto;
+	float: right;
+	margin-top: 15px;
+	text-align: center;
+}
+#wrap .calculator .feature span{
+	width: 50px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: Garamond;
+	background-color: #16f6ff;
+	margin: 5px;
+	border: 1px double black;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border-radius: 5%;
+}
+.Theme{
+	width: auto;
+	height: auto;
+	position: fixed;
+	top: 200px;
+	right: 0px;
+}
+.Theme ul{
+	width: auto;
+	height: auto;
+}
+.Theme ul li{
+	display: table;
+	width: 40px;
+	height: 30px;
+	background-color: grey;
+	list-style-type: none;
+	cursor: pointer;	
+	border-bottom: 1px dashed grey;
+	position: relative;
+}
+.Theme ul li> .sub{
+	display: none;
+	top: 30px;
+	position: absolute;
+}
+.Theme ul li:hover .sub{
+	display: block;
+}
+.Theme ul li .sub li{
+	border-bottom: 1px dashed grey;
+	background-color: yellow;
+}

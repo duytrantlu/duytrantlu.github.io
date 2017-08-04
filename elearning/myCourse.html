@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học Tiếng Anh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/notification.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.theme.green.css">
+</head>
+<body>	
+    <header class="page-top">
+        <div class="container">
+            <div class="row">
+                <a class="logo col-xs-1 col-sm-3 col-md-2 col1 hidden-xs hidden-sm" href="after-login.html">
+                    <img class="logoimg logoimg1" src="img/logo-global.png" alt="global" />
+                    <img class="logoimg logoimg2" src="img/logo-global-2.png" alt="global" />
+                </a>
+                <a class="btn-click hidden-md hidden-lg courses-browsers-btn" href="">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </a>
+                <div class="search-box  col-xs-9 col-sm-8 col-md-5 col2 nopdr hidden-xs hidden-sm">
+                    <form class="form-search-box pull-right" method="post" action="">
+                        <div class="dropdown-browse-courses form-group  pull-left">
+                            <span class="dropdown-toggle">
+                                <span class="btn-browse-text">
+                                    Danh mục Khóa học
+                                </span>
+                                <span class="btn-browse-icon btn-click">
+                                    <i class="glyphicon glyphicon-triangle-bottom"></i>
+                                </span>
+                            </span>
+                            <ul class="dropdown-menu browses-dropdow-data">
+                                <li><a href="">Kế toán - Tài chính</a></li>
+                                <li><a href="">Marketing - Bán hàng</a></li>
+                                <li><a href="">IT - Web/ Games/ Apps</a></li>  
+                                <li><a href="">Kinh doanh - Khởi nghiệp</a></li>
+                                <li><a href="">Design - Multimedia</a></li>
+                                <li><a href="">Ngoại ngữ - Kỹ năng mềm</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-group pull-left form-group-2">
+                            <label class="sr-only" for="search-query"></label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="s" id="s" value="" placeholder="Search">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="pull-right col-md-5 col-xs-7 col3 nopdl text-right page-top-nav-right">
+                    <ul class="nav navbar-nav navbar-right user-dropdow-data"> 
+                        <li>
+                            <a href="co-operate.html" class="btn-teach-on-global mgr15"><span>Hợp tác giảng dạy</span></a>
+                        </li>
+                        <li>
+                            <a href="myCourse.html">
+                                <span class="glyphicon glyphicon-th  hidden-xs"></span>
+                                <span class="glyphicon glyphicon-th  hidden-lg hidden-md hidden-sm"></span>
+                            </a>
+                        </li>
+                        <li class="hidden-xs hidden-sm">
+                            <a class="get-message-board">
+                                <span class="glyphicon glyphicon-envelope" id="tong-so-tin-nhan"></span>
+                            </a>
+                        </li>
+                        <li class="hidden-xs hidden-sm dropdown prl noti">
+                            <a id="noti-bell">
+                                <span class="noti-message-btn glyphicon glyphicon-bell"></span>
+                            </a>
+                            <div class="dropdown-menu pab bg-ee" id="noti-panel">
+                                <div id="message-panel" class="message-panel">
+                                    <div class="mess-panel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation">
+                                                <a href="#notification-panel-1" aria-controls="notification-panel-1" role="tab" data-toggle="tab">
+                                                    Global 
+                                                    <span class="message-number" id="total-panel-1">0</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="active">
+                                            <a href="#notification-panel-2" aria-controls="notification-panel-2" role="tab" data-toggle="tab">
+                                                Instructors 
+                                                <span class="message-number" id="total-panel-2">0</span>
+                                            </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#notification-panel-3" aria-controls="notification-panel-3" role="tab" data-toggle="tab">
+                                                    Students  
+                                                    <span class="message-number" id="total-panel-3">0</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content text-left">
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-1">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane active" id="notification-panel-2">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                                <!-- /item -->
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-3">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="compose-container text-right">
+                                            <span class="mark-as-read" onclick=""><i class="glyphicon glyphicon-check"></i>Đánh dấu Bạn đã đọc tất cả các thông báo.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user-avatar-data dropdow">
+                            <div class="top-avatar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                                <img src="img/Blank-avatar.png">
+                            </div>
+                            <ul class="user-dropdow-menu dropdown-menu">
+                                <li>
+                                    <div class="u">
+                                        <div class="avatar">
+                                            <img src="img/Blank-avatar.png">
+                                        </div>
+                                        <div class="uil">
+                                            <div class="u-name">
+                                                
+                                            </div>
+                                            <div class="u-ctr row">
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-user"></i>
+                                                    </span>
+                                                    <span>Hồ sơ</span>
+                                                </a>
+                                                <a href="edit-info.html" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-pencil"></i>
+                                                    </span>
+                                                    <span>Chỉnh sửa</span>
+                                                </a>
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-cog"></i>
+                                                    </span>
+                                                    <span>Cài đặt</span>
+                                                </a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <span class="arrow-top"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                 <ul class="usub">
+                                     <li>
+                                         <a href="#" class="get-message-board">
+                                             Hộp tin nhắn        
+                                             <span class="ctnn" id="tong-so-tin-nhan-2"></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="#">My Wishlist</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Global Referral Credits</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Lịch sử giao dịch</a>
+                                     </li>
+                                 </ul> 
+                             </li>
+                             <li>
+                                <a class="btn-log-out" href="index.html">
+                                    <span class="glyphicon glyphicon-off"></span>
+                                    Log Out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mega menu courses -->
+    <div class="megamenu hidden-xs hidden-sm">
+        <div class="container">
+            <div class="mgpdl">
+                <a class="all-courses" href="all-coures.html">
+                    <div class="content">
+                        <div class="overlay">
+                            <p>Tât cả khóa học</p>
+                            <span class="icon-courses icon-benefit-1-2"></span>
+                        </div>
+                    </div>
+                </a>
+                <a class="keepbooking" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-accounting"></span>
+                        <p>Kế toán - Tài chính</p>
+                    </div>
+                </a>
+                <a class="sale" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-marketing"></span>
+                        <p>Marketing - Bán hàng</p>
+                    </div>
+                </a>
+                <a class="code" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-infomation-technology"></span>
+                        <p>IT - Web/ Games/ Apps</p>
+                    </div>
+                </a>
+                <a class="founded" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-manager"></span>
+                        <p>Kinh doanh - Khởi nghiệp                                </p>
+                    </div>
+                </a>
+                <a class="digital" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-designer"></span>
+                        <p>Design - Multimedia                                </p>
+                    </div>
+                </a>
+                <a class="en" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-soft-skills"></span>
+                        <p>Ngoại ngữ - Kỹ năng mềm                                </p>
+                    </div>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="my-courses-header">
+        <div class="container">
+            <div class="row">
+                <div class="mchd">
+                    <!-- <div class="avatar">
+                        <div class="bdw">
+                            <img alt="avatar" src="img/Blank-avatar.png">
+                        </div>
+                    </div> -->
+                    <div class="col-sm-4 col-md-3 col-1">
+                        <a href="#">
+                            <span class="btn btn1">Khóa học của tôi</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 col-md-9 col-2">
+                        <div class="mcgrbtn">
+                            <div class="mcgrbtn-gr-1 col-sm-2">
+                                <div class="dropdown">
+                                    <span aria-expanded="false" class="btn" role="button" aria-haspopup="true" data-toggle="dropdown">
+                                        Học tập
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                    </span>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li>
+                                                <a class="active" href="#">Học tập</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Wishlist</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                                
+                            </div>
+                            <div class="mcgrbtn-gr-2 col-sm-10">
+                                <ul class="courses-filter-type text-center">
+                                    <li class="active">
+                                        <a onclick=""> 
+                                            <span>đang học</span>
+                                        </a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a onclick=""> 
+                                            <span>chưa bắt đầu</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick=""> 
+                                            <span>hoàn thành</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick=""> 
+                                            <span>tất cả</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><!-- if-course-null -->
+        <div class="container" style="display: none;">
+            <div class="courses-null-alert success">
+                <div class="courses-null-alert-text ">
+                    <div class="hidden" data-filter="current-learning">
+                        <p>Bạn không có khóa học nào đang học.</p>
+                        <p>Hãy chọn một khóa học và bắt đầu.</p>
+                    </div>
+                    <div class="hidden" data-filter="note-started">
+                        <p>Bạn chưa có khóa học nào ở mục này.</p>
+                        <p>Hãy chọn một khóa học và bắt đầu.</p>
+                    </div>
+                    <div class="" data-filter="completed">
+                        <p>Bạn chưa hoàn thành khóa học nào.</p>
+                        <p>Hãy hoàn thành một vài khóa học để nâng cao chuyên môn và có cơ hội thăng tiến.</p>
+                    </div>
+                    <div class="hidden" data-filter="0">
+                        <p>Bạn không có khóa học nào đang học.</p>
+                        <p>Hãy chọn một khóa học và bắt đầu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-course-body">
+        <div class="container">
+            <div class="couses-filter">
+                <div class="couses-filter-content row">
+                    <div class="courses-list">
+                        <div class="col-sm-4 col-md-3">
+                            <div class="courses-list-item">
+                                <header class="course-list-item-header">
+                                    <a class="course-thumb" href="course-learning.html">
+                                        <img src="img/thiet-ke.jpg">
+                                        <div class="bg-overlay">
+                                            <div class="text-white">
+                                                <p>16 lectures</p>
+                                                <p>3.3 giờ video</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="course-list-item-status">
+                                        <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
+
+                                        </span>
+                                        <span class="pull-right">MỚI</span>
+                                    </div>
+                                    <ul class="actors">
+                                        <li>
+                                            <a class="avatar" href="info-teacher.html">
+                                                <img src="img/ava1.jpg" alt="avatar">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <section class="coures-list-item-body">
+                                    <h3>
+                                        <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
+                                    </h3>
+                                    <p class="text-muted">Trần Mạnh Duy</p>
+                                    <p class="text-muted">
+                                        <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
+                                    </p>
+                                </section>
+                                <footer class="course-list-item-footer">
+                                    <a href="course-learning.html" class="text-blue"> <span>0%
+                                        Hoàn thành</span> <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                    <div class="clearfix"></div>
+                                </footer>
+                            </div>
+                            
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<!-- footer -->
+<footer id="footer" class="footer-block">
+    <div class="footer-link">
+      <div class="container">
+        <div class="row footer-btns">
+          <div class="col-sm-4 chance">
+            <a class="footer-btn" href="#">Cơ hội nghề nghiệp</a>
+        </div>
+        <div class="col-sm-4 ">
+            <a class="footer-btn" href="#">SỔ TAY GIẢNG VIÊN</a>
+        </div>
+        <div class="col-sm-4 ">
+            <a class="footer-btn" href="#">TÀI NGUYÊN HỖ TRỢ</a>
+        </div>
+    </div>
+    <hr class="footer-line">
+    <div class="row footer-content">
+      <div class="col-md-4 m-b-30">
+        <h2>Về Global</h2>
+        <p class="text-justify">AllCourse.com là nền tảng DẠY và HỌC trực tuyến hàng đầu Việt Nam. Chúng tôi hợp tác với các chuyên gia hàng đầu trong các lĩnh vực Tài chính, Marketing, Công nghệ thông tin, Kinh doanh - Khởi nghiệp... và các tổ chức đào tạo để mang đến cho bạn những khóa học chất lượng và có tính ứng dụng thực tiển cao.<a class="text-blue" href="#">Xem chi tiết</a></p>
+    </div>
+    <div class="col-md-4 m-b-30">
+        <h2>Liên hệ</h2>
+        <address class="text-justify">
+            <div class="address-block">
+                <div class="address-sm">
+                  <span class="fa fa-building" aria-hidden="true"></span>
+              </div>
+              <div><strong>Global Co., LTD.</strong></div>
+          </div>
+          <div class="address-block">
+            <div class="address-sm"><span class="fa fa-location-arrow" aria-hidden="true"></span></div>
+            <div>19 Liễu Giai - Ba Đình<br>Hà Nội<br>Việt Nam</div>
+        </div>
+    </address>
+    <p class="made-with-love">Made with <span class="glyphicon glyphicon-heart text-danger"></span> in Viet Nam.</p>
+</div>
+<div class="col-md-4 socials m-b-30">
+    <h2>Kết nối với chúng tôi</h2>
+    <p>
+        <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
+        <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+        <a href="https://plus.google.com/" target="_blank" rel="publisher"><span class="fa fa-google-plus-official" aria-hidden="true"></span></a>
+        <a href="https://www.pinterest.com/" target="_blank"><span class="fa fa-pinterest" aria-hidden="true"></span></a>
+        <a href="https://www.youtube.com/" target="_blank"><span class="fa fa-youtube" aria-hidden="true"></span></a>
+    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+  <a class="btn-back-to-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+  <div class="container text-center">
+    © 2017 <a href="#">Global Co., Ltd</a>. All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Điều khoản sử dụng</a> · <a href="#">Chính sách riêng tư</a>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/customer.js"></script>
+<script type="text/javascript">
+    //back to top
+    $(document).ready(function(){
+       if($(".btn-back-to-top").length > 0){
+          $(window).scroll(function () {
+              var e = $(window).scrollTop();
+              if (e > 300) {
+                  $(".btn-back-to-top").show()
+              } else {
+                  $(".btn-back-to-top").hide()
+              }
+          });
+          $(".btn-back-to-top").click(function () {
+              $('body,html').animate({
+                  scrollTop: 0
+              })
+          })
+      }       
+  });
+</script>
+</body>
+</html>

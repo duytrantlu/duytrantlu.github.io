@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học Tiếng Anh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/notification.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.theme.green.css">
+</head>
+<body>	
+    <header class="page-top">
+        <div class="container">
+            <div class="row">
+                <a class="logo col-xs-1 col-sm-3 col-md-2 col1 hidden-xs hidden-sm" href="#">
+                    <img class="logoimg logoimg1" src="img/logo-global.png" alt="global" />
+                    <img class="logoimg logoimg2" src="img/logo-global-2.png" alt="global" />
+                </a>
+                <a class="btn-click hidden-md hidden-lg courses-browsers-btn" href="">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </a>
+                <div class="search-box  col-xs-9 col-sm-8 col-md-5 col2 nopdr hidden-xs hidden-sm">
+                    <form class="form-search-box pull-right" method="post" action="">
+                        <div class="dropdown-browse-courses form-group  pull-left">
+                            <span class="dropdown-toggle">
+                                <span class="btn-browse-text">
+                                    Danh mục Khóa học
+                                </span>
+                                <span class="btn-browse-icon btn-click">
+                                    <i class="glyphicon glyphicon-triangle-bottom"></i>
+                                </span>
+                            </span>
+                            <ul class="dropdown-menu browses-dropdow-data">
+                                <li><a href="">Kế toán - Tài chính</a></li>
+                                <li><a href="">Marketing - Bán hàng</a></li>
+                                <li><a href="">IT - Web/ Games/ Apps</a></li>  
+                                <li><a href="">Kinh doanh - Khởi nghiệp</a></li>
+                                <li><a href="">Design - Multimedia</a></li>
+                                <li><a href="">Ngoại ngữ - Kỹ năng mềm</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-group pull-left form-group-2">
+                            <label class="sr-only" for="search-query"></label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="s" id="s" value="" placeholder="Search">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="pull-right col-md-5 col-xs-7 col3 nopdl text-right page-top-nav-right">
+                    <ul class="nav navbar-nav navbar-right user-dropdow-data"> 
+                        <li>
+                            <a href="#" class="btn-teach-on-global mgr15"><span>Hợp tác giảng dạy</span></a>
+                        </li>
+                        <li>
+                            <a href="myCourse.html">
+                                <span class="glyphicon glyphicon-th hidden-xs"></span>
+                                <span class="glyphicon glyphicon-th hidden-lg hidden-md hidden-sm"></span>
+                            </a>
+                        </li>
+                        <li class="hidden-xs hidden-sm">
+                            <a class="get-message-board"><span class="glyphicon glyphicon-envelope" id="tong-so-tin-nhan"></span></a>
+                        </li>
+                        <li class="hidden-xs hidden-sm dropdown prl noti">
+                            <a id="noti-bell">
+                                <span class="noti-message-btn glyphicon glyphicon-bell"></span>
+                            </a>
+                            <div class="dropdown-menu pab bg-ee" id="noti-panel">
+                                <div id="message-panel" class="message-panel">
+                                    <div class="mess-panel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation">
+                                                <a href="#notification-panel-1" aria-controls="notification-panel-1" role="tab" data-toggle="tab">
+                                                    Global 
+                                                    <span class="message-number" id="total-panel-1">0</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="active">
+                                                <a href="#notification-panel-2" aria-controls="notification-panel-2" role="tab" data-toggle="tab">
+                                                    Instructors 
+                                                    <span class="message-number" id="total-panel-2">0</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#notification-panel-3" aria-controls="notification-panel-3" role="tab" data-toggle="tab">
+                                                    Students 
+                                                    <span class="message-number" id="total-panel-3">0</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content text-left">
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-1">
+                                                <div class="message-item">
+                                                    <p class="text-center">Không có thông báo</p>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane active" id="notification-panel-2">
+                                                <div class="message-item">
+                                                    <p class="text-center">Không có thông báo</p>
+                                                </div>
+                                                <!-- /item -->
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-3">
+                                                <div class="message-item">
+                                                    <p class="text-center">Không có thông báo</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="compose-container text-right">
+                                            <span class="mark-as-read" onclick="">
+                                                <i class="glyphicon glyphicon-check">  
+                                                </i>Đánh dấu Bạn đã đọc tất cả các thông báo.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user-avatar-data dropdow">
+                            <div class="top-avatar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                                <img src="img/Blank-avatar.png">
+                            </div>
+                            <ul class="user-dropdow-menu dropdown-menu">
+                                <li>
+                                    <div class="u">
+                                        <div class="avatar">
+                                            <img src="img/Blank-avatar.png">
+                                        </div>
+                                        <div class="uil">
+                                            <div class="u-name">
+
+                                            </div>
+                                            <div class="u-ctr row">
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-user"></i>
+                                                    </span>
+                                                    <span>Hồ sơ</span>
+                                                </a>
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-pencil"></i>
+                                                    </span>
+                                                    <span>Chỉnh sửa</span>
+                                                </a>
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-cog"></i>
+                                                    </span>
+                                                    <span>Cài đặt</span>
+                                                </a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <span class="arrow-top"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                 <ul class="usub">
+                                     <li>
+                                         <a class="get-message-board">
+                                             Hộp tin nhắn        
+                                             <span class="ctnn" id="tong-so-tin-nhan-2"></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="#">My Wishlist</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Global Referral Credits</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Lịch sử giao dịch</a>
+                                     </li>
+                                 </ul> 
+                             </li>
+                             <li>
+                                <a class="btn-log-out" href="#">
+                                    <span class="glyphicon glyphicon-off"></span>
+                                    Log Out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mega menu courses -->
+    <div class="megamenu hidden-xs hidden-sm">
+        <div class="container">
+            <div class="mgpdl">
+                <a class="all-courses" href="">
+                    <div class="content">
+                        <div class="overlay">
+                            <p>Tât cả khóa học</p>
+                            <span class="icon-courses icon-benefit-1-2"></span>
+                        </div>
+                    </div>
+                </a>
+                <a class="keepbooking" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-accounting"></span>
+                        <p>Kế toán - Tài chính</p>
+                    </div>
+                </a>
+                <a class="sale" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-marketing"></span>
+                        <p>Marketing - Bán hàng</p>
+                    </div>
+                </a>
+                <a class="code" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-infomation-technology"></span>
+                        <p>IT - Web/ Games/ Apps</p>
+                    </div>
+                </a>
+                <a class="founded" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-manager"></span>
+                        <p>Kinh doanh - Khởi nghiệp                                </p>
+                    </div>
+                </a>
+                <a class="digital" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-designer"></span>
+                        <p>Design - Multimedia                                </p>
+                    </div>
+                </a>
+                <a class="en" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-soft-skills"></span>
+                        <p>Ngoại ngữ - Kỹ năng mềm                                </p>
+                    </div>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="checkout bg-ee">
+        <div class="container">
+            <div class="checkout-hd text-center">
+                <h2>CHỌN PHƯƠNG THỨC THANH TOÁN</h2>
+                <p class="text-yel">[Tất cả đều được miễn phí giao dịch]</p>
+            </div>
+            <div class="row checkout-bd-2">
+                <form role="form" class="radio_group" action="addCourseSuccess.html" name="frmOrder" id="frmOrder" method="post" action="" enctype="multipart/form-data" novalidate="novalidate">
+                    <div class="col-sm-4 hidden-xs">
+                        <div class="order-info border-gray ordrbx bg-white">
+                            <div class=" bg-f2 pd15">
+                                <div class="row">
+                                    <div class="form-group text-bl">
+                                        <div class="col-xs-7">
+                                            <h4>Thông tin Đơn hàng</h4>
+                                            <hr class="nomg">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-4">Khóa học :</div>
+                                        <div class="col-xs-8">Thiết kế Website bằng WordPress cho người mới bắt đầu</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-4">Giá :</div>
+                                        <div class="col-xs-8 text-right">100.000 đ</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-4">Chiết khấu :</div>
+                                        <div class="col-xs-8 text-right">--</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-group text-bl text-bold">
+                                        <div class="col-xs-4">Bạn trả :</div>
+                                        <div class="col-xs-8 text-right">100.000 đ</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" bg-white pd15 pd15 ">
+                                <div class="row">
+                                    <div class="form-group text-bl">
+                                        <div class="col-xs-7">
+                                            <h4>Thông tin người dùng</h4>
+                                            <hr class="nomg">
+                                        </div>
+                                        <div class="col-xs-5 text-right">                                
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-4">Họ và Tên:</div>
+                                        <div class="col-xs-8">manh duy</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-4">Email:</div>
+                                        <div class="col-xs-8">duytrinhmi@gmail.com</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-4">Mobile :</div>
+                                        <div class="col-xs-8">
+                                            <input id="co-phone-input" class="form-control" name="hd_dien_thoai" type="tel" value="">
+                                            <span id="phone-mess" class="help-block" style="line-height: 1;"><small>Số điện thoại dùng để đối chiếu trong trường hợp bạn yêu cầu refund:</small></span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="border-gray bg-white text-bl pd15 ordrbx">
+                                <div class="chgr">
+                                    <div class="chgr-hd">
+                                        <label>
+                                            <input id="httt1" onchange="" type="radio" name="payment_method" value="2">
+                                            <span class="text-blue">Thanh toán bằng thẻ ATM</span>
+                                        </label>
+                                        <a href="#" class="text-yel pull-right">[Hướng dẫn]</a>
+                                    </div>
+                                    <div class="chgr-bd">
+                                        <div class="orther-pm-mt ">
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                            <label for="httt1">
+                                                <span class="fh-img">
+                                                    <img src="img/banks/0.png" alt="visa">
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="chgr">
+                                    <div class="chgr-hd">
+                                        <label>
+                                            <input id="httt2" onchange="" type="radio" name="payment_method" value="3">
+                                            <span class="text-blue">Thanh toán bằng Credit Cards</span>
+                                        </label>
+                                    </div>
+                                    <div class="chgr-bd">
+                                        <label for="httt2">
+                                            <span class="fh-img chgr-pcc">
+                                                <img src="img/banks/chgr-pcc.png">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="chgr">
+                                    <div class="chgr-hd">
+                                        <label>
+                                            <input onchange=" " id="httt3" type="radio" name="payment_method" value="1">
+                                            <span class="text-blue">Thanh toán qua Paypal</span>
+                                        </label>
+                                    </div>
+                                    <div class="chgr-bd">
+                                        <label for="httt3">
+                                            <span class="fh-img chgr-pcc">
+                                                <img src="img/banks/chgr-paypal.png">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="text-right chgrft">
+                                    <a href="addCourseSuccess.html">
+                                        <button type="submit" id="btnsubmut" class="btn btn-green btn-lg">Tôi mua khóa học</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="pd15 checkout-r bg-f2 border-gray ordrbx">
+                            <div class="sec-img fw-img">
+                                <a href="">
+                                    <img src="img/security.png" alt="ssl">
+                                </a>
+                            </div>
+                            <h3>Cam kết hoàn tiền</h3>
+                            <p>Trong vòng 30 ngày kể từ khi thanh toán học phí khóa học, nếu bạn cảm thấy khóa học không hiệu quả, bạn chỉ cần gửi email đến refund@Global.com, bạn sẽ được hoàn trả 100% học phí mà không cần phải giải thích lý do.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>            
+        </div>
+    </div>
+</section>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/customer.js"></script>
+    <script type="text/javascript" src="js/co-operate.js"></script>
+    <script type="text/javascript" scr="individual.html"></script>
+</body>
+</html>

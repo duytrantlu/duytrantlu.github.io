@@ -1,0 +1,419 @@
+.lecture-detail-header {
+    padding-bottom: 5px;
+    padding-top: 13px;
+    background-color: #000;
+    color: white;
+    line-height: 30px;
+}
+.lecture-detail-header .navx {
+	position: relative;
+    padding-right: 15px !important;
+}
+.lecture-breadcrum .lt {
+    background-color: #808080;
+    margin-right: 15px;
+    color: white;
+    float: left;
+    padding: 0px 5px;
+}
+.lecture-breadcrum .lt-title {
+    color: #fff;
+    display: block;
+    font-size: 120%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.room-header-menu ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.room-header-menu ul li {
+    display: inline-block;
+}
+.room-header-menu a {
+    height: 40px;
+}
+.room-header-menu a, .room-header-menu button {
+    color: #fff;
+    padding: 5px 7px;
+    margin: 0 20px;
+    border: none;
+    font-size: 20px;
+}
+.room-header-menu .btn-lt-dl, #full-mode-btn:focus{
+    background: #676767;
+    color: #fff;
+    border: none;
+    height: 35px;
+    margin-top: -3px;
+}
+.lecture-detail-header .icon-home {
+    padding: 5px 12px;
+    padding-right: 45px;
+    margin-right: 19px !important;
+    border-right: 1px solid #fff;
+    width: 25px;
+    height: 25px;
+    margin-top: 4px;
+    position: relative;
+    font-size: 30px;
+
+}
+.lecture-detail-header .icon-home>.fa-home{
+	position: absolute;
+    font-size: 30px;
+    left: 10px;
+    top: -3px;
+}
+.lecture-detail-body {
+    position: relative;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+.lecture-detail-left {
+    margin-right: 360px;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+}
+.btn-toggle-full-mod {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: -5000px;
+    transition: all 0.25s ease-in-out;
+    z-index: 9;
+}
+.lecture-detail-left .ldt-main .lecture-video {
+    height: 95% !important;
+    top: 15px;
+}
+.ldt-main .lecture-video {
+    margin: auto;
+    width: 100% !important;
+    top: 15px;
+    height: 90% !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.mejs-container {
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+}
+.mejs__overlay-play{
+	width: 100% !important;
+	height: 100% !important;
+}
+.lecture-detail-right {
+    background-color: #F2F2F2;
+    position: absolute;
+    max-height: 100%;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 360px;
+    transition: all 0.25s ease-in-out;
+}
+.lecture-detail-right .ldl-body .ldt-section-list {
+    padding-bottom: 125px;
+}
+.ldt-section-list, .ldt-section-list ul {
+    margin: 0;
+    padding: 0;
+}
+.ldt-section-list li {
+    background: #fff;
+    list-style: none;
+}
+.ldt-section-list .ss-hd {
+    position: relative;
+    cursor: pointer;
+    background: #ddd;
+    border-bottom: 1px solid #eee;
+}
+.ldt-section-list .ss-hd {
+    padding: 10px 0px;
+    background-color: #CCCCCC;
+}
+.ldt-section-list li .ss-hd> .ss-index {
+    margin: 0 15px;
+    float: left;
+}
+.ldt-section-list li .ss-hd> .ss-title {
+    margin-left: 100px;
+    display: block;
+}
+.ldt-section-list .ss-hd .collapse-icon {
+    position: absolute;
+    right: 5px;
+    top: 37%;
+}
+.ldt-section-list li.active {
+    background: #fff;
+}
+.ldl-lecture-list > li {
+    padding: 10px 0;
+}
+.ldt-section-list .ldl-c1 {
+    width: 52px;
+    font-size: 11px;
+    border: 1px solid #ccc;
+    background: #fbfcfc;
+    text-align: right;
+    margin-left: 7px;
+    border-radius: 10px;
+    line-height: 18px;
+    position: relative;
+    float: left;
+}
+.ldl-lecture-list .lt-index {
+    padding-right: 3px;
+}
+.ldl-lecture-list .lt-index.stt-2 .stt-icon, .ldl-lecture-list li.active .lt-index.stt-2 .stt-icon, .ldl-lecture-list li.active .lt-index.stt-3 .stt-icon{
+	background: -moz-linear-gradient(left, rgba(151, 203, 83, 1) 0%, rgba(151, 203, 83, 1) 50%, rgba(255, 255, 255, 0) 51%) !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(151, 203, 83, 1)), color-stop(50%, rgba(151, 203, 83, 1)), color-stop(51%, rgba(255, 255, 255, 0))) !important;
+    background: -webkit-linear-gradient(left, rgba(151, 203, 83, 1) 0%, rgba(151, 203, 83, 1) 50%, rgba(255, 255, 255, 0) 51%) !important;
+    background: -o-linear-gradient(left, rgba(151, 203, 83, 1) 0%, rgba(151, 203, 83, 1) 50%, rgba(255, 255, 255, 0) 51%) !important;
+    background: -ms-linear-gradient(left, rgba(151, 203, 83, 1) 0%, rgba(151, 203, 83, 1) 50%, rgba(255, 255, 255, 0) 51%) !important;
+    background: linear-gradient(to right, rgba(151, 203, 83, 1) 0%, rgba(151, 203, 83, 1) 50%, rgba(255, 255, 255, 0) 51%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ebbc8', endColorstr='#00ffffff', GradientType=1);
+    color: rgba(255, 255, 255, 0) !important;
+}
+.ldl-lecture-list li.active .lt-index, .ldl-lecture-list li.active .lt-index>span {
+    border-color: #ccc !important;
+    background: #fbfcfc !important;
+    color: #666 !important;
+}
+.ldt-section-list .stt-icon {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 10px;
+    width: 20px;
+    text-align: center;
+    font-size: 10px;
+    top: -1px;
+    left: -1px;
+    color: rgba(255, 255, 255, 0);
+}
+.ldl-lecture-list .lt-index.stt-1, .ldl-lecture-list .lt-index.stt-1>span, .ldl-lecture-list .lt-index.stt-2, .ldl-lecture-list .lt-index.stt-2>span {
+    border-color: #ccc;
+    background: #fbfcfc;
+    color: #666;
+}
+.ldt-section-list li.active .bdl {
+    background: #2EBBC8;
+}
+.ldt-section-list li.active .bdl .ldl-tt{
+	color: white !important;
+}
+.ldl-lecture-list li.active .bdl, .ldl-lecture-list li:hover .bdl {
+    border-color: #2EBBC8;    
+}
+ .ldl-lecture-list li.active .bdl, .ldl-lecture-list li.active .bdl a {
+    color: #fff !important;
+    text-decoration: none;
+} 
+.ldl-lecture-list .bdl {
+    border: 1px solid #ccc;
+    border-right: none;
+    border-top: none;
+    margin-left: -31px;
+    padding-left: 30px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ldt-section-list .ldl-c2 {
+    margin-left: 65px;
+    padding-right: 15px;
+}
+.ldl-lecture-list .lt-tile {
+    text-decoration: none !important;
+    color: #666;
+}
+.ldl-tt .glyphicon-facetime-video {
+    margin-top: 2px;
+    float: left;
+    margin-right: 5px;
+}
+.ldl-tt {
+    color: #999;
+}
+.ldt-section-list li:not(.active) .bdl:hover a{
+	color: #2EBBC8;
+}
+.ldt-section-list li:not(.active) .bdl:hover .ldl-tt{
+	color: #333;
+}
+.progress-devide {
+    border: none;
+    height: 6px;
+    color: #2ebbc8;
+    background-color: #2ebbc8;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.progress-container {
+    width: 360px;
+    position: fixed;
+    top: auto !important;
+    bottom: 42px !important;
+    right: 0 !important;
+    z-index: 99999999;
+    background: #fff;
+    opacity: 1 !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+.prb-container {
+    padding-right: 0;
+}
+.progress-container .progress {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.progress-container .cup-active {
+    color: #fecb07;
+}
+.progress-container .cup-icon {
+    font-size: 36px;
+}
+/* full-mode */
+.lecture-detail-body.full-mod .lecture-detail-right{
+    right: -100%;
+}
+.lecture-detail-body.full-mod .lecture-detail-left{
+    margin-right: 0;
+}
+.btn-toggle-full-mod{
+    display: block;
+    position: absolute;
+    top:15px;
+    right:-5000px;
+    transition: all 0.25s ease-in-out;
+    z-index: 9;
+}
+.lecture-detail-body.full-mod .btn-toggle-full-mod{
+    right: 0;
+    z-index: 99;
+}
+.lecture-detail-body.full-mod .video-ft-pagi{
+    display: none
+}
+.lecture-detail-body.full-mod .ldt-main .lecture-video{
+    width:80%;
+}
+.lecture-detail-body.full-mod .video-ft-pagi .glyphicon-resize-small{
+    display: inline-block;
+}
+.lecture-detail-body.full-mod .video-ft-pagi .glyphicon-resize-full{
+    display: none;
+}
+.video-ft-pagi {
+    width: 360px;
+    position: fixed;
+    top: auto !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    z-index: 9998;
+    background: #000;
+    opacity: 1 !important;
+    padding: 8px 15px 2px;
+}
+.video-ft-pagi .lt-pg {
+    margin-left: 0;
+    padding-left: 70px;
+}
+.video-ft-pagi .on-off-btn-2 {
+    font-size: 12px;
+    margin-top: 3px;
+    position: relative;
+}
+.on-off-btn-2 {
+    width: 100px;
+    background-color: #CCCCCC;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: normal;
+}
+.video-ft-pagi .on-off-btn-2:before {
+    margin-top: 2px;
+    content: 'Auto Play';
+    position: absolute;
+    right: 100%;
+    width: 80px;
+    color: #666;
+}
+.video-ft-pagi .on-off-btn-2>span {
+    visibility: visible!important;
+    height: 20px !important;
+    line-height: 20px !important;
+}
+.video-ft-pagi .on-off-btn-2 span.y, .video-ft-pagi .on-off-btn-2.active span.n{
+    background-color: #B3B3B3 !important;
+}
+.video-ft-pagi .on-off-btn-2 span.n{
+    background-color: #E6E6E6 !important;
+}
+.on-off-btn-2>input {
+    display: none;
+}
+.video-ft-pagi .lt-pg .btn-t {
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: #B3B3B3;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+    margin: 0 5px;
+}
+.video-ft-pagi .lt-pg .btn-t span.arrow-left {
+    border-left-color: transparent;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+.video-ft-pagi .lt-pg .btn-t span {
+    border: 9px solid #E6E6E6;
+    border-width: 8px 13px;
+    height: 0;
+    display: block;
+    margin-top: 5px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+.video-ft-pagi .lt-pg .btn-t span {
+    border-width: 7px 10px;
+}
+.video-ft-pagi .lt-pg .btn-t span.arrow-right {
+    border-right-color: transparent;
+    margin-left: 10px;
+}
+.on-off-btn-2>span {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 25px;
+    line-height: 25px;
+}
+.lecture-detail-body.full-mod .progress-container {
+    display: none;
+}

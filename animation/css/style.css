@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333333;
+    overflow: scroll;
+    background-color: white;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+#wrap{
+	width: 1296px;
+	height: auto;
+	margin: auto;
+}
+#wrap #container{
+	width: 100%;
+	height: auto;
+}
+#wrap #container #header{
+	width: 100%;
+	height: 70px;
+	animation: key 10s ease infinite;
+	position: relative;
+
+}
+@keyframes key{
+	0%  {background-color: #EF7126;}
+    25%  {background-color: #6F3662;}
+    50%  {background-color: #9F6164;}
+    75%  {background-color: #44B3C2;}
+    100% {background-color: #218C8D;}
+}
+@keyframes keys{
+	0%  {color: #F9E559;}
+    25%  {color: #FFFFFF;}
+    50%  {color: #F8DEBD;}
+    75%  { color: #FFFFFF;}
+    100% {color: #F9E559;}
+}
+#wrap #container #header h1{
+	text-align:center;
+	text-transform: uppercase;
+	font-family: Verdana;
+	line-height: 70px;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	animation: keys 10s ease infinite;
+}
+#wrap #container #bake{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+#wrap #container #bake .shows{
+	width: 33.33%;
+	height: 260px;
+	float: left;
+	box-sizing: border-box;
+}
+#wrap #container #bake .shows .image{
+	width: 302px;
+	border:1px solid grey;
+	height: 200px;	
+	margin-left: 60px; 
+	transition: all 0.5s ease;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+#wrap #container #bake .shows .image2{
+	width: 302px;
+	border:1px solid grey;
+	height: 200px;	
+	margin-left: 60px; 
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#wrap #container #bake .shows .image img{
+	width: 300px;
+	height:200px;
+	padding: 2px;
+}
+#wrap #container #bake .shows .image:hover{
+	transform: translate(0,-5px);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+#wrap #container #bake .shows .image2 img{
+	width: 300px;
+	height:200px;
+	padding: 2px;
+	cursor: pointer;
+}
+#wrap #container #bake .shows .image2 img:hover{
+	transform: scale(1.2);
+}
+#wrap #container #footer{
+	float: right;
+	margin-right: 60px;
+}
+#wrap #container #footer p{
+	font-weight: bold;
+	color: blue;	
+	animation: move 4s ease infinite;
+}
+@keyframes move{
+	0%{opacity: 1;}
+	25%{opacity: 0.6;}
+	
+	50%{opacity: 0.4}
+	75%{
+		opacity: 0.2;
+	}
+	100%{
+		transform: translate(-400px);
+		opacity: 0;
+	}
+}

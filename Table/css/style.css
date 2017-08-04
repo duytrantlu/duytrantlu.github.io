@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333333;
+    overflow: scroll;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+#wrap{
+	width: 100%;
+	height: auto; 
+	margin: auto;
+}
+table{
+	width: 100%;
+	margin: auto;
+	border-collapse: collapse;
+}
+table, td,th{
+	border: 1px solid grey;
+}
+th, td{
+	padding: 10px;
+	
+}
+tr:hover{
+	background-color: yellow;
+	cursor: pointer;
+}
+.title{
+	background-color: green;
+	color:white;
+}
+.title:hover{
+	background-color: green;
+	color:white;
+}

@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #333;
+}
+h1 {
+  animation: intro .5s 1s ease-in-out both;
+  background-color: rgb(66, 173, 244);
+  box-shadow: 0 0 0 .25em #544,
+              0 0 0 1.75em rgb(66, 173, 244);
+  color: rgb(219, 19, 72);
+  font: bold 3em/1.5 sans-serif;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+}
+img{
+   width: 200px;
+  height: 200px;
+}
+
+#wrapper {
+  width: 600px;
+  margin: 150px auto 0;
+  perspective: 800;
+  perspective-origin: 50% 90px;
+  transition: perspective, 1s;
+}
+
+#wrapper:hover {
+   perspective-origin: 50% -100px;
+}
+
+
+
+#shape {
+  margin: 200px auto 100px;
+  height: 400px;
+  width: 400px;
+  transform-style: preserve-3d;
+  animation: spin 8s infinite linear;
+}
+.thumb img{
+  vertical-align: middle;
+}
+.plane {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+  font-size: 10em;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+#shape > .p1 { transform: translateZ(250px); }
+#shape > .p2 { transform: rotateY(45deg) translateZ(250px); }
+#shape > .p3 { transform: rotateY(90deg) translateZ(250px); }
+#shape > .p4 { transform: rotateY(135deg) translateZ(250px); }
+
+#snow{
+  background: none;
+  font-family: Androgyne;
+  background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@keyframes intro {
+  0% {
+    box-shadow: none;
+    height: .25em;
+  }
+  100% {
+    height: 1.5em;
+    margin-top: 2.5em;
+  }
+}
+@keyframes spin {
+  from { transform: rotateY(0); }
+  to   { transform: rotateY(-360deg); }
+}

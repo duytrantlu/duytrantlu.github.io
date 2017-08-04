@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KanBan</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<header class="container-fluid">
+		<nav>
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo center">kanban</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">		        
+		      </ul>
+		    </div>
+	  	</nav>
+	</header>
+	<section class="container">
+		<div class="row main">
+	        <div class="col s12 m4">
+	          <div class="card">
+	          		<div class="text-color1" >
+	          			<h5 >TODO (4)</h5>
+					</div>
+	            <ul class="collection connect-list" id="todo">
+				     <li class="collection-item"> <i class="material-icons badge" >delete</i>Alvin</li>
+				     <li class="collection-item active"><i class="material-icons badge" >delete</i>Alvin</li>
+				     <li class="collection-item"><i class="material-icons badge" >delete</i>Alvin</li>
+				     <li class="collection-item"><i class="material-icons badge" >delete</i>Alvin</li>           			
+			    </ul>
+		     	<div class="input-field">
+		       		<input placeholder="new job..." id="first_name" type="text" class="validate" onkeydown="add(event, 'todo', this)">
+		       	</div> 
+	          </div>
+
+	        </div>
+
+	        <div class="col s12 m4">
+	          <div class="card">
+	          		<div class="text-color2" >
+	          			<h5 >DOING (1)</h5>
+					</div>
+
+	            <ul class="collection connect-list" id='doing'>
+				    <li class="collection-item active"><i class="material-icons badge">delete</i>Alvin</li>				     
+			    </ul>
+			    <div class="input-field">
+		       		<input placeholder="new job..." id="first_name" type="text" class="validate" onkeydown="add(event, 'doing', this)">
+		       	</div>
+	          </div>
+	        </div>
+
+	        <div class="col s12 m4">
+	          <div class="card">
+	          		<div class="text-color3" >
+	          			<h5 >DONE (3)</h5>
+					</div>
+	            <ul class="collection connect-list" id='done'>
+				   	<li class="collection-item"><i class="material-icons badge" >delete</i>Alvin</li>
+				    <li class="collection-item active"><i class="material-icons badge">delete</i>Alvin</li>
+				    <li class="collection-item"><i class="material-icons badge" >delete</i>Alvin</li>
+			    </ul>
+			    <div class="input-field">
+		       		<input placeholder="new job..." id="first_name" type="text" class="validate" onkeydown="add(event, 'done', this)">
+		       	</div>
+	          </div>
+	        </div>
+      	</div>
+	</section>
+	<!-- modal -->
+	<div id="del-modal" class="modal">
+	    <div class="modal-content">
+	      <h4>Confirm</h4>
+	      <p>Bạn có muốn xóa công việc không?</p>
+	    </div>
+	    <div class="modal-footer">
+	    	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Hủy</a>
+	      	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat agree">Đồng ý</a>
+	    </div>
+  	</div> <!-- end modal -->
+	<footer></footer>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="css/materialize/js/materialize.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function add(e, type, input) {
+		var event = window.event || e;
+		console.log(event.key);
+		var jobName = $(input).val();
+		if(event.key==='Enter' && jobName.trim()!==''){
+				//update lại 
+				this.addjobtolist(type,jobName);
+
+				//làm trống cái input
+				$(input).val('');
+			}
+			
+		}
+		function addjobtolist(type, jobName) {
+				var item = '<li class="collection-item"> <i class="material-icons badge" onclick="del(this)" >delete</i>'+jobName+'</li>';
+			 	$('#'+type).append(item);
+		}
+		function del(arg) {
+				var job=$(arg).parent();
+				$('#del-modal').modal('open');
+				$('.agree').on('click',function(){
+					job.remove();
+				});
+				
+			}	
+	</script>
+</body>
+</html>

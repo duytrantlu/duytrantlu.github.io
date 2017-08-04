@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Học Tiếng Anh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/notification.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.theme.green.css">
+</head>
+<body>
+<header class="page-top fixed-tops edit">
+        <div class="container">
+            <div class="row">
+                <a class="logo col-xs-1 col-sm-3 col-md-2 col1 hidden-xs hidden-sm" href="#">
+                    <img class="logoimg logoimg1" src="img/logo-global.png" alt="global" />
+                    <img class="logoimg logoimg2" src="img/logo-global-2.png" alt="global" />
+                </a>
+                <a class="btn-click hidden-md hidden-lg courses-browsers-btn" href="">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </a>
+                <div class="search-box  col-xs-9 col-sm-8 col-md-5 col2 nopdr hidden-xs hidden-sm">
+                    <form class="form-search-box pull-right" method="post" action="">
+                        <div class="dropdown-browse-courses form-group  pull-left">
+                            <span class="dropdown-toggle">
+                                <span class="btn-browse-text">
+                                    Danh mục Khóa học
+                                </span>
+                                <span class="btn-browse-icon btn-click">
+                                    <i class="glyphicon glyphicon-triangle-bottom"></i>
+                                </span>
+                            </span>
+                            <ul class="dropdown-menu browses-dropdow-data">
+                                <li><a href="">Kế toán - Tài chính</a></li>
+                                <li><a href="">Marketing - Bán hàng</a></li>
+                                <li><a href="">IT - Web/ Games/ Apps</a></li>  
+                                <li><a href="">Kinh doanh - Khởi nghiệp</a></li>
+                                <li><a href="">Design - Multimedia</a></li>
+                                <li><a href="">Ngoại ngữ - Kỹ năng mềm</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-group pull-left form-group-2">
+                            <label class="sr-only" for="search-query"></label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="s" id="s" value="" placeholder="Search">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="pull-right col-md-5 col-xs-7 col3 nopdl text-right page-top-nav-right">
+                    <ul class="nav navbar-nav navbar-right user-dropdow-data"> 
+                        <li>
+                            <a href="co-operate.html" class="btn-teach-on-global-edit mgr15"><span>Hợp tác giảng dạy</span></a>
+                        </li>
+                        <li>
+                            <a href="myCourse.html">
+                                <span class="glyphicon glyphicon-th noti-message-btn hidden-xs"></span>
+                                <span class="glyphicon glyphicon-th noti-message-btn hidden-lg hidden-md hidden-sm"></span>
+                            </a>
+                        </li>
+                        <li class="hidden-xs hidden-sm">
+                            <a class="get-message-board">
+                                <span class="glyphicon glyphicon-envelope" id="tong-so-tin-nhan"></span>
+                            </a>
+                        </li>
+                        <li class="hidden-xs hidden-sm dropdown prl noti">
+                            <a id="noti-bell">
+                                <span class="noti-message-btn glyphicon glyphicon-bell"></span>
+                            </a>
+                            <div class="dropdown-menu pab bg-ee" id="noti-panel">
+                                <div id="message-panel" class="message-panel">
+                                    <div class="mess-panel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation">
+                                                <a href="#notification-panel-1" aria-controls="notification-panel-1" role="tab" data-toggle="tab">
+                                                    Global 
+                                                    <span class="message-number" id="total-panel-1">0</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="active">
+                                            <a href="#notification-panel-2" aria-controls="notification-panel-2" role="tab" data-toggle="tab">
+                                                Instructors 
+                                                <span class="message-number" id="total-panel-2">0</span>
+                                            </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#notification-panel-3" aria-controls="notification-panel-3" role="tab" data-toggle="tab">
+                                                    Students  
+                                                    <span class="message-number" id="total-panel-3">0</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content text-left">
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-1">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane active" id="notification-panel-2">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                                <!-- /item -->
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-3">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="compose-container text-right">
+                                            <span class="mark-as-read" onclick=""><i class="glyphicon glyphicon-check"></i>Đánh dấu Bạn đã đọc tất cả các thông báo.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user-avatar-data dropdow">
+                            <div class="top-avatar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                                <img src="img/Blank-avatar.png">
+                            </div>
+                            <ul class="user-dropdow-menu dropdown-menu">
+                                <li>
+                                    <div class="u">
+                                        <div class="avatar">
+                                            <img src="img/Blank-avatar.png">
+                                        </div>
+                                        <div class="uil">
+                                            <div class="u-name">
+                                                
+                                            </div>
+                                            <div class="u-ctr row">
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-user"></i>
+                                                    </span>
+                                                    <span>Hồ sơ</span>
+                                                </a>
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-pencil"></i>
+                                                    </span>
+                                                    <span>Chỉnh sửa</span>
+                                                </a>
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-cog"></i>
+                                                    </span>
+                                                    <span>Cài đặt</span>
+                                                </a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <span class="arrow-top"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                 <ul class="usub">
+                                     <li>
+                                         <a href="#" class="get-message-board">
+                                             Hộp tin nhắn        
+                                             <span class="ctnn" id="tong-so-tin-nhan-2"></span>
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="#">My Wishlist</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Global Referral Credits</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Lịch sử giao dịch</a>
+                                     </li>
+                                 </ul> 
+                             </li>
+                             <li>
+                                <a class="btn-log-out" href="#">
+                                    <span class="glyphicon glyphicon-off"></span>
+                                    Log Out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mega menu courses -->
+    <div class="megamenu hidden-xs hidden-sm">
+        <div class="container">
+            <div class="mgpdl">
+                <a class="all-courses" href="all-coures.html">
+                    <div class="content">
+                        <div class="overlay">
+                            <p>Tât cả khóa học</p>
+                            <span class="icon-courses icon-benefit-1-2"></span>
+                        </div>
+                    </div>
+                </a>
+                <a class="keepbooking" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-accounting"></span>
+                        <p>Kế toán - Tài chính</p>
+                    </div>
+                </a>
+                <a class="sale" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-marketing"></span>
+                        <p>Marketing - Bán hàng</p>
+                    </div>
+                </a>
+                <a class="code" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-infomation-technology"></span>
+                        <p>IT - Web/ Games/ Apps</p>
+                    </div>
+                </a>
+                <a class="founded" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-manager"></span>
+                        <p>Kinh doanh - Khởi nghiệp                                </p>
+                    </div>
+                </a>
+                <a class="digital" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-designer"></span>
+                        <p>Design - Multimedia                                </p>
+                    </div>
+                </a>
+                <a class="en" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-soft-skills"></span>
+                        <p>Ngoại ngữ - Kỹ năng mềm                                </p>
+                    </div>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container-fluid bgpf">
+        <div class="row">
+            <div class="slidebar pslidebar col-sm-3 col-md-2 col-xs-3">
+                <div class="nav nav-sidebar text-center hidden-xs">
+                    <div class="avatar bdw">
+                        <img src="img/Blank-avatar.png" alt="User avatar" id="img-of-user" onclick="img_of_user_click(this)">
+                    </div>
+                    <h3>
+                        <span class="hidden-xs">tran duy</span>
+                    </h3>
+                    <p>
+                        <span class="hidden-xs"></span>
+                    </p>
+                </div>
+                <!-- Nav-tabs -->
+                <ul class="nav nav-sidebar nav-tabs nav-of-all-edit" role="tablist">
+                    <li class="active" role="presentation">
+                        <a href="#setting" aria-controls="setting" role="tab" data-toggle="tab">
+                            <i class="glyphicon glyphicon-user"></i>
+                            <span class="hidden-xs">Chỉnh sửa hồ sơ</span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#emailPassword" aria-controls="emailPassword" role="tab" data-toggle="tab">
+                            <i class="glyphicon glyphicon-cog"></i>
+                            <span class="hidden-xs">Cài đặt Email &amp; Mật khẩu</span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#interest" aria-controls="interest" role="tab" data-toggle="tab">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            <span class="hidden-xs">Lĩnh vực bạn quan tâm</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" data-toggle="modal" data-target="#remove-account-modal" class="modal-remove-acount">
+                            <i class="glyphicon glyphicon-remove"></i>
+                            <span class="hidden-xs">Xóa tài khoản</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- modal remove acount -->
+            <div class="modal fade remove-account-modal" id="remove-account-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-gray">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="text-center nomg">Bạn có chắc không?</h3>
+                    </div>
+                    <div class="modal-body bgw">
+                        <div class="container-fluid">
+                            <p>Chúng tôi thực sự không muốn bạn rời đi!</p>
+                            <p>Nhưng nếu bạn đã quyết định, thì đây là một số điều bạn cần biết:</p>
+                            <ul>
+                                <li>Xóa tài khoản của bạn có nghĩa là bạn sẽ mất tất cả quyền truy cập các khóa học mà bạn đã mua hoặc tham gia.</li>
+                                <li>Xóa tài khoản của bạn không có nghĩa là xóa luôn mọi bình luận hay câu hỏi mà bạn đã đăng trên  Global.</li>
+                            </ul>
+                            <p>Nếu anh/chị là Giảng viên đang có học viên theo học các khóa học của anh/chị, thì anh/chị không thể xóa tài khoản của mình. Anh/Chị cần liên hệ với chúng tôi tại <a href="mailto:support@duytrantlu.com">support@duytrantlu.com</a> để gửi yêu cầu. Trân trọng cảm ơn. </p>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Xóa tài khoản</button>
+                        <button type="button" class="btn btn-cancel" data-dismiss="modal">Hủy</button>
+                    </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+            <!-- tab xử lý -->
+            <!-- Tab panes của chỉnh sửa hồ sơ -->
+            <div class="tab-content edit-of-app">
+                <div role="tabpanel" class="tab-pane active" id="setting">
+                    <div class="col-sm-9 col-md-10 col-xs-9 col-sm-offset-3 col-md-offset-2 col-xs-offset-3">
+                        <div class="profile-main pd15 bg-white">
+                            <div class="profile-edit">
+                                <div class="page-header ph">
+                                    <div class="col-sm-4">
+                                        <span class="size22">Chỉnh sửa hồ sơ</span>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <ul class="nav nav-of-setting" role="tablist">
+                                            <li class="active">
+                                                <a href="#basic-infomation" role="tab" data-toggle="tab">Thông tin cơ bản</a>
+                                            </li>
+                                            <li role="presentation" class="img-click-show-edit">
+                                                <a href="#profile-picture" role="tab" data-toggle="tab">Hình profile</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#privacy" role="tab" data-toggle="tab">Riêng tư</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#notifications" aria-controls="notifications" role="tab" data-toggle="tab">Thông báo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- profile basic form -->
+                                <div>
+                                    <div class="tab-content nav-setting">
+                                        <div class="tab-pane active" role="tabpanel" id="basic-infomation">
+                                            <form class="form-horizontal frmp form-horizontal-2" enctype="multipart/form-data" method="post">
+                                                <div class="row-fluid">
+                                                    <div class="col-sm-9">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2 required" for="first_name">Tên</label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="tk_ten" name="tk_ten" value="duy">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2 required" for="last_name">Họ</label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="tk_ho" name="tk_ho" value="tran">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2 required" for="tk_mobile">Số di động</label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="tk_mobile" name="tk_mobile" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <p>
+                                                                <span class="alert text-yel"> ( <i class="required"></i>
+                                                                    thông tin bắt buộc)
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2" for="tk_chuc_vu">Chức danh/ Chuyên môn nghề nghiệp</label>
+                                                            <div class="col-sm-10">
+                                                                <div class="input-group">
+                                                                    <input class="form-control" id="tk_chuc_vu" name="tk_chuc_vu" value="" onkeyup="call_valild_len(this,60)" maxlength="60"> <span class="input-group-addon">60</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2" for="tk_facebook">Facebook</label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="tk_facebook" name="tk_facebook" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2" for="tk_twitter">Twitter</label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="tk_twitter" name="tk_twitter" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2" for="tk_google">Google Plus</label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="tk_google" name="tk_google" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2 " for="tk_linkedin">LinkedIn</label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="tk_linkedin" name="tk_linkedin" value="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="border-gray bg-gray pd15">
+                                                            <p class="text-strong">Lưu ý:</p>
+                                                            <p>Tên đầy đủ của bạn sẽ được in trên Giấy chứng nhận (Course Certificate). Vì vậy, bạn vui lòng ghi đúng và đầy đủ. </p>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="col-sm-9">
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row-fluid">
+                                                    <div class="col-sm-9">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Giới thiệu ngắn gọn về bạn</label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-sm-12 nopdl">
+                                                                <textarea class="form-control" rows="12" name="tk_gioi_thieu"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="block">Một số thông tin về bạn như: bạn đang làm nghề gì, sở thích của bạn, bạn quan tâm đến điều là gì, bạn mong muốn làm gì trong hiện tại và tương lai.</div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2 required">Giới tính </label>
+                                                            <div class="col-sm-10">
+                                                                <label class="control-label col-xs-3 col-sm-2">
+                                                                    <input type="radio" name="tk_gioi_tinh" value="1" id="gender_male"> 
+                                                                    Nam
+                                                                </label> 
+                                                                <label class="control-label col-xs-3 col-sm-2">
+                                                                    <input type="radio" name="tk_gioi_tinh" value="0" checked="checked" id="gender_female">
+                                                                    Nữ
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-sm-2 required">Ngày sinh</label>
+                                                            <div class="col-sm-10">
+                                                                <div class="row">
+                                                                    <div class="col-xs-3 col-md-2">
+                                                                        <select class="form-control" name="day">
+                                                                            <option value="" selected="">Ngày</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="1">2</option>
+                                                                            <option value="1">3</option>
+                                                                            <option value="1">4</option>
+                                                                            <option value="1">5</option>
+                                                                            <option>....</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-xs-5 col-md-3">
+                                                                        <select class="form-control" name="month">
+                                                                            <option value="" selected="">Tháng</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="1">2</option>
+                                                                            <option value="1">3</option>
+                                                                            <option value="1">4</option>
+                                                                            <option value="1">5</option>
+                                                                            <option>....</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-xs-4 col-md-3">
+                                                                        <select class="form-control" name="year">
+                                                                            <option value="" selected="">Năm</option>
+                                                                            <option value="1">1990</option>
+                                                                            <option value="1">2000</option>
+                                                                            <option value="1">2013</option>
+                                                                            <option value="1">2014</option>
+                                                                            <option value="1">2015</option>
+                                                                            <option>....</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                       
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-2 control-label">Tỉnh/ Thành phố</label>
+                                                            <div class="col-sm-10">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <select class="form-control" id="tp_id" name="tp_id">
+                                                                            <option value="val1" selected="">Hà Nội</option>
+                                                                            <option value="val2" selected="">TP. HCM</option>
+                                                                            <option value="val3" selected="">Đà Nẵng</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <span class="col-sm-6"> (nơi bạn đang sống/làm việc hay học tập) </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="well pdl26">
+                                                                <label class="col-sm-2 required control-label">Ngôn ngữ</label>
+                                                                <div class="col-sm-5">
+                                                                    <select class="form-control" name="nn_id">
+                                                                        <option value="vi" selected="">Tiếng Việt</option><option value="en">English</option>                   
+                                                                    </select>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group text-center">
+                                                            <div class="col-sm-5 col-sm-offset-2 text-right">
+                                                                <button class="btn btn-info">Lưu các thay đổi</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div><!-- end profile basic info -->
+                                <!-- profile picture -->      
+                                <div class="tab-content nav-picture">                
+                                    <div class="tab-pane" role="tabpanel" id="profile-picture">
+                                        <form class="form-horizontal frmp form-horizontal-2" method="post" enctype="multipart/form-data">
+                                            <div class="col-sm-6">
+                                                <p>
+                                                    <span class="text-yel">LƯU Ý:</span> 
+                                                    Hình nên có độ lớn (240 X 240 pixels)<br> với định dạng là: jpg, png, gif<br> Kích cở file tối đa: 500KB                                       
+                                                </p>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-md-3 nopdr">
+                                                            <label for="tk_hinh" id="image-show" class="thumbnail avatar tk_hinh"> 
+                                                                <img src="img/Blank-avatar.png" alt="user-picture" id="img_show">
+                                                            </label>
+                                                        </div>
+                                                        <input type="hidden" name="tk_hinh" id="tk_hinh">
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-3 nopdr text-btn">Chọn hình để upload</div>
+                                                        <div class="col-md-7">
+                                                            <div class="row" id="drag-and-drop-zone">
+                                                                <div class="col-sm-4 browser">
+                                                                    <button type="button" class="btn btn-green btn-upload-file">Upload file hình</button>
+                                                                    <input type="file" name="files[]" title="Click to add Files">
+                                                                </div> 
+                                                                <div class="clearfix"></div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-3 nopdr">
+                                                            <button class="btn bg-blue text-white mw">Thay hình</button>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <label class="btn btn-warning avatar" for="tk_hinh">Hủy</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- privacy -->
+                                <div class="tab-content nav-privacy">
+                                    <div class="tab-pane" role="tabpanel" id="privacy">
+                                        <form class="form-horizontal frmp form-horizontal-2" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="privacy" value="1">
+                                            <div class="col-sm-9">
+                                                <div class="form-group">Chỉnh sửa cài đặt chế độ riêng tư ở đây.</div>
+                                                <div class="form-group">
+                                                    <div class="border-gray checkbox-group">
+                                                        Hiển thị các khóa học của tôi trên trang Hô sơ cá nhân. 
+                                                        <label class="on-off-btn-2 "> 
+                                                            <span class="y">ON</span> <span class="n">OFF</span> 
+                                                            <input onchange="set_on_off_btn_2(this)" name="tk_hien_thi_dang_hoc" value="1000" type="checkbox">
+                                                        </label>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="border-gray checkbox-group">
+                                                        Hiển thị các khóa học tôi đang dạy trên trang Hô sơ cá nhân. 
+                                                        <label class="on-off-btn-2 "> 
+                                                            <span class="y">ON</span> <span class="n">OFF</span> 
+                                                            <input onchange="set_on_off_btn_2(this)" name="tk_hien_thi_dang_day" value="1000" type="checkbox">
+                                                        </label>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="border-gray checkbox-group">
+                                                        Hiển thị các khóa học trong danh sách Wisshlist trên trang Hô sơ cá nhân. 
+                                                        <label class="on-off-btn-2 "> 
+                                                            <span class="y">ON</span> <span class="n">OFF</span> 
+                                                            <input onchange="set_on_off_btn_2(this)" name="tk_hien_thi_yeu_thich" value="1000" type="checkbox">
+                                                        </label>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-center">
+                                                    <button class="btn btn-info">Lưu các thay đổi</button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>  
+                                </div>
+                                <!-- notifications -->
+                                <div class="tab-content nav-notifications" >
+                                    <div class="tab-pane" role="tabpanel" id="notifications">
+                                        <form class="form-horizontal frmp form-horizontal-2" method="post">
+                                            <input type="hidden" name="notifications" value="1">
+                                            <div class="col-sm-9">
+                                                <p class="text-strong">Gửi email cho tôi khi:</p>
+                                                <div class="well">
+                                                    <div class="form-group">
+                                                        <label class="control-label"> 
+                                                            <input name="tk_tb_ global_gui_khuyen_mai" value="1000" type="checkbox" checked=""> 
+                                                            <span> Global gửi cho tôi các thông báo và chương trình giảm giá đặc biệt.</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label"> 
+                                                            <input name="tk_tb_user_gui_tin_nhan" value="1000" type="checkbox" checked="">
+                                                            <span>Học viên trên  Global gửi tin nhắn cho tôi</span>
+                                                        </label>
+                                                    </div>    
+                                                </div>
+                                                <p class="text-strong">Các thông báo của khóa học</p>
+                                                <div class="well">
+                                                    <div class="form-group">
+                                                        <label class="control-label"> 
+                                                            <input name="tk_tb_moi_tu_giang_vien_hoac_nhom" value="1000" type="checkbox" checked=""> 
+                                                            <span>
+                                                                Thông báo mới từ Giảng viên của khóa học
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label"> 
+                                                            <input name="tk_tb_giang_vien_yeu_cau_nhan_xet" value="1000" type="checkbox" checked=""> 
+                                                            <span>Giảng viên gửi cho tôi thư mời đánh giá khóa học</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label"> 
+                                                            <input name="tk_tb_khi_hoc_vien_nhan_xet" value="1000" type="checkbox" checked=""> 
+                                                            <span>Ai đó trả lời câu hỏi của tôi trong khóa học mà tôi tham gia.</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-center">
+                                                    <button type="submit" class="btn bg-blue text-white">Lưu các thay đổi</button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>                  
+            </div><!-- end Tab panes của chỉnh sửa hồ sơ -->
+            <!-- tab của cài đặt email và mật khẩu -->
+            <div class="tab-content edit-of-emailPassword">
+                <div id="emailPassword" role="tabpanel" class="tab-pane">
+                    <div class="col-sm-9 col-md-10 col-xs-9 col-sm-offset-3 col-md-offset-2 col-xs-offset-3">
+                        <div class="profile-main pd15 bg-white">
+                            <div class="profile-edit">
+                                <div class="page-header ph">
+                                    <div class="col-sm-6">
+                                        <span class="size22">Cài đặt tài khoản</span>
+                                    </div>
+                                    <div class="clearfix"></div>    
+                                </div>
+                                <div class="pfby">
+                                    <form class="form-horizontal frmp form-horizontal-2" method="post" id="frm1" name="frm1" novalidate="novalidate">
+                                        <div class="row-fluid">
+                                            <div class="col-sm-9">
+                                                <div class="form-group">
+                                                    <h4>Thay đổi mật khẩu</h4>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-3" for="oldpwd">Mật khẩu hiện tại</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="password" name="mat_khau_hien_tai" id="oldpwd" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-3" for="newpwd">Mật khẩu mới</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="password" name="mat_khau_moi" id="mat_khau_moi" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-3" for="repwd">Re-type new password</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="password" name="mat_khau_moi_nhap_lai" id="repwd" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-9 col-sm-offset-3">
+                                                        <button type="submit" class="btn btn-info">Thay Mật khẩu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <hr class="col-sm-9">
+                                    <form class="form-horizontal frmp form-horizontal-2" method="post" id="frm2" name="frm2" novalidate="novalidate">
+                                        <div class="row-fluid">
+                                            <div class="col-sm-9">
+                                                <div class="form-group">
+                                                    <h4>Thay đổi email của bạn</h4>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-3" for="oldemail">Email hiện tại</label>
+                                                    <div class="col-sm-6">
+                                                        <input class="form-control" type="email" id="oldemail" value="duytrantlu@gmail.com" readonly="readonly">
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-3" for="newemail">Thay bằng email</label>
+                                                    <div class="col-sm-6">
+                                                        <input class="form-control" type="email" id="newemail" name="newemail" required="required" placeholder="Vui lòng nhập địa chỉ email mới" onblur="">                                
+                                                    </div>
+                                                    <div class="col-sm-3 text-right">
+                                                        <button type="submit" class="btn btn-gr">Thay email</button>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div><!-- end tab của cài đặt email và mật khẩu -->
+            <!-- tab của lĩnh vực bạn quan tâm -->
+            <div class="tab-content edit-of-interest"">
+                <div id="interest" role="tabpanel" class="tab-pane">
+                    <div class="col-sm-9 col-md-10 col-xs-9 col-sm-offset-3 col-md-offset-2 col-xs-offset-3">
+                        <div class="profile-main pd15 bg-white">
+                            <div class="profile-edit">
+                                <div class="page-header ph">
+                                    <div class="col-sm-6">
+                                        <span class="size22">Cập nhật lĩnh vực bạn quan tâm</span>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="pfby">
+                                    <!-- Update your interests form -->
+                                    <form class="form-horizontal frmp form-horizontal-2" method="post">
+                                        <div class="row-fluid">
+                                            <div class="col-md-9">
+                                                <div class="form-group">
+                                                    <p>Hãy cho chúng tôi biết bạn quan tâm đến những lĩnh vực nào và chúng tôi sẽ lựa chọn và cập nhật cho bạn những khóa học tốt nhất thuộc lĩnh vực đó trên  Global. </p>
+                                                    <p>Vui lòng chọn lĩnh vực mà bạn quan tâm nhất:</p>
+                                                </div>
+                                                <div class="grnt row">
+                                                    <label class="col-sm-6 col-xs-12">
+                                                        <input type="checkbox" name="nhom_id[]" value="6">
+                                                        Kế toán - Tài chính                        
+                                                    </label>
+                                                    <label class="col-sm-6 col-xs-12">
+                                                        <input type="checkbox" name="nhom_id[]" value="6">
+                                                        Lập trình                       
+                                                    </label>
+                                                    <label class="col-sm-6 col-xs-12">
+                                                        <input type="checkbox" name="nhom_id[]" value="6">
+                                                        Toiec - Ielts                       
+                                                    </label>
+                                                    <label class="col-sm-6 col-xs-12">
+                                                        <input type="checkbox" name="nhom_id[]" value="6">
+                                                        Marketing                       
+                                                    </label>
+                                                    <label class="col-sm-6 col-xs-12">
+                                                        <input type="checkbox" name="nhom_id[]" value="6">
+                                                        Design - mutilmedia                       
+                                                    </label>
+                                                    <label class="col-sm-6 col-xs-12">
+                                                        <input type="checkbox" name="nhom_id[]" value="6">
+                                                        Startup                       
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn btn-info" type="submit">Lưu các thay đổi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </form><!--end Update your interests-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer></footer>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/customer.js"></script>
+    <script type="text/javascript" src="js/edit.js"></script>
+</body>
+</html>

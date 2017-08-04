@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học Tiếng Anh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/notification.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.theme.green.css">
+</head>
+<body>	
+    <header class="page-top">
+        <div class="container">
+            <div class="row">
+                <a class="logo col-xs-1 col-sm-3 col-md-2 col1 hidden-xs hidden-sm" href="#">
+                    <img class="logoimg logoimg1" src="img/logo-global.png" alt="global" />
+                    <img class="logoimg logoimg2" src="img/logo-global-2.png" alt="global" />
+                </a>
+                <a class="btn-click hidden-md hidden-lg courses-browsers-btn" href="">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </a>
+                <div class="search-box  col-xs-9 col-sm-8 col-md-5 col2 nopdr hidden-xs hidden-sm">
+                    <form class="form-search-box pull-right" method="post" action="">
+                        <div class="dropdown-browse-courses form-group  pull-left">
+                            <span class="dropdown-toggle">
+                                <span class="btn-browse-text">
+                                    Danh mục Khóa học
+                                </span>
+                                <span class="btn-browse-icon btn-click">
+                                    <i class="glyphicon glyphicon-triangle-bottom"></i>
+                                </span>
+                            </span>
+                            <ul class="dropdown-menu browses-dropdow-data">
+                                <li><a href="">Kế toán - Tài chính</a></li>
+                                <li><a href="">Marketing - Bán hàng</a></li>
+                                <li><a href="">IT - Web/ Games/ Apps</a></li>  
+                                <li><a href="">Kinh doanh - Khởi nghiệp</a></li>
+                                <li><a href="">Design - Multimedia</a></li>
+                                <li><a href="">Ngoại ngữ - Kỹ năng mềm</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-group pull-left form-group-2">
+                            <label class="sr-only" for="search-query"></label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="s" id="s" value="" placeholder="Search">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="pull-right col-md-5 col-xs-7 col3 nopdl text-right page-top-nav-right">
+                    <ul class="nav navbar-nav navbar-right user-dropdow-data"> 
+                        <li>
+                            <a href="#" class="btn-teach-on-global mgr15"><span>Hợp tác giảng dạy</span></a>
+                        </li>
+                        <li>
+                            <a href="myCourse.html">
+                                <span class="glyphicon glyphicon-th hidden-xs"></span>
+                                <span class="glyphicon glyphicon-th hidden-lg hidden-md hidden-sm"></span>
+                            </a>
+                        </li>
+                        <li class="hidden-xs hidden-sm">
+                            <a  class="get-message-board"><span class="glyphicon glyphicon-envelope" id="tong-so-tin-nhan"></span></a>
+                        </li>
+                        <li class="hidden-xs hidden-sm dropdown prl noti">
+                            <a id="noti-bell">
+                                <span class="noti-message-btn glyphicon glyphicon-bell"></span>
+                            </a>
+                            <div class="dropdown-menu pab bg-ee" id="noti-panel">
+                                <div id="message-panel" class="message-panel">
+                                    <div class="mess-panel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation"><a href="#notification-panel-1" aria-controls="notification-panel-1" role="tab" data-toggle="tab">Uskills <span class="message-number" id="total-panel-1">0</span></a></li>
+                                            <li role="presentation" class="active"><a href="#notification-panel-2" aria-controls="notification-panel-2" role="tab" data-toggle="tab">Instructors <span class="message-number" id="total-panel-2">0</span></a></li>
+                                            <li role="presentation"><a href="#notification-panel-3" aria-controls="notification-panel-3" role="tab" data-toggle="tab">Students <span class="message-number" id="total-panel-3">0</span></a></li>
+                                        </ul>
+                                        <div class="tab-content text-left">
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-1">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane active" id="notification-panel-2">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                                <!-- /item -->
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="notification-panel-3">
+                                                <div class="message-item"><p class="text-center">Không có thông báo</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="compose-container text-right">
+                                            <span class="mark-as-read" onclick=""><i class="glyphicon glyphicon-check"></i>Đánh dấu Bạn đã đọc tất cả các thông báo.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user-avatar-data dropdow">
+                            <div class="top-avatar" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                                <img src="img/Blank-avatar.png">
+                            </div>
+                            <ul class="user-dropdow-menu dropdown-menu">
+                                <li>
+                                    <div class="u">
+                                        <div class="avatar">
+                                            <img src="img/Blank-avatar.png">
+                                        </div>
+                                        <div class="uil">
+                                            <div class="u-name">
+
+                                            </div>
+                                            <div class="u-ctr row">
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-user"></i>
+                                                    </span>
+                                                    <span>Hồ sơ</span>
+                                                </a>
+                                                <a href="edit-info.html" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-pencil"></i>
+                                                    </span>
+                                                    <span>Chỉnh sửa</span>
+                                                </a>
+                                                <a href="#" class="col-xs-4">
+                                                    <span>
+                                                        <i class="glyphicon glyphicon-cog"></i>
+                                                    </span>
+                                                    <span>Cài đặt</span>
+                                                </a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <span class="arrow-top"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                   <ul class="usub">
+                                       <li>
+                                           <a href="#" class="get-message-board">
+                                               Hộp tin nhắn        
+                                               <span class="ctnn" id="tong-so-tin-nhan-2"></span>
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a href="#">My Wishlist</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Global Referral Credits</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Lịch sử giao dịch</a>
+                                       </li>
+                                   </ul> 
+                               </li>
+                               <li>
+                                <a class="btn-log-out" href="index.html">
+                                    <span class="glyphicon glyphicon-off"></span>
+                                    Log Out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mega menu courses -->
+    <div class="megamenu hidden-xs hidden-sm">
+        <div class="container">
+            <div class="mgpdl">
+                <a class="all-courses" href="">
+                    <div class="content">
+                        <div class="overlay">
+                            <p>Tât cả khóa học</p>
+                            <span class="icon-courses icon-benefit-1-2"></span>
+                        </div>
+                    </div>
+                </a>
+                <a class="keepbooking" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-accounting"></span>
+                        <p>Kế toán - Tài chính</p>
+                    </div>
+                </a>
+                <a class="sale" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-marketing"></span>
+                        <p>Marketing - Bán hàng</p>
+                    </div>
+                </a>
+                <a class="code" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-infomation-technology"></span>
+                        <p>IT - Web/ Games/ Apps</p>
+                    </div>
+                </a>
+                <a class="founded" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-manager"></span>
+                        <p>Kinh doanh - Khởi nghiệp                                </p>
+                    </div>
+                </a>
+                <a class="digital" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-designer"></span>
+                        <p>Design - Multimedia                                </p>
+                    </div>
+                </a>
+                <a class="en" href="">
+                    <div class="content">
+                        <span class="icon-courses icon-courses-soft-skills"></span>
+                        <p>Ngoại ngữ - Kỹ năng mềm                                </p>
+                    </div>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="myCourse-name-header bg-blue">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-sm-7 col-md-8">
+                    <h4 class="nomg">Thiết kế Website bằng WordPress cho người mới bắt đầu</h4>
+                </div>
+                <div class="col-sm-5 col-md-4 text-right">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-7">
+
+                        </div>
+                        <div class="col-xs-6 col-md-5 text-white pnt nopdl  pull-right" id="rating-course">
+                            <span class="rating nomgr">
+                                <i class="glyphicon glyphicon-star "></i>
+                                <i class="glyphicon glyphicon-star "></i>
+                                <i class="glyphicon glyphicon-star "></i>
+                                <i class="glyphicon glyphicon-star "></i>
+                                <i class="glyphicon glyphicon-star "></i>
+                            </span>
+                            <p>Đánh giá</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- get link modal rating -->
+        <div class="modal fade" id="rating-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post" id="form-comment-rating">
+                                <div class="form-group row size22">
+                                    <label class="col-xs-5 col-sm-5">Đánh giá khóa học này</label>
+                                    <div class="col-xs-7 col-sm-7 rating_callback">
+                                        <span class="rating"> 
+                                            <i class="glyphicon glyphicon-star"></i> 
+                                            <i class="glyphicon glyphicon-star"></i> 
+                                            <i class="glyphicon glyphicon-star"></i> 
+                                            <i class="glyphicon glyphicon-star"></i> 
+                                            <i class="glyphicon glyphicon-star"></i>
+                                        </span> <input type="text" name="rate" id="rate" value="0" style="border:none; width:0px; height:0px" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control"
+                                    placeholder="Nhập tiêu đề ở đây " name="spbl_ten" id="spbl_ten" value=""/>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="6"
+                                    placeholder="Nội dung đánh giá" name="spbl_noi_dung" id="spbl_noi_dung"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-lg btn-green col-xs-12" id="send-feedback">Gửi</button>
+                                </div>
+                            </form>
+                            <div class="form-group rating_submit_callback text-center hidden" id="form-comment-rating-result">
+                                <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h3>Cảm ơn bạn đã đánh giá.</h3>
+                            <p>Tôi hy vọng khóa học thực sự  hữu ích cho bạn.</p>
+                            <p>
+                                Nếu bạn có đề xuất hay góp ý nào, vui lòng gửi cho tôi bằng cách click button này.  <a href="/message/create?id=512&sp_id=274" data-dismiss="modal" class="btn btn-green call-intructor-popup">Gửi góp ý</a>.
+                                Chân thành cảm ơn bạn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</div>
+<div class="course-detail-wraper student-review">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 course-about-right-col">
+                <!-- các video và phần học-->
+                <div class="session-group">
+                    <div class="session-group-hd">
+                        <a class="btn bg-blue text-white" href="#">VIDEO BÀI GIẢNG </a>
+                        <div class="col-sm-6 pull-right nopdr">
+                            <span class="btn-default btn pull-right">%</span>
+                            <div class="progress-group">
+                                <div class="text-right">
+                                    Tiến độ học tập
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- session list -->
+                    <ul class="session-group-list border-gray">
+                        <li class="thead lst-section-lecture">
+                            <span class="col-xs-9">
+                                <span class="ss-index">Phần 1</span>
+                                <span class="ss-title">Giới Thiệu</span>
+                            </span>
+                            <span class="col-xs-3 pull-right hidden-xs nopdl text-right"> </span>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li class="lst-section-lecture">
+                            <a href="media-player.html" class=""> 
+                                <span class="td">1.1</span> 
+                                <span class="td col-xs-9 col-sm-7">Giới thiệu về web</span>
+                                <span class="td col-xs-3"> 
+                                    <span class="lt-type-r"> 
+                                        <span class="glyphicon glyphicon-facetime-video"></span> 
+                                        <span>01:15</span>
+                                    </span> 
+                                    <span class="btn-item-view">
+                                        <span class="strfree"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lst-section-lecture">
+                            <a href="media-player.html" class=""> 
+                                <span class="td">1.2</span> 
+                                <span class="td col-xs-9 col-sm-7">Công cụ và môi trường</span>
+                                <span class="td col-xs-3"> 
+                                    <span class="lt-type-r"> 
+                                        <span class="glyphicon glyphicon-facetime-video"></span> 
+                                        <span>01:50</span>
+                                    </span> 
+                                    <span class="btn-item-view">
+                                        <span class="strfree"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="lst-section-lecture">
+                            <a href="media-player.html" class=""> 
+                                <span class="td">1.3</span> 
+                                <span class="td col-xs-9 col-sm-7">Tổng quan về một trang web</span>
+                                <span class="td col-xs-3">
+                                    <span class="lt-type-r"> 
+                                        <span class="glyphicon glyphicon-facetime-video"></span> 
+                                        <span>03:16</span>
+                                    </span> 
+                                    <span class="btn-item-view">
+                                        <span class="strfree"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>         
+                    </ul>
+                    <!-- phần 2 -->
+                    <ul class="session-group-list border-gray">
+                      <li class="thead lst-section-lecture">
+                        <span class="col-xs-9"><span class="ss-index">Phần 2</span>
+                        <span class="ss-title">HTML5</span></span>
+                        <span class="col-xs-3 pull-right hidden-xs nopdl text-right"></span>
+                        <div class="clearfix"></div>
+                    </li>               
+                    <li class="lst-section-lecture">
+                        <a href="media-player.html" class=""> <span class="td">
+                          2.1</span> <span class="td col-xs-9 col-sm-7">Cấu trúc cơ bản của một file HTML</span>
+                          <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:27</span>
+                      </span> <span class="btn-item-view">
+                      <span class="strfree"></span>
+                  </span>
+              </span>
+          </a>
+      </li>          
+      <li class="lst-section-lecture">
+          <a href="media-player.html" class=""> <span class="td">
+            2.2</span> <span class="td col-xs-9 col-sm-7">Tiêu đề và nội dung văn bản</span>
+            <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:41</span>
+        </span> <span class="btn-item-view">
+        <span class="strfree"></span>
+    </span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+  <a href="media-player.html" class=""> <span class="td">
+    2.3</span> <span class="td col-xs-9 col-sm-7">Định dạng nội dung văn bản</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:21</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.4</span> <span class="td col-xs-9 col-sm-7">Hiển thị kí tự đặc biệt</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:10</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.5</span> <span class="td col-xs-9 col-sm-7">Một số thẻ văn bản khác</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>02:59</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.6</span> <span class="td col-xs-9 col-sm-7">Tạo đường dẫn liên kết</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:34</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                  
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.7</span> <span class="td col-xs-9 col-sm-7">Hiển thị ảnh trên web</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:44</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                 
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.8</span> <span class="td col-xs-9 col-sm-7">Tạo link liên kết bằng hình ảnh</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:22</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.9</span> <span class="td col-xs-9 col-sm-7">Hiển thị danh sách</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:23</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.10</span> <span class="td col-xs-9 col-sm-7">Thiết kế bảng trong HTML</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>08:05</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>            
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.11</span> <span class="td col-xs-9 col-sm-7">Tạo form nhập dữ liệu</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>07:54</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>                
+</span>
+</span>
+</a>
+</li>               
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.12</span> <span class="td col-xs-9 col-sm-7">Tổng hợp các kiểu input trong form</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:57</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    2.13</span> <span class="td col-xs-9 col-sm-7">Tạo danh sách lựa chọn</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:20</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li> 
+</ul>
+<!-- phần 3 -->
+<ul class="session-group-list border-gray">
+  <li class="thead lst-section-lecture"><span class="col-xs-9">
+    <span class="ss-index">Phần 3</span><span class="ss-title">CSS3</span></span>
+    <span class="col-xs-3 pull-right hidden-xs nopdl text-right"></span>
+    <div class="clearfix"></div>
+</li>                 
+<li class="lst-section-lecture">
+    <a href="#" class=""> <span class="td">
+      3.1</span> <span class="td col-xs-9 col-sm-7">Giới thiệu về CSS qua inline style</span>
+      <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:05</span>
+  </span> <span class="btn-item-view">
+  <span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                    
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.2</span> <span class="td col-xs-9 col-sm-7">Định dạng CSS qua thẻ style</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:55</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.3</span> <span class="td col-xs-9 col-sm-7">Liên kết tới file CSS</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:49</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                  
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.4</span> <span class="td col-xs-9 col-sm-7">Thứ tự ưu tiên trong CSS</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:33</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.5</span> <span class="td col-xs-9 col-sm-7">Sử dụng class để định dạng CSS</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:16</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.6</span> <span class="td col-xs-9 col-sm-7">Sử dụng ID để định dạng CSS</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>02:15</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                    
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.7</span> <span class="td col-xs-9 col-sm-7">Định dạng CSS qua nested selector</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:56</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.8</span> <span class="td col-xs-9 col-sm-7">Thiết kế background</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>07:53</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                    
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.9</span> <span class="td col-xs-9 col-sm-7">Tìm hiểu về màu sắc</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>05:42</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.10</span> <span class="td col-xs-9 col-sm-7">Định dạng cho text</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:24</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.11</span> <span class="td col-xs-9 col-sm-7">Định dạng cho font</span>
+    <span class="td col-xs-3"> 
+      <span class="lt-type-r"> 
+        <span class="glyphicon glyphicon-facetime-video"></span> <span>06:35</span>
+    </span> 
+    <span class="btn-item-view">
+        <span class="strfree"></span>
+    </span>
+</span>
+</a>
+</li>                   
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.12</span> <span class="td col-xs-9 col-sm-7">Sử dụng div để bao khung nội dung</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>08:38</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>                    
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.13</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh vị trí tương quan giữa các thẻ HTML</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>09:18</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>               
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.14</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh cách hiển thị cho các thẻ HTML</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>05:25</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>           
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.15</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh vị trí hiển thị</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>07:45</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.16</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh CSS cho danh sách UL và OL.</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:05</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+
+  <a href="#" class=""> <span class="td">
+
+    3.17</span> <span class="td col-xs-9 col-sm-7">Thiết kế một button đẹp mắt</span>
+    <span class="td col-xs-3"> 
+      <span class="lt-type-r"> 
+        <span class="glyphicon glyphicon-facetime-video"></span> <span>06:12</span>
+    </span> 
+    <span class="btn-item-view">
+        <span class="strfree"></span>
+    </span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.18</span> <span class="td col-xs-9 col-sm-7">Thiết kế một navigation bar đẹp mắt</span>
+    <span class="td col-xs-3"> 
+      <span class="lt-type-r"> 
+        <span class="glyphicon glyphicon-facetime-video"></span> <span>07:22</span>
+    </span> 
+    <span class="btn-item-view">
+        <span class="strfree"></span>
+    </span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+  <a href="#" class=""> <span class="td">
+    3.19</span> <span class="td col-xs-9 col-sm-7">Giới thiệu về float</span>
+    <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>05:03</span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
+</span></span>
+</a>
+</li>                   
+</ul>
+<!-- end section list -->
+</div>
+</div>
+<div class="col-sm-4">
+    <div class="right-col">
+        <div class="right-box right-box-2 bg-gray border-gray">
+            <a class="btn2" href="#">
+                <span>
+                    <i class="glyphicon glyphicon-bullhorn"></i>
+                    Thông báo
+                </span>
+            </a>
+            <h2>NỘI DUNG KHÓA HỌC</h2>
+            <a class="btn2 active">
+                <span class=""><i class="glyphicon glyphicon-facetime-video"></i>Video bài giảng</span>
+            </a>
+            <a class="btn2">
+                <span class=""><i class="glyphicon glyphicon-file"></i>tài liệt tham khảo</span>
+            </a>
+            <a class="btn2">
+                <span class=""><i class="glyphicon glyphicon-comment"></i>diễn đàn thảo luận</span>
+            </a>
+            <a class="btn2">
+                <span class=""><i class="glyphicon glyphicon-question-sign"></i>bài Quiz / Test</span>
+            </a>
+            <a class="btn2">
+                <span class=""><i class="icon-certificate"></i>chứng chỉ</span>
+            </a>
+        </div>
+        <div class="right-box right-box-2 bg-gray border-gray">
+            <a class="btn2" href="#">
+                <span class="glyphicon glyphicon-share-alt"></span>
+                <span>Giới thiệu bạn bè - Nhận quà...</span>
+            </a>
+        </div>
+        <div class="right-box right-box-2 bg-gray border-gray">
+            <h2 style="margin-top: 0;">TRUNG TÂM HỖ TRỢ</h2>
+            <a href="#" class="btn2">
+                <span>FAQ</span>
+            </a>
+            <a href="#" class="btn2">
+                <span>Gửi báo cáo về lỗi nội dung</span>
+            </a>
+            <a href="#" class="btn2">
+                <span>Gửi báo cáo về lỗi kỹ thuật</span>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>    
+<a class="btn-back-to-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/customer.js"></script>
+<script type="text/javascript">
+    //back to top
+    $(document).ready(function(){
+     if($(".btn-back-to-top").length > 0){
+      $(window).scroll(function () {
+          var e = $(window).scrollTop();
+          if (e > 300) {
+              $(".btn-back-to-top").show()
+          } else {
+              $(".btn-back-to-top").hide()
+          }
+      });
+      $(".btn-back-to-top").click(function () {
+          $('body,html').animate({
+              scrollTop: 0
+          })
+      })
+  }       
+});
+</script>
+</body>
+</html>

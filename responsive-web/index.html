@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học Tiếng Anh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body class="fullpage">
+	<header class="page-top fixed-top">
+		 <!-- Static navbar -->
+      <nav class="navbar navbar-default color">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"  aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+            	<img src="img/lg.png" class="logo img-responsive">
+            </a>
+          </div>
+          <div class="row">
+           <div class="col-xs-9 col-sm-4 col-md-3 col-lg-3 col1">
+	          	<div id="navbar" class="navbar-collapse collapse">         
+		            <ul class="nav navbar-nav">              
+		              <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Danh mục <span class="caret"></span> </a>	                		                
+		              </li>		             
+		            </ul>
+	           	</div>	           	
+	           </div><!--/.nav-collapse -->
+	           <div class="search col-xs-9 col-sm-4 col-md-4 col-lg-4">
+	           		<input type="search" name="search" placeholder="Search" class="form-control pos" >
+	           		<div class="timKiem">
+	           			<button class="pull-right glyphicon glyphicon-search"></button>
+	           		</div>
+	           </div>
+	           <div class="pull-right col-md-4 col-sm-1 col3 hidden-sm hidden-xs">
+	           		<ul class="nav navbar-nav navbar-right commonSign">
+                    	<li class="hopTac"><a href="#">Hợp tác giảng dạy</a></li>
+                        <li><a href="#" id="link_login"><span>Đăng nhập</span></a></li>
+                        <li><a href="#" id="link_signup"><span>Đăng ký</span></a></li>   						 
+                	</ul>
+	           </div>
+          </div>
+        </div><!--/.container-fluid -->
+      </nav>
+		<!-- modal tạo khi navbar-toggle đc kích hoạt -->
+            <div class="toogle-box" data-animation="bounceInDown" style="display: none;">
+                <a class="text-blue login" href="#"> Đăng nhập</a>
+    			Hoặc
+    			<a href="#" class="text-blue sigup" >Đăng ký</a>
+                <p>Danh mục Khóa học</p>
+                <ul>
+	                <li><a href="#">Kế toán tài chính</a></li>	    
+	                <li><a href="#">Lập trình</a></li>	    
+	                <li><a href="#">Toeic - Ielts</a></li>
+	                <li><a href="#">Marketing</a></li>
+	                <li><a href="#">Design - Multimedia</a></li>	    
+	                <li><a href="#">Khởi nghiệp</a></li>
+                </ul>
+                <p><a href="#">Hợp tác giảng dạy</a></p>
+                <p>Ngôn ngữ</p>
+                <ul>
+                    <li><a href="#">English</a>
+                        </li>
+            		<li>
+                        <a href="#">Tiếng Việt</a>
+                    </li>
+                </ul>
+            </div> <!-- end modal -->
+			<!-- modal login -->
+		  <div class="modal fade" id="login" role="dialog">
+		    <div class="modal-dialog">		    
+		      <div class="modal-content">
+		        <div class="modal-header" style="padding:35px 50px;">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+		        </div>
+		        <div class="modal-body" style="padding:40px 50px;">
+		          <form role="form">
+		            <div class="form-group">
+		              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+		              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+		            </div>
+		            <div class="form-group">
+		              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+		              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+		            </div>
+		            <div class="checkbox">
+		              <label><input type="checkbox" value="" checked>Remember me</label>
+		            </div>
+		              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+		          </form>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+		          <p>Not a member? <a href="#">Sign Up</a></p>
+		          <p>Forgot <a href="#">Password?</a></p>
+		        </div>
+		      </div>		      
+		    </div>
+		  </div> <!-- end modal sign up-->
+		  <!-- modal login -->
+		  <div class="modal fade" id="signup" role="dialog">
+		    <div class="modal-dialog">		    
+		      <div class="modal-content">
+		        <div class="modal-header" style="padding:35px 50px;">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+		        </div>
+		        <div class="modal-body" style="padding:40px 50px;">
+		          <form role="form">
+		            <div class="form-group">
+		              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+		              <input type="text" class="form-control" id="usrname" placeholder="Enter name">
+		            </div>
+		            <div class="form-group">
+		              <label for="email"><span class="glyphicon glyphicon-envelope"></span> E-mail</label>
+		              <input type="email" class="form-control" id="email" placeholder="Enter email">
+		            </div>
+		            <div class="form-group">
+		              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+		              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+		            </div>
+		            <div class="form-group">
+		              <label for="confirm-psw"><span class="glyphicon glyphicon-eye-open"></span>Confirm - Password</label>
+		              <input type="password" class="form-control" id="confirm_psw" placeholder="Confirm password">
+		            </div>		            
+		              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign Up</button>
+		          </form>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+		          <p>Not a member? <a href="#">Sign Up</a></p>
+		          <p>Forgot <a href="#">Password?</a></p>
+		        </div>
+		      </div>		      
+		    </div>
+		  </div> <!-- end modal sign up-->
+      <!-- mega menu -->  
+      <div class="megamenu hidden-xs hidden-sm" style="display: none;">
+    	<div class="container">
+        <div class="mgpdl">
+            <a class="all-courses" href="#">
+                <div class="content">
+                    <div class="overlay">
+                        <p>Tât cả khóa học</p>
+                        <span class="icon-courses icon-allcourse"></span>
+                    </div>
+                </div>
+            </a>
+    		<a href="#" class="keepbooking">
+                <div class="content">                	
+	                    <span class="icon-courses icon-courses-accounting"></span>
+	                    <p>Kế toán - Tài chính </p>
+                </div>
+            </a>
+       		 <a href="#" class="code">
+                <div class="content">
+                    <span class="icon-courses icon-courses-programing"></span>
+                    <p>Lập Trình </p>
+                </div>
+            </a>
+       		 <a href="#" class="en">
+                <div class="content">
+                    <span class="icon-courses icon-courses-english"></span>
+                    <p>TOEIC - IELTS </p>
+                </div>
+            </a>
+        	<a href="#" class="sale">
+                <div class="content">
+                    <span class="icon-courses icon-courses-marketing"></span>
+                    <p>Marketing</p>
+                </div>
+            </a>
+        	<a href="#" class="digital">
+                <div class="content" >
+                    <span class="icon-courses icon-courses-media"></span>
+                    <p>Design - Multimedia </p>
+                </div>
+            </a>
+        	<a href="#" class="founded">
+	            <div class="content" >
+	                <span class="icon-courses icon-courses-startup"></span>
+	                <p>Khởi Nghiệp</p>
+	            </div>
+            </a>
+    </div>
+    </div>
+    </div>
+                        <!-- end mega menu -->
+	</header>
+	<section>
+		<div class="bg" style="background-image: url(img/bg-hs1.png);">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7">
+						<h1  class="" style="opacity: 1;">HỌC TRỰC TUYẾN CÙNG NHỮNG CHUYÊN GIA HÀNG ĐẦU VIỆT NAM VÀ THẾ GIỚI</h1>
+						<h3 class="txt1" data-animation="fadeInRight" style="opacity: 1;"> Global giúp bạn nâng cao năng lực chuyên môn, thăng tiến nghề nghiệp. </h3>
+						<p class="txt2"  style="opacity: 1;"> 
+						<i>Học online mọi lúc, mọi nơi. Học trên mọi thiết bị.</i> </p>
+						<p class="" style="opacity: 1;"> 
+							<a class="btn btn-warning " href="#">KHÁM PHÁ NGAY</a> 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg2 text-center bg-blue">
+			<div class="container">
+				<h2 class="text-white" style="color:white;">HỌC TỪ NHỮNG CHUYÊN GIA GIỎI NHẤT TRONG CÁC LĨNH VỰC</h2>
+				<hr>
+				<div class="clearfix"></div>
+				<div class="course-main">
+					<div class="row course-grid">
+					 	<div class="col-xs-6 col-sm-4 col-md-2">
+			              	<div class="contents"> 
+				              	<span class="icon-courses icon-courses-accounting-2"></span>
+				                <p>KẾ TOÁN - TÀI CHÍNH</p>
+			              	</div>
+			            </div>
+			            <div class="col-xs-6 col-sm-4 col-md-2">
+			              	<div class="contents"> 
+				              	<span class="icon-courses icon-courses-programing-2"></span>
+				                <p>LẬP TRÌNH</p>
+			              	</div>
+			            </div>
+			            <div class="col-xs-6 col-sm-4 col-md-2">
+			              	<div class="contents"> 
+				              	<span class="icon-courses icon-courses-eng-2"></span>
+				                <p>TOIEC - IELTS</p>
+			              	</div>
+			            </div>
+			            <div class="col-xs-6 col-sm-4 col-md-2">
+			              	<div class="contents"> 
+				              	<span class="icon-courses icon-courses-marketing-2"></span>
+				                <p>MARKETING</p>
+			              	</div>
+			            </div>
+			            <div class="col-xs-6 col-sm-4 col-md-2">
+			              	<div class="contents"> 
+				              	<span class="icon-courses icon-courses-media-2"></span>
+				                <p>DESIGN - MULTIMEDIA</p>
+			              	</div>
+			            </div>
+			            <div class="col-xs-6 col-sm-4 col-md-2">
+			              	<div class="contents"> 
+				              	<span class="icon-courses icon-courses-startup-2"></span>
+				                <p>STARTUP</p>
+			              	</div>
+			            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer" class="footer-block">
+		<div class="footer-link">
+			<div class="container">
+				<div class="row footer-btns">
+					<div class="col-sm-4 ">
+						<a class="footer-btn" href="#">Cơ hội nghề nghiệp</a>
+					</div>
+					<div class="col-sm-4 ">
+						<a class="footer-btn" href="#">SỔ TAY GIẢNG VIÊN</a>
+					</div>
+					<div class="col-sm-4 ">
+						<a class="footer-btn" href="#">TÀI NGUYÊN HỖ TRỢ</a>
+					</div>
+				</div>
+				<hr class="footer-line">
+				<div class="row footer-content">
+					<div class="col-md-4 m-b-30">
+                        <h2>Về Global</h2>
+                        <p class="text-justify">AllCourse.com là nền tảng DẠY và HỌC trực tuyến hàng đầu Việt Nam. Chúng tôi hợp tác với các chuyên gia hàng đầu trong các lĩnh vực Tài chính, Marketing, Công nghệ thông tin, Kinh doanh - Khởi nghiệp... và các tổ chức đào tạo để mang đến cho bạn những khóa học chất lượng và có tính ứng dụng thực tiển cao.<a class="text-blue" href="#">Xem chi tiết</a></p>
+                    </div>
+                    <div class="col-md-4 m-b-30">
+                        <h2>Liên hệ</h2>
+                        <address class="text-justify">
+                            <div class="address-block">
+                                <div class="address-sm">
+                                	<span class="fa fa-building" aria-hidden="true"></span>
+                                </div>
+                                <div><strong>Global Co., LTD.</strong></div>
+                            </div>
+                            <div class="address-block">
+                                <div class="address-sm"><span class="fa fa-location-arrow" aria-hidden="true"></span></div>
+                                <div>19 Liễu Giai - Ba Đình<br>Hà Nội<br>Việt Nam</div>
+                            </div>
+                        </address>
+                        <p class="made-with-love">Made with <span class="glyphicon glyphicon-heart text-danger"></span> in Viet Nam.</p>
+                    </div>
+                    <div class="col-md-4 socials m-b-30">
+                        <h2>Kết nối với chúng tôi</h2>
+                        <p>
+                            <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
+                            <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            <a href="https://plus.google.com/" target="_blank" rel="publisher"><span class="fa fa-google-plus-official" aria-hidden="true"></span></a>
+                            <a href="https://www.pinterest.com/" target="_blank"><span class="fa fa-pinterest" aria-hidden="true"></span></a>
+                            <a href="https://www.youtube.com/" target="_blank"><span class="fa fa-youtube" aria-hidden="true"></span></a>
+                        </p>
+                    </div>
+                    </div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+            <div class="container text-center">
+                © 2017 <a href="#">Global Co., Ltd</a>. All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Điều khoản sử dụng</a> · <a href="#">Chính sách riêng tư</a>
+            </div>
+        </div>
+	</footer>
+
+	<!-- script -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/customer.js"></script>
+</body>
+</html>

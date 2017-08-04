@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333333;
+    overflow: scroll;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+#wrap{
+	width: 600px;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;	
+}
+#wrap .container{
+	width: 400px;
+	height: 550px;
+	margin: auto;
+	border-radius: 5%;
+}
+#wrap .container .calculator{
+	width: 300px;
+	height: 540px;
+	background-color: #8c5002;
+	margin: auto;
+	border: 5px double #3f6cb5;
+	border-radius: 5%;
+}
+#wrap .container .calculator .screen{
+	width: 260px;
+	height: 60px;
+	margin: auto;
+	border: 5px double #3fafb5;
+}
+#wrap .container .calculator .content{
+	width: 260px;
+	height: auto;
+	background-color: #aaafab;
+	margin: auto;
+}
+#wrap .container .calculator .content table{
+	width: 260px;
+	height: auto;
+	margin: auto;
+}
+#wrap .container .calculator .content table .row{
+	width: 250px;
+	height: 50px;
+	text-align: center;
+}
+#wrap .container .calculator .content table .row td{
+
+}
+.btn{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	font-size: 13px;
+	line-height: 13px;
+	font-family: Garamond;
+	color: black;
+}
+.screen{
+	width: 250px;
+	height: 50px;
+	background-color: white;
+}

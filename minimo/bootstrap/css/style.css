@@ -1,0 +1,180 @@
+@font-face{
+	font-family: "PlayfairDisplay";
+	src: url('../fonts/PlayfairDisplay-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "inconsolata";
+	src:url('../fonts/Inconsolata.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "ubuntu-light";
+	src:url('../fonts/Ubuntu-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: "PlayfairDisplay";
+	font-size: 14px;
+	color:#626262;
+}
+@media (min-width: 1200px){
+	.container {
+    	width: 1062px;
+	}
+}
+@media (min-width: 768px){
+	.navbar-right {
+	    margin-right: -40px;
+	}
+}
+@media (min-width: 768px){
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -30px;
+}
+}
+.container-fluid{
+	margin-top: 60px;
+}
+.navbar{
+	text-transform: uppercase;
+	color:#000000;
+}
+.navbar-brand{
+	font-family: "inconsolata";
+	font-size: 30px;
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #fff; 
+}
+.nav > li > a {
+    padding: 10px 10px 0px 100px;
+}
+.post{
+	max-width: 900px;
+	margin:auto;
+	margin-top: 100px;
+	margin-bottom: 130px;
+}
+.post> .tag{
+	color: #b4ad9e;
+	text-transform: uppercase;
+	font-family: "ubuntu-light";
+}
+.post> .title{
+	margin-bottom: 25px;
+}
+.post> .title h3{
+	font-size: 30px;
+}
+.post> .content{
+	margin-bottom: 50px;
+}
+.post> .cmt{
+	color: #b4ad9e;
+	text-transform: uppercase;
+	font-family: "ubuntu-light";
+}
+.post> .cmt h3{
+	font-size: 14px;
+}
+.content-img{
+	max-width: 900px;
+	margin:auto;
+}
+.item{
+	margin-bottom: 60px;
+}
+.item> .tag{
+	color: #b4ad9e;
+	text-transform: uppercase;
+	font-family: "ubuntu-light";
+}
+.item> .title{
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+.item> .title h3{
+	font-size: 30px;
+}
+.wrap{
+	background-color: #eaeaea;
+	text-align: center;
+	max-height: 290px;
+}
+.tieuDe{
+	height: 100px;
+}
+.tieuDe> h3{
+	margin-top: 70px;
+	font-size: 30px;
+}
+.s-mail{
+	width: 400px;
+	height: 290px;
+	margin: auto;
+}
+.form-control{
+	background-color: #eaeaea;
+	border: 0px solid #ccc;
+	border-bottom: 1px double #000;
+
+}
+.s-icon{
+	position: relative;
+	top: -25px;
+	right: -190px;
+	cursor: pointer;
+}
+.next-content-img{
+	margin-top: 100px;
+	margin-bottom: 165px;
+}
+.loadmore{
+	margin: auto;
+	width: 165px;
+	height: 60px;
+	border: 1px solid black;
+	text-align: center;
+	cursor: pointer;
+	line-height: 60px;
+}
+.loadmore> h3{
+	font-size: 20px;
+	color: #626262;
+	font-family: "PlayfairDisplay";
+}
+.bg-color{
+	height: 1370px;
+	background-color: #fff;
+}
+.fix-container-fluid{
+	margin-top: 0px !important;
+	background: #eaeaea;
+}
+.fix-footer{
+	height: 100px;
+}
+.introduces{
+	margin-top: 40px;
+	float: left;
+}
+.introduce> p{
+	font-size: 14px;
+	color:#000;
+	font-family: "PlayfairDisplay";
+}
+.icons{
+	margin-top: 40px;
+	float: right;
+	text-align: right;
+}
+.icons> span{
+	font-size: 14px;
+	color:#000;
+	font-family: "PlayfairDisplay";
+}

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333333;
+    overflow: scroll;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+#wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.container{
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+	opacity: 0.8;
+}
+.container .part{
+	width: 500px;
+	height: 60px;
+	font-size: 36px;
+	font-family: Garamond;
+	text-align: center;
+	line-height: 60px;
+}
+.container .part span{
+	color:#9b5b2a;
+}
+.container .quiz{
+	margin-top: 50px;
+	width: 500px;
+	height: 210px;
+	border: 1px solid #30140c
+}
+.container .question{
+	width: 500px;
+	height: 60px;
+	background-color: #f6af30;
+	font-size: 20px;
+	font-family: Garamond;
+	text-align: center;
+	line-height: 60px;
+
+	
+}
+.container .question span{
+	color:#020203;
+}
+.container .answer{
+	width: 500px;
+	height: 150px;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 10px;
+	font-family: Garamond;
+}
+.container .answer span{
+	display: block;
+	width: 490px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid black;
+	background-color: #cccccc;
+	margin: 5px;
+	cursor: pointer;
+	box-shadow: 0px 4px #0d0805;
+}
+.container .answer span:hover{
+	background-color: #66CCFF;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
+.container .choose{
+	width: 100px;
+	height: 40px;
+	text-transform: uppercase;
+	border: 1px solid white;
+	position: absolute;
+	right: 5px;
+	bottom: 110px;
+	font-family: Garamond;
+	line-height: 40px;
+	padding: 1px;
+	background-color: #030305;
+	color:#efa628;
+	border-radius: 5%;
+	cursor: pointer;
+	overflow: hidden;
+}
+.container .choose:hover{
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+/* win css */
+.container .win{
+	width: 500px;
+	height: auto;
+	font-size: 36px;
+	font-family: Garamond;
+	text-align: center;
+	line-height: 60px;
+	color: white;
+}
+.container .win h1{
+	
+	text-transform: uppercase;
+}
+.container .reset{
+	width: 100px;
+	height: 40px;
+	text-transform: uppercase;
+	border: 1px solid white;
+	position: absolute;
+	right: 5px;
+	bottom: 110px;
+	font-family: Garamond;
+	line-height: 40px;
+	padding: 1px;
+	background-color: #030305;
+	color:#efa628;
+	border-radius: 5%;
+	cursor: pointer;
+	overflow: hidden;
+}
+/* lose css */
+.container .lose{
+	width: 500px;
+	height: auto;
+	font-size: 36px;
+	font-family: Garamond;
+	text-align: center;
+	line-height: 60px;
+	color: white;
+}
+.container .lose h1{
+	
+	text-transform: uppercase;
+}
