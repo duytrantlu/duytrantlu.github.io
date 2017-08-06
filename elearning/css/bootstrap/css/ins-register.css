@@ -1,0 +1,128 @@
+.header-block {
+    /* background: url(../../../img/form-operate/man-coffee-cup-pen.jpg) center center no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover; */
+    padding-bottom: 85px;
+}
+.blue-menu-bar {
+    background: rgba(2,179,228,1);
+}
+.menu-bar {
+    background: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 75px;
+}
+.blue-menu-bar {
+    background: rgba(2,179,228,1);
+}
+.item-icon, a {
+    color: #02b3e4;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.header-block .header-nav .logo {
+    max-height: 35px;
+}
+.header-block .header-link {
+    margin-top: 7px;
+}
+.header-block .header-link a.header-blue-link{
+    color: rgba(2,179,228,1);
+    border: 1px solid rgba(2,179,228,1);
+    background: #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.header-block .header-link a{
+    color: #fff;
+    font-weight: 400;
+    border-radius: 2px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: rgba(2,179,228,.85);
+    border: 1px solid rgba(2,179,228,.85);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.header-block .header-link a:hover{
+	color: white;
+	background-color: #31708f;
+}
+.ins-register-form {
+    color: #777;
+}
+.ins-register-form-img img {
+    margin-top: -20px;
+    width: 100px;
+}
+.partnership-img {
+    width: 150px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+img {
+    max-width: 100%;
+    height: auto!important;
+}
+.m-b-15 {
+    margin-bottom: 15px;
+}
+.m-t-0 {
+    margin-top: 0;
+}
+.m-b-30 {
+    margin-bottom: 30px;
+}
+.ins-register-form .form-group, .ins-register-form h2 {
+    margin-bottom: 25px;
+}
+.ins-register-form .form-control {
+    background: #fafafa;
+}
+.form-control{
+	border-radius: 4px;
+	width: 100%;
+}
+.footer-block {
+    font-size: 13px;
+}
+.footer-link {
+    background: #252525;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #919191;
+}
+.footer-copyright {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #1b1b1b;
+    color: #828282;
+}
+.footer-link h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer-block address {
+    margin-bottom: 15px;
+}
+.address-block div.address-sm {
+    padding-right: 8px;
+}
+.address-block div {
+    display: table-cell;
+}
+.footer-link .socials a {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.footer-block a {
+    color: #7E7E7E;
+}

@@ -2877,7 +2877,7 @@ ul.session-group-list {
     font-size: 16px;
 }
 .tt-banner {
-    background: url(../../../img/operate/tt-banner.jpg) no-repeat center center #1382DC;
+    background: url(../../../img/co-operate/tt-banner.jpg) no-repeat center center #1382DC;
     background-size: cover;
     color: white;
     text-align: center;
@@ -3548,4 +3548,133 @@ ul.session-group-list {
 .grnt label input {
     float: left;
     margin-right: 10px;
+}
+/* organization page */
+.tt-banner-2 {
+    background: url(../../../img/co-operate/tt-banner.jpg) no-repeat center center transparent;
+    background-size: cover;
+    padding-top: 210px;
+    min-height: 700px;
+    color: white;
+}
+.tt-banner-2 h4 {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.5;
+}
+.tt-banner-2 h4>span {
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+}
+.tt-banner-2 h1 {
+    max-width: 490px;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+.tt-banner-2 p {
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+.tt-banner-2 input.form-control {
+    max-width: 370px;
+    border-color: white;
+    padding: 8px 15px;
+    box-shadow: none !important;
+}
+.tt-banner-2 .btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+.tt-banner-2 .btn:hover{
+    background-color: white;
+    color: #2ebbc8;
+}
+.bat-st-1-2.bt1-2 .bat-st-1-2-content > p:first-child {
+    max-width: 933px;
+    font-size: 24px;
+    margin: 0 auto 40px;
+}
+.bat-st-1-2.bt1-2 .bat-st-1-2-content > p:last-child {
+    font-size: 24px;
+    max-width: 955px;
+    margin: 0 auto 90px;
+}
+.bat-st-1-2.bt1-2 a.text-blue {
+    color: #2ebbc8;
+    border-bottom: 0;
+    position: relative;
+}
+.bat-st-1-2.bt1-2 .bat-st-1-2-content:after {
+    margin: 60px auto -25px;
+    width: 0;
+    height: 0;
+    border-width: 36px 62px 0 62px;
+    border-color: white transparent transparent transparent;
+    border-style: solid;
+    z-index: 1;
+    position: relative;
+    content: '';
+    display: block;
+}
+.tt7 {
+    background: #E7E8E9;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.tt7-hd {
+    margin-bottom: 60px;
+}
+.tt7-hd h2{
+    font-size: 28px;
+    line-height: 1.4;
+    max-width: 520px;
+    margin: 0 auto;
+}
+.tt7-item-icon {
+    height: 150px;
+    text-align: center;
+}
+.tt7-item-icon img {
+    height: 100%;
+    display: inline;
+}
+.tt7-item-title {
+    height: 105px;
+    overflow: hidden;
+    max-width: 235px;
+    margin: 25px auto 0 auto;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
+}
+.bst-6 {
+    padding-bottom: 100px;
+}
+.bat-st-6 {
+    padding: 25px 0 100px;
+}
+.size25 {
+    font-size: 28px;
+    line-height: 1.4;
+}
+.bst-6-dsc {
+    margin-bottom: 30px;
+    font-size: 125%;
+}
+.pdor {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.bat-st-6.bst-6 .bt6-2-h4 {
+    margin: 15px 0 30px;
+}
+.bst-6 .bts6ft {
+    margin-top: 20px;
 }

@@ -439,6 +439,33 @@
 	    min-height: 231px;
 	}
 }
-/* .page-top.fixed-top .logoimg{
-	height: 42px !important;
-} */
+@media (min-width: 992px){
+	.why-item {
+	    height: 200px;
+	    overflow: hidden;
+	}
+}
+@media(max-width: 737px){
+	#luyen_quiz{
+		width: 106%;
+	    position: absolute;
+	    bottom: 0;
+	    left: -10px;
+	}
+}
+@media (max-width: 415px){
+	#luyen_quiz{
+		bottom: 20px;
+	}
+}
+@media(max-width: 569px){
+	#luyen_quiz .btn-quiz{
+		padding: 5px !important;
+	}
+}
+@media(min-width:  767px){
+	#luyen_quiz{
+		position: absolute;
+		bottom: 30px;
+	}
+}

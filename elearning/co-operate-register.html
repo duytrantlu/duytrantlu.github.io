@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi" class="js">
+<head>
+	<meta charset="UTF-8">
+	<title>Hợp tác giảng dạy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/ins-register.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">	
+</head>
+<body>
+	<section id="header" class="header-block bg-white">
+		<div class="menu-bar blue-menu-bar">
+			<nav class="container header-nav">
+				<div class="pull-left">
+					<a href="index.html">
+						<img class="logo" src="img/co-operate/logo-co-operate.png" alt="logo"/>
+					</a>
+				</div>
+				<div class="pull-right header-link">
+					<a class="header-blue-link" href="co-operate.html">Hợp Tác Giảng Dạy</a>
+				</div>
+				<div class="clearfix"></div>
+			</nav>
+		</div>
+		<div class="container ins-register-form">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="text-center ins-register-form-img">
+						<img class="partnership-img" src="img/co-operate/partnership-icon.png">
+					</div>
+					<h1 class="m-t-0 m-b-15">Đăng Ký Giảng Viên / Đối Tác Nội Dung</h1>
+					<p>Cảm ơn bạn tham gia đăng ký giảng dạy và làm Đối tác nội dung của Global.</p>
+					<p class="m-b-30">
+						Để giúp Team Global có kế hoạch hợp tác và hỗ trợ bạn một cách hiệu quả, bạn vui lòng cung cấp một số thông tin như bên dưới. Chúng tôi sẽ liên lạc với bạn trong vòng 48 giờ làm việc.
+					</p>
+					<div class="clearfix"></div>
+					<form id="ins-reg" action="" method="post" enctype="multipart/form-data">
+						<h2>Thông tin liên hệ</h2>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>
+										Tên (Vd: Trung, hoặc Vân Anh) 
+										<span class="text-danger">*</span></label>
+										<input id="ins-name" name="ins_name" type="text" class="form-control" placeholder="Tên" required="" tabindex="1">
+									</div>
+									<div class="form-group">
+										<label>
+											Điện thoại liên hệ (di động) 
+											<span class="text-danger">*</span>
+										</label>
+										<input id="ins-tel" name="ins_tel" type="tel" class="form-control" placeholder="Số điện thoại" required="" tabindex="4">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Họ và tên đệm 
+											<span class="text-danger">*</span>
+										</label>
+										<input id="ins-s-name" name="ins_s_name" type="text" class="form-control" placeholder="Họ và tên đệm" required="" tabindex="2">
+									</div>
+									<div class="form-group">
+										<label>Tên công ty bạn đang làm việc</label>
+										<input id="ins-company" name="ins_company" type="text" class="form-control" placeholder="Công ty" tabindex="5">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Email 
+											<span class="text-danger">*</span>
+										</label>
+										<input id="ins-email" name="ins_email" type="email" class="form-control" placeholder="email@example.com" required="" tabindex="3">
+									</div>
+									<div class="form-group">
+										<label>
+											Thành phố / Tỉnh 
+											<span class="text-danger">*</span>
+										</label>
+										<select id="ins-city" name="ins_city" class="form-control" required="" tabindex="6">
+											<option selected="" disabled="" hidden="">Chọn</option>
+											<optgroup>
+												<option selected="selected">Hà Nội</option>
+												<option>TP Hồ Chí Minh</option>
+												<option>Đà Nẵng</option>
+												<option>Thừa Thiên Huế</option>
+												<option>Cần Thơ</option>
+											</optgroup>
+											<optgroup>
+												<option>An Giang</option>
+												<option>Bà Rịa - Vũng Tàu</option>
+												<option>Bắc Giang</option>
+												<option>Bắc Kạn</option>
+												<option>Bạc Liêu</option>                                     
+											</optgroup>
+										</select>
+									</div>
+								</div>
+							</div>
+							<h2>Kinh nghiệm</h2>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label>
+											Chuyên môn của bạn 
+											<span class="text-danger">*</span>
+										</label>
+										<input id="ins-skill" name="ins_skill" type="text" class="form-control" placeholder="Vd: Lập trình Web, Tiếng Anh, Kế toán - Tài chính, Internet Marketing..." required="" tabindex="7">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>
+											Kinh nghiệm chuyên môn (số năm) 
+											<span class="text-danger">*</span>
+										</label>
+										<select id="ins-work-exp" name="ins_work_exp" class="form-control" tabindex="8">
+											<option selected="" disabled="" hidden="">Chọn</option>
+											<option selected="selected">Dưới 2 năm</option>
+											<option>2 - 5 năm</option>
+											<option>5 - 10 năm</option>
+											<option>Trên 10 năm</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>
+											Kinh nghiệm giảng dạy (số năm) 
+											<span class="text-danger">*</span>
+										</label>
+										<select id="ins-teach-exp" name="ins_teach_exp" class="form-control" tabindex="9">
+											<option selected="" disabled="" hidden="">Chọn</option>
+											<option>Chưa có</option>
+											<option selected="selected">Dưới 2 năm</option>
+											<option>2 - 5 năm</option>
+											<option>5 - 10 năm</option>
+											<option>Trên 10 năm</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div id="school-ques" class="form-group">
+										<label>
+											Nếu bạn đang giảng dạy, vui lòng cho tiết tên trường hoặc trung tâm đào tạo
+										</label>
+										<span class="help-block m-t-0">
+											Nếu nhiều hơn 1, vui lòng cách bằng dấu "phẩy".
+										</span>
+										<input id="ins-school" name="ins_school" type="text" class="form-control" placeholder="Tên trường hoặc trung tâm đào tạo" tabindex="10">                              
+									</div>
+									<div class="form-group">
+										<label>
+											Tiêu đề khóa học dự kiến giảng dạy trên Global 
+											<span class="text-danger">*</span>
+										</label>
+										<input id="ins-title" name="ins_title" type="text" class="form-control" placeholder="Tiêu đề khóa học" required="" tabindex="11">
+									</div>
+									<div class="form-group">
+										<label>
+											Nội dung tóm tắt của khóa học/ hoặc chủ đề dự kiến giảng dạy <span class="text-danger">*</span>
+										</label>
+										<span class="help-block" style="margin-top: 0px">
+											Hoặc Bạn có thể copy và dán dường link file tài liệu nội dung khóa học vào ô bên dưới.
+										</span>
+										<textarea id="ins-excerp" name="ins_excerp" class="form-control" placeholder="Tóm tắt nội dung khóa học" rows="3" tabindex="12"></textarea>
+									</div>
+								</div>
+							</div>
+							<h2>Kinh nghiệm e-learning / Giảng dạy trực tuyến</h2>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Bạn đã từng giảng dạy trực tuyến chưa? 
+											<span class="text-danger">*</span>
+										</label>
+										<div class="radio">
+											<label>
+												<input id="ins-teach-yes" type="radio" name="name-1" value="Yes" checked="" required="" tabindex="13">
+												Có (Đã từng)
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input id="ins-teach-no" type="radio" name="name-1" value="No" required="" tabindex="14">
+												Không (Chưa từng)
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Bạn có thể tự quay phim bài giảng không? 
+											<span class="text-danger">*</span>
+										</label>
+										<div class="radio">
+											<label>
+												<input id="ins-movie-yes" type="radio" name="name-2" value="Yes" required="" tabindex="15" checked="checked">
+												Có thể
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input id="ins-movie-no" type="radio" name="name-2" value="No" required="" tabindex="16">
+												Không thể
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Bạn có biết tự cắt ghép phim không? 
+											<span class="text-danger">*</span>
+										</label>
+										<div class="radio">
+											<label>
+												<input id="ins-edit-yes" type="radio" name="name-3" value="Yes" required="" tabindex="17" checked="checked">
+												Có biết
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input id="ins-edit-no" type="radio" name="name-3" value="No" required="" tabindex="18">
+												Không biết
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Vui lòng chia sẻ một Slide hoặc Video bài giảng của bạn (nếu có)
+										</label>
+										<input id="ins-slideshare" name="ins_slideshare" type="text" class="form-control" placeholder="Link Slide hoặc Video bài giảng" tabindex="19">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Vui lòng chia sẻ link Blog/ Website hoặc Forum (nếu có)
+										</label>
+										<input id="ins-youtube" name="ins_youtube" type="text" class="form-control" placeholder="Link Blog hoặc Website" tabindex="20">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Vui lòng chia sẻ link khóa học trực tuyến của bạn (nếu có)
+										</label>
+										<input id="ins-link-1" name="ins_link_1" type="text" class="form-control" placeholder="Link khóa học" tabindex="21">
+									</div>
+								</div>
+							</div>
+							<h2>Yêu cầu hỗ trợ của bạn</h2>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Hỗ trợ quay phim bài giảng tại lớp học? 
+											<span class="text-danger">*</span>
+										</label>
+										<div class="radio">
+											<label>
+												<input id="ins-record-class-yes" type="radio" name="name-4" value="No" checked="" required="" tabindex="22">
+												Không, tôi tự thực hiện
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input id="ins-record-class-no" type="radio" name="name-4" value="Yes" required="" tabindex="23">
+												Có, cần hỗ trợ của Global
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Hỗ trợ quay phim bài giảng tại studio? 
+											<span class="text-danger">*</span>
+										</label>
+										<div class="radio">
+											<label>
+												<input id="ins-record-studio-yes" type="radio" name="name-5" value="No" required="" tabindex="24">
+												Không, tôi tự thực hiện
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input id="ins-record-studio-no" type="radio" name="name-5" value="Yes" required="" tabindex="25" checked="checked">
+												Có, cần hỗ trợ của Global
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											Hỗ trợ làm hậu kì bài giảng sau khi quay? 
+											<span class="text-danger">*</span>
+										</label>
+										<div class="radio">
+											<label>
+												<input id="ins-edit-support-yes" type="radio" name="name-6" value="No" required="" tabindex="26">
+												Không, tôi tự thực hiện
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input id="ins-edit-support-no" type="radio" name="name-6" value="Yes" required="" tabindex="27" checked="checked">
+												Có, cần hỗ trợ của Global
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label>
+											Nếu bạn có câu hỏi / hoặc yêu cầu hỗ trợ nào khác từ Global, vui lòng ghi chi tiết vào ô bên dưới. Nếu không có, bạn chỉ cần ghi "Không có". Cảm ơn bạn. 
+											<span class="text-danger">*</span>
+										</label>
+										<textarea id="ins-question" name="ins_question" class="form-control" placeholder="Câu hỏi hoặc yêu cầu của bạn" rows="3" required="" tabindex="28"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="m-t-30">
+								<input type="hidden" name="ins_reg_from" value="Tem 1">
+								<input type="hidden" name="ins_refid" value="Null">
+								<button id="ins-submit" type="submit" name="submit" class="btn btn-primary" tabindex="29">
+									Đăng Ký Giảng Viên
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="footer-block">
+			<div class="footer-link">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 m-b-30">
+							<h2>Về Global</h2>
+							<p class="text-justify">
+								Global là nền tảng DẠY và HỌC trực tuyến hàng đầu Việt Nam. Chúng tôi hợp tác với các chuyên gia hàng đầu trong các lĩnh vực Tài chính, Marketing, Công nghệ thông tin, Kinh doanh - Khởi nghiệp... và các tổ chức đào tạo để mang đến cho bạn những khóa học chất lượng và có tính ứng dụng thực tiễn cao.
+							</p>
+						</div>
+						<div class="col-md-4 m-b-30">
+							<h2>Liên hệ</h2>
+							<address class="text-justify">
+	                            <div class="address-block">
+	                                <div class="address-sm">
+	                                	<span class="fa fa-building" aria-hidden="true"></span>
+	                                </div>
+	                                <div>
+	                                	<strong>Global Co., LTD.</strong>
+	                                </div>
+	                            </div>
+	                            <div class="address-block">
+	                                <div class="address-sm">
+	                                	<span class="fa fa-location-arrow" aria-hidden="true"></span>
+	                                </div>
+	                                <div>
+	                                	19 Lieu Gia, Ba Dinh, Việt Nam
+	                                </div>
+	                            </div>
+	                        </address>
+	                        <p class="made-with-love">
+	                        	Made with 
+	                        	<span class="glyphicon glyphicon-heart text-danger"></span> 
+	                        	in VietNam.
+	                        </p>
+						</div>
+						<div class="col-md-4 socials m-b-30">
+	                        <h2>Kết nối với chúng tôi</h2>
+	                        <p>
+	                            <a href="#" target="_blank">
+	                            	<span class="fa fa-facebook-official" aria-hidden="true"></span>
+	                            </a>
+	                            <a href="#" target="_blank">
+	                            	<span class="fa fa-twitter" aria-hidden="true"></span>
+	                            </a>
+	                            <a href="#" target="_blank" rel="publisher">
+	                            	<span class="fa fa-google-plus-official" aria-hidden="true"></span>
+	                            </a>
+	                            <a href="#" target="_blank">
+	                            	<span class="fa fa-pinterest" aria-hidden="true"></span>
+	                            </a>
+	                            <a href="#" target="_blank">
+	                            	<span class="fa fa-youtube" aria-hidden="true"></span>
+	                            </a>
+	                        </p>	                        
+	                    </div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container text-center">
+                	© 2017 <a href="#">Global Co., Ltd</a>. All rights reserved.
+            	</div>
+			</div>
+		</footer>
+		<!-- script -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="Counter-Up/jquery.counterup.js"></script>
+		<script type="text/javascript" src="js/customer.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){			
+			//back to top
+			if($(".btn-back-to-top").length > 0){
+				$(window).scroll(function () {
+					var e = $(window).scrollTop();
+					if (e > 300) {
+						$(".btn-back-to-top").show()
+					} else {
+						$(".btn-back-to-top").hide()
+					}
+				});
+				$(".btn-back-to-top").click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					})
+				})
+			}       
+		});
+	</script>
+	<style type="text/css">
+		.hisella-messages { position: fixed; bottom: 0; right: 0; z-index: 999999; }
+		.hisella-messages-outer { position: relative; }
+		#hisella-minimize { background: #3b5998; font-size: 14px; color: #fff; padding: 3px 10px; position: absolute; top: -34px; left: -1px; border: 1px solid #E9EAED; cursor: pointer; }
+		@media screen and (max-width:768px){ #hisella-facebook { opacity:0; } .hisella-messages { bottom: -300px; right: -135px; } }
+	</style>
+	<div id='fb-root'></div>
+	<script>
+		(function($) { $(document).ready(function(){ $( '#hisella-minimize' ).click( function() { if( $( '#hisella-facebook' ).css( 'opacity' ) == 0 ) { $( '#hisella-facebook' ).css( 'opacity', 1 ); $( '.hisella-messages' ).animate( { right: '0' } ).animate( { bottom: '0' } ); } else { $( '.hisella-messages' ).animate( { bottom: '-300px' } ).animate( { right: '-135px' }, 400, function(){ $( '#hisella-facebook' ).css( 'opacity', 0 ) } ); } } ) }); })(jQuery);
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="hisella-messages"><div class="hisella-messages-outer"><div id="hisella-minimize">Facebook chat</div><div id="hisella-facebook" class='fb-page' data-adapt-container-width='true' data-height='300' data-hide-cover='false' data-href='https://www.facebook.com/Global-262481760915803/' data-show-facepile='true' data-show-posts='false' data-small-header='false' data-tabs='messages' data-width='250'></div></div></div>
+</body>
+</html>

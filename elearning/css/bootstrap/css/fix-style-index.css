@@ -155,3 +155,54 @@
     font-size: 18px;
     text-transform: uppercase;
 }
+.why-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #f4f4f4;
+}
+.block-header {
+    margin-bottom: 55px;
+}
+.block-header h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.block-header p {
+    font-size: 18px;
+}
+.why-item {
+    margin-bottom: 50px;
+    padding: 25px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: #fff;
+    -webkit-box-shadow: 0 9px 6px -6px #ddd;
+    -moz-box-shadow: 0 9px 6px -6px #ddd;
+    box-shadow: 0 9px 6px -6px #ddd;
+}
+.why-item h3 {
+    margin-top: 0;
+    font-size: 16px;
+    vertical-align: bottom;
+    margin-bottom: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.why-item h3 span.item-icon{
+    font-size: 26px;
+    margin-right: 7px;
+}
+.modal-body label{
+	margin-top: 10px !important;
+	margin-bottom: 0 !important;
+}
