@@ -1,0 +1,251 @@
+
+<div class=" login-panel login-panel-pop">
+    <button type="button" onclick="$.fancybox.close()" class="close  pull-right" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <h4 class="text-center login-panel-pop-hd">ĐĂNG NHẬP</h4>							
+
+    <form role="form" class="form-horizontal login-panel-pop-bd" style="padding: 10px;"
+						name="frmLogin" id="frmLogin" method="post"
+						action="/user/login" enctype="multipart/form-data"
+						novalidate="novalidate">
+<div id="message" class="frm-alert alert alert-danger block-helper" style="display:none"></div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" name="email" id="email"
+								placeholder="Email" value="">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="mat_khau"
+								id="mat_khau" placeholder="Mật khẩu" value="">
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label class="control-label labelcheckbox">
+                        <input type="checkbox"  name="remember" value="1" />
+                        <span>Nhớ mật khẩu.</span>
+                    </label>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <a href="/user/forgotPassword" class="text-blue">Quên mật khẩu</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="fw btn bg-blue text-white ">Đăng nhập</button>
+        </div>
+        <div class="row">
+            <hr class="col-xs-6 col-xs-offset-3" />
+            <div class="clearfix"></div>
+        </div>
+        <div class="form-group text-center">Hoặc</div>
+        <div class="form-group text-center btnopenid">
+            <div class="row">
+                <div class="col-sm-6">
+                <div id="fb-root"></div>
+                
+                <!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>-->
+
+                    <a href="/user/loginFb" class="btn btn-fb-share fw">
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <a href="" class="btn btn-gg-share">
+                        <span>Login with Google+</span>
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>       
+        </div>
+    </form>
+    <div class="form-group login-panel-pop-ft">
+        Bạn chưa có tài khoản? <a href="/user/register" class="text-blue get-regis-pop">Đăng ký</a>
+    </div>
+</div>
+<script type="text/javascript">
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      /*document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';*/
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      /*document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';*/
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '276681399346507',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.5' // use graph api version 2.5
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      /*console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';*/
+    });
+  }
+</script>
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+
+
+
+
+
+
+
+
+<script src="/public/js/jquery.validate.js"></script>
+<script src="/public/js/jquery.metadata.js"></script>
+
+<script type="text/javascript">  
+$(document).ready(function(){
+	
+	jQuery.validator.messages.required = "Thông tin cần nhập";
+	jQuery.validator.messages.number = "Số nhập không hợp lệ";
+	jQuery.validator.messages.email = "Email nhập không hợp lệ";
+	jQuery.validator.messages.minlength = "Nhập ít nhất {0} ký tự.";
+	jQuery.validator.messages.equalTo = "Nhập không đúng mật khẩu phía trên";
+	
+	$.metadata.setType("attr", "validate");
+	
+	  
+     $("#frmLogin").submit(function(e) {
+        e.preventDefault();
+    }).validate({
+        rules: {
+            email: {
+                minlength: 6,
+                required: true,
+                email:true
+            },
+            mat_khau: {
+                minlength: 6,
+                required: true
+            }
+        },
+        highlight: function(element) {
+            $(element).addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).removeClass('has-error');
+        },
+        errorElement: 'div',
+        errorPlacement: function(error, element) {
+            error.addClass('frm-alert alert alert-danger block-helper');
+            error.insertAfter(element);
+            $(window).resize();
+        },
+        submitHandler: function(form){
+            $.ajax({
+                type: "POST",
+                url: "/user/login",
+                cache: false,
+                dataType: 'json',
+                data: $('#frmLogin').serialize(),
+                success: function (data) {
+                  //console.log('success');
+                    if(data.result == 1)
+                    {
+                        if(data.return_url != null && data.return_url != '')
+                        {
+                            //console.log('1');
+                            location.href=data.return_url;
+
+                        }
+                        else
+                        {
+                            //console.log('2');
+                            location.reload();    
+                        }
+                        
+                    }
+                    else
+                    {
+                        $('#message').html(data.message).show();
+                        $(window).resize();
+                    }
+                        
+                },
+                error: function () {
+                    
+                }
+            });
+        }
+    });
+	
+     
+});
+
+	
+</script>
+
+<script type="text/javascript">
+re_call_regis_modal();
+</script>
+

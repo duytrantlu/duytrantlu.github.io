@@ -4,6 +4,8 @@
 	<title>Học Tiếng Anh</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="fancybox-fr/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
@@ -48,11 +50,10 @@
 						</div>
 					</form>
 				</div>
-
 				<div class="pull-right col-md-5 col-sm-1 col3 nopdl hidden-sm hidden-xs">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="co-operate.html" target="blank" class="btn-teach-on-global mgr15"><span>Hợp tác giảng dạy</span></a></li>
-						<li><a class="" id="link_login"><span>Đăng nhập</span></a></li>
+						<li><a href="user/index.html" id="link_login" class="get-regis-pop"><span>Đăng nhập</span></a></li>
 						<li><a class="" id="link_signup"><span>Đăng ký</span></a></li>
 						<li class="language-fx visible-lg visible-md">
 							<a class="lang-en" href=""></a>
@@ -184,19 +185,19 @@
 						<a class="founded" href="all-coures.html">
 							<div class="content">
 								<span class="icon-courses icon-courses-manager"></span>
-								<p>Kinh doanh - Khởi nghiệp                                </p>
+								<p>Kinh doanh - Khởi nghiệp</p>
 							</div>
 						</a>
 						<a class="digital" href="all-coures.html">
 							<div class="content">
 								<span class="icon-courses icon-courses-designer"></span>
-								<p>Design - Multimedia                                </p>
+								<p>Design - Multimedia</p>
 							</div>
 						</a>
 						<a class="en" href="all-coures.html">
 							<div class="content">
 								<span class="icon-courses icon-courses-soft-skills"></span>
-								<p>Ngoại ngữ - Kỹ năng mềm                                </p>
+								<p>Ngoại ngữ - Kỹ năng mềm</p>
 							</div>
 						</a>
 						<div class="clearfix"></div>
@@ -204,6 +205,9 @@
 				</div>
 			</div>
 		</header>
+		<a href="support-global.html" id="sp-global" class="btn-floating btn-large pulse">
+			<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+		</a>
 		<section>
 			<div class="bg" style="background-image: url(img/bg-hs1.png);">
 				<div class="container">
@@ -942,7 +946,7 @@
 											<p>Globals chính là đối tác và là người bạn động hành vì sự thành công của bạn.</p>
 											<p>Hãy khám phá xem Globals giúp bạn như thế nào.</p>
 										</div>
-										<a class="btn bg-blue2 btn-lg" href="organization.html">KHÁM PHÁ NGAY</a>
+										<a class="btn bg-blue2 btn-lg" href="#">KHÁM PHÁ NGAY</a>
 									</div>
 								</div>
 							</div>
@@ -1016,6 +1020,9 @@
 
 	<!-- script -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
+	<script type="text/javascript" src="fancybox-fr/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="fancybox-fr/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="Counter-Up/jquery.counterup.js"></script>
@@ -1049,9 +1056,7 @@
 </style>
 <div id='fb-root'></div>
 <script>
-(function($) { $(document).ready(function(){ $( '#hisella-minimize' ).click( function() { 
-	console.log('vào đây rồi');
-	if( $( '#hisella-facebook' ).css( 'opacity' ) == 0 ) { $( '#hisella-facebook' ).css( 'opacity', 1 ); $( '.hisella-messages' ).animate( { right: '0' } ).animate( { bottom: '0' } ); } else { $( '.hisella-messages' ).animate( { bottom: '-300px' } ).animate( { right: '-135px' }, 400, function(){ $( '#hisella-facebook' ).css( 'opacity', 0 ) } ); } } ) }); })(jQuery);
+(function($) { $(document).ready(function(){ $( '#hisella-minimize' ).click( function() { if( $( '#hisella-facebook' ).css( 'opacity' ) == 0 ) { $( '#hisella-facebook' ).css( 'opacity', 1 ); $( '.hisella-messages' ).animate( { right: '0' } ).animate( { bottom: '0' } ); } else { $( '.hisella-messages' ).animate( { bottom: '-300px' } ).animate( { right: '-135px' }, 400, function(){ $( '#hisella-facebook' ).css( 'opacity', 0 ) } ); } } ) }); })(jQuery);
 (function(d, s, id) {
 var js, fjs = d.getElementsByTagName(s)[0];
 if (d.getElementById(id)) return;
@@ -1060,6 +1065,6 @@ js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
-<div class="hisella-messages"><div class="hisella-messages-outer"><div id="hisella-minimize">Facebook Messenger</div><div id="hisella-facebook" class='fb-page' data-adapt-container-width='true' data-height='300' data-hide-cover='false' data-href='https://www.facebook.com/Global-262481760915803/' data-show-facepile='true' data-show-posts='false' data-small-header='false' data-tabs='messages' data-width='250'></div></div></div>
+<div class="hisella-messages"><div class="hisella-messages-outer"><div id="hisella-minimize">Facebook chat</div><div id="hisella-facebook" class='fb-page' data-adapt-container-width='true' data-height='300' data-hide-cover='false' data-href='https://www.facebook.com/Global-262481760915803/' data-show-facepile='true' data-show-posts='false' data-small-header='false' data-tabs='messages' data-width='250'></div></div></div>
 </body>
 </html>

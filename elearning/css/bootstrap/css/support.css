@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #666666;
+    overflow: scroll;
+}
+body.home .navbar {
+    background: none!important;
+}
+.navbar {
+    position: absolute!important;
+    width: 100%;
+    background: rgba(0, 0, 0, 0)!important;
+    border: none!important;
+    background: #FFF!important;
+    border-radius: 0px!important;
+    margin-bottom: 0px!important;
+}
+.navbar .nav-fix {
+    height: 92px;
+}
+.navbar-inverse .navbar-toggle{
+	background-color: rgba(46,187,200,1) !important;
+}
+.navbar-inverse .navbar-toggle, .container .blog-btn {
+    border-color: rgba(46,187,200,1)!important;
+}
+.navbar-brand {
+    margin-top: 15px;
+}
+img.home-logo-hide {
+    display: none;
+}
+.custom-nav-logo {
+    margin-top: -6px;
+    width: auto;
+    height: 35px;
+    margin-right: 10px;
+    padding: 1px;
+}
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+img.home-logo-show {
+    display: block!important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    overflow: hidden;
+}
+.navbar-collapse {
+    padding-right: 0px!important;
+}
+.navbar-nav {
+    float: right!important;
+    margin-left: 20px!important;
+}
+body.home .navbar-inverse .navbar-nav>li>a {
+    color: red!important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0 17px;
+    letter-spacing: 1px;
+    line-height: 100px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    margin-top: 0;
+}
+.navbar-inverse .navbar-nav li a {
+    font-family: inherit;
+}
+.navbar-inverse .navbar-nav>li.lang-item>a {
+    padding: 0px 5px;
+}

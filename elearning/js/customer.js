@@ -130,8 +130,15 @@ $(document).ready(function(){
 	$('.navbar-toggle').click(function(){
 		$('.toogle-box').toggle();
 	});
+	//popup đăng ký đăng nhập
+	re_call_regis_modal();
+	var require_login = getParameterByName('return_url');
+	 if (require_login != '') {
+	    $('#link_login').attr('href', $('#link_login').attr('href') + '?return_url=' + require_login)
+	    $('#link_login').trigger('click');
+	  }
 	//modal login
-	$('#link_login').click(function(){
+	/*$('#link_login').click(function(){
 		$("#login").modal('show');
 	});
 	$('#link_login-mb').click(function(){
@@ -151,7 +158,7 @@ $(document).ready(function(){
 		$('.toogle-box').css('display','none'),
 		$("#signup").modal('show');
 		
-	});
+	});*/
 	//sử lý thông báo
 	$('.noti-message-btn').click(function(){
 		if($('.prl').is('.open')){
@@ -326,3 +333,33 @@ $('.btn-next-toggle').click(function() {
 	$(this).parent().next().toggleClass('hidden-xs hidden-sm');
 	$(this).toggleClass('glyphicon-chevron-up').toggleClass('glyphicon-chevron-down');
 });
+//phần đăng ký đăng nhập popup
+function re_call_regis_modal() {
+	console.log('vao r');
+  $('a.get-regis-pop').each(function() {
+    if (!$(this).is('[fancy]')) {
+      $(this).addClass('fancybox.ajax').fancybox({
+        maxWidth: 370,
+        minWidth: 300,
+        width: '90%',
+        fitToView: false,
+        autoSize: false,
+        autoHeight: true,
+        closeClick: false,
+        openEffect: 'none',
+        closeEffect: 'elastic',
+        padding: 0,
+        closeBtn: false
+      });
+      $(this).removeClass('get-regis-pop');
+    }
+  });
+}
+function getParameterByName(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    console.log(results);
+  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+
+}
