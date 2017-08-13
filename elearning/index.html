@@ -52,93 +52,32 @@
 				</div>
 				<div class="pull-right col-md-5 col-sm-1 col3 nopdl hidden-sm hidden-xs">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="co-operate.html" target="blank" class="btn-teach-on-global mgr15"><span>Hợp tác giảng dạy</span></a></li>
-						<li><a href="user/index.html" id="link_login" class="get-regis-pop"><span>Đăng nhập</span></a></li>
-						<li><a class="" id="link_signup"><span>Đăng ký</span></a></li>
+						<li>
+							<a href="co-operate.html" target="blank" class="btn-teach-on-global mgr15"><	span>Hợp tác giảng dạy</span>
+							</a>
+						</li>
+						<li>
+							<a href="user/login.html" id="link_login" class="get-regis-pop">
+								<span>Đăng nhập</span>
+							</a>
+						</li>
+						<li>
+							<a href="user/register.html" class="get-regis-pop" id="link_signup">
+								<span>Đăng ký</span>
+							</a>
+						</li>
 						<li class="language-fx visible-lg visible-md">
 							<a class="lang-en" href=""></a>
 							<a class="active lang-vi" href=""></a>
 						</li>
 					</ul>
-				</div>
-				<!-- modal login -->
-				<div class="modal fade" id="login" role="dialog">
-					<div class="modal-dialog">          
-						<div class="modal-content">
-							<div class="modal-header" style="padding:35px 50px;">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-							</div>
-							<div class="modal-body" style="padding:40px 50px;">
-								<form role="form" action="after-login.html">
-									<div class="form-group">
-										<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-										<input type="text" class="form-control" id="usrname" placeholder="Enter email" style="width: 100% !important">
-									</div>
-									<div class="form-group">
-										<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-										<input type="text" class="form-control" id="psw" placeholder="Enter password" style="width: 100% !important">
-									</div>
-									<div class="checkbox">
-										<label><input type="checkbox" value="" checked>Remember me</label>
-									</div>
-									<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-								</form>
-							</div>
-							<div class="modal-footer" style="padding: 15px 50px!important;">
-								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-								<p>Not a member? <a href="#">Sign Up</a></p>
-								<p>Forgot <a href="#">Password?</a></p>
-							</div>
-						</div>              
-					</div>
-				</div> <!-- end modal login-->
-				<!-- modal signup -->
-				<div class="modal fade" id="signup" role="dialog">
-					<div class="modal-dialog">          
-						<div class="modal-content">
-							<div class="modal-header" style="padding:35px 50px;">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
-							</div>
-							<div class="modal-body" style="padding:40px 50px;">
-								<form role="form">
-									<div class="form-group">
-										<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-										<input type="text" class="form-control" id="usrname" placeholder="Enter name" style="width: 100% !important">
-									</div>
-									<div class="form-group">
-										<label for="email"><span class="glyphicon glyphicon-envelope"></span> E-mail</label>
-										<input type="email" class="form-control" id="email" placeholder="Enter email" style="width: 100% !important">
-									</div>
-									<div class="form-group">
-										<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-										<input type="password" class="form-control" id="psw" placeholder="Enter password" style="width: 100% !important">
-									</div>
-									<div class="form-group">
-										<label for="confirm-psw"><span class="glyphicon glyphicon-eye-open"></span>Confirm - Password</label>
-										<input type="password" class="form-control" id="confirm_psw" placeholder="Confirm password" style="width: 100% !important">
-									</div>                  
-										<button type="submit" class="btn btn-success btn-block" style="margin-top: 20px;margin-bottom: -15px;">
-											<span class="glyphicon glyphicon-off"></span> 
-											Sign Up
-										</button>
-								</form>
-							</div>
-							<div class="modal-footer" style="padding: 15px 50px!important;">
-								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-								<p>Not a member? <a href="#">Sign Up</a></p>
-								<p>Forgot <a href="#">Password?</a></p>
-							</div>
-						</div>              
-					</div>
-				</div> <!-- end modal signup-->
+				</div>				
 				<span class="pull-right">
 					<span class="btn-click hidden visible-xs btn-toogle visible-sm btn-toogle-top-right-menu" data-result=".navbar-right"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
 				</span>
 				<div class="toogle-box"  style="display: none;">
-					<a class="text-blue"  id="link_login-mb">Đăng nhập</a>
-					Hoặc<a  class="text-blue" id="link_singup-mb">Đăng ký</a>
+					<a class="text-blue get-regis-pop"  id="link_login-mb">Đăng nhập</a>
+					Hoặc<a  class="text-blue get-regis-pop" id="link_singup-mb">Đăng ký</a>
 					<p>Danh mục Khóa học</p>
 					<ul class="getdt" data-result=".browses-dropdow-data"></ul>
 					<p><a href="">Giảng dạy trên Global</a></p>

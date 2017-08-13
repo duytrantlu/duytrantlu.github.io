@@ -472,7 +472,7 @@
 		bottom: 30px;
 	}
 }
-/* fancybox style */
+/* fancybox style login */
 .fancybox-overlay {
     z-index: 1000;
 }
@@ -578,3 +578,5 @@
     padding-top: 15px;
     border-top: 1px solid #eee;
 }
+
+/* fancybox style register */
