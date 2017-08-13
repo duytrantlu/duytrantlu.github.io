@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fancybox-fr/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
@@ -18,191 +19,191 @@
         <a href="index.html" class="logo col-xs-1 col-sm-3 col-md-2 col1">
           <img class="logoimg logoimg1" src="img/logo-global.png" alt="global" />
           <img class="logoimg logoimg2" src="img/logo-global-2.png" alt="global" />
-        </a>
-        <div class="search-box  col-xs-9 col-sm-8 col-md-5 col2 nopdr hidden-xs hidden-sm">
+      </a>
+      <div class="search-box  col-xs-9 col-sm-8 col-md-5 col2 nopdr hidden-xs hidden-sm">
           <form class="form-search-box pull-right" action="" method="get">
             <div class="dropdown-browse-courses form-group  pull-left">
               <span  class="dropdown-toggle">
                 <span class="btn-browse-text">Danh mục Khóa học</span>
                 <span class="btn-browse-icon btn-click">
                   <i class="glyphicon glyphicon-triangle-bottom"></i>
-                </span>
               </span>
-              <ul class="dropdown-menu browses-dropdow-data">
-               <li><a href="">Kế toán - Tài chính</a></li>
+          </span>
+          <ul class="dropdown-menu browses-dropdow-data">
+             <li><a href="">Kế toán - Tài chính</a></li>
 
-               <li><a href="">Lập trình</a></li>
+             <li><a href="">Lập trình</a></li>
 
-               <li><a href="">TOIEC - IELTS</a></li>
+             <li><a href="">TOIEC - IELTS</a></li>
 
-               <li><a href="">MARKETING</a></li>
+             <li><a href="">MARKETING</a></li>
 
-               <li><a href="">DESIGN - MULTIMEDIA</a></li>
+             <li><a href="">DESIGN - MULTIMEDIA</a></li>
 
-               <li><a href="">STARTUP</a></li>
-             </ul>
-           </div>
-           <div class="form-group pull-left form-group-2">
-            <label class="sr-only" for="search-query"></label>
-            <div class="input-group">
-              <input type="text" class="form-control" name="s" id="s" value="" placeholder="Search"/>
-              <div class="input-group-addon" style="cursor: pointer !important; z-index: 9999;"><i class="glyphicon glyphicon-search"></i></div>
-            </div>
-
-          </div>
-        </form>
-      </div>
-
-      <div class="pull-right col-md-5 col-sm-1 col3 nopdl hidden-sm hidden-xs">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="co-operate.html" target="blank" class="btn-teach-on-global mgr15"><span>Hợp tác giảng dạy</span></a></li>
-          <li><a class="" id="link_login"><span>Đăng nhập</span></a></li>
-          <li><a class="" id="link_signup"><span>Đăng ký</span></a></li>
-          <li class="language-fx visible-lg visible-md">
-           <a class="lang-en" href=""></a>
-           <a class="active lang-vi" href=""></a>
-         </li>
-       </ul>
+             <li><a href="">STARTUP</a></li>
+         </ul>
      </div>
-     <!-- modal login -->
-     <div class="modal fade" id="login" role="dialog">
-      <div class="modal-dialog">          
-        <div class="modal-content">
-          <div class="modal-header" style="padding:35px 50px;">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-          </div>
-          <div class="modal-body" style="padding:40px 50px;">
-            <form role="form">
-              <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                <input type="text" class="form-control" id="psw" placeholder="Enter password">
-              </div>
-              <div class="checkbox">
-                <label><input type="checkbox" value="" checked>Remember me</label>
-              </div>
-              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-            <p>Not a member? <a href="#">Sign Up</a></p>
-            <p>Forgot <a href="#">Password?</a></p>
-          </div>
-        </div>              
+     <div class="form-group pull-left form-group-2">
+        <label class="sr-only" for="search-query"></label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="s" id="s" value="" placeholder="Search"/>
+          <div class="input-group-addon" style="cursor: pointer !important; z-index: 9999;"><i class="glyphicon glyphicon-search"></i></div>
       </div>
-    </div> <!-- end modal login-->
-    <!-- modal signup -->
-    <div class="modal fade" id="signup" role="dialog">
-      <div class="modal-dialog">          
-        <div class="modal-content">
-          <div class="modal-header" style="padding:35px 50px;">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
-          </div>
-          <div class="modal-body" style="padding:40px 50px;">
-            <form role="form">
-              <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                <input type="text" class="form-control" id="usrname" placeholder="Enter name">
-              </div>
-              <div class="form-group">
-                <label for="email"><span class="glyphicon glyphicon-envelope"></span> E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                <input type="password" class="form-control" id="psw" placeholder="Enter password">
-              </div>
-              <div class="form-group">
-                <label for="confirm-psw"><span class="glyphicon glyphicon-eye-open"></span>Confirm - Password</label>
-                <input type="password" class="form-control" id="confirm_psw" placeholder="Confirm password">
-              </div>                  
-              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign Up</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-            <p>Not a member? <a href="#">Sign Up</a></p>
-            <p>Forgot <a href="#">Password?</a></p>
-          </div>
-        </div>              
-      </div>
-    </div> <!-- end modal signup-->
-    <span class="pull-right">
-      <span class="btn-click hidden visible-xs btn-toogle visible-sm btn-toogle-top-right-menu" data-result=".navbar-right"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
-    </span>
-    <div class="toogle-box"  style="display: none;">
-      <a class="text-blue"  id="link_login-mb">Đăng nhập</a>
-      Hoặc<a  class="text-blue" id="link_singup-mb">Đăng ký</a>
-      <p>Danh mục Khóa học</p>
-      <ul class="getdt" data-result=".browses-dropdow-data"></ul>
-      <p><a href="">Giảng dạy trên Global</a></p>
-      <p>Ngôn ngữ</p>
-      <ul >
-        <li><a class=" lang-en" href="">English</a>
-        </li>
-        <li>
-          <a class="active lang-vi" href="">Tiếng Việt</a></li>
-        </ul>
-      </div>
-    </div>
+
   </div>
-  <!-- mega menu courses -->
-  <div class="megamenu hidden-xs hidden-sm">
-   <div class="container">
-     <div class="mgpdl">
-       <a class="all-courses" href="">
-         <div class="content">
-           <div class="overlay">
-             <p>Tât cả khóa học</p>
-             <span class="icon-courses icon-benefit-1-2"></span>
-           </div>
-         </div>
-       </a>
-       <a class="keepbooking" href="">
-         <div class="content">
-           <span class="icon-courses icon-courses-accounting"></span>
-           <p>Kế toán - Tài chính</p>
-         </div>
-       </a>
-       <a class="sale" href="">
-         <div class="content">
-           <span class="icon-courses icon-courses-marketing"></span>
-           <p>Marketing - Bán hàng</p>
-         </div>
-       </a>
-       <a class="code" href="">
-         <div class="content">
-           <span class="icon-courses icon-courses-infomation-technology"></span>
-           <p>IT - Web/ Games/ Apps</p>
-         </div>
-       </a>
-       <a class="founded" href="">
-         <div class="content">
-           <span class="icon-courses icon-courses-manager"></span>
-           <p>Kinh doanh - Khởi nghiệp                                </p>
-         </div>
-       </a>
-       <a class="digital" href="">
-         <div class="content">
-           <span class="icon-courses icon-courses-designer"></span>
-           <p>Design - Multimedia                                </p>
-         </div>
-       </a>
-       <a class="en" href="">
-        <div class="content">
-          <span class="icon-courses icon-courses-soft-skills"></span>
-          <p>Ngoại ngữ - Kỹ năng mềm                                </p>
+</form>
+</div>
+
+<div class="pull-right col-md-5 col-sm-1 col3 nopdl hidden-sm hidden-xs">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="co-operate.html" target="blank" class="btn-teach-on-global mgr15"><span>Hợp tác giảng dạy</span></a></li>
+      <li><a class="" id="link_login"><span>Đăng nhập</span></a></li>
+      <li><a class="" id="link_signup"><span>Đăng ký</span></a></li>
+      <li class="language-fx visible-lg visible-md">
+         <a class="lang-en" href=""></a>
+         <a class="active lang-vi" href=""></a>
+     </li>
+ </ul>
+</div>
+<!-- modal login -->
+<div class="modal fade" id="login" role="dialog">
+  <div class="modal-dialog">          
+    <div class="modal-content">
+      <div class="modal-header" style="padding:35px 50px;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+    </div>
+    <div class="modal-body" style="padding:40px 50px;">
+        <form role="form">
+          <div class="form-group">
+            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
         </div>
-      </a>
-      <div class="clearfix"></div>
+        <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" checked>Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+    <p>Not a member? <a href="#">Sign Up</a></p>
+    <p>Forgot <a href="#">Password?</a></p>
+</div>
+</div>              
+</div>
+</div> <!-- end modal login-->
+<!-- modal signup -->
+<div class="modal fade" id="signup" role="dialog">
+  <div class="modal-dialog">          
+    <div class="modal-content">
+      <div class="modal-header" style="padding:35px 50px;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
     </div>
+    <div class="modal-body" style="padding:40px 50px;">
+        <form role="form">
+          <div class="form-group">
+            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+            <input type="text" class="form-control" id="usrname" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="email"><span class="glyphicon glyphicon-envelope"></span> E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+            <input type="password" class="form-control" id="psw" placeholder="Enter password">
+        </div>
+        <div class="form-group">
+            <label for="confirm-psw"><span class="glyphicon glyphicon-eye-open"></span>Confirm - Password</label>
+            <input type="password" class="form-control" id="confirm_psw" placeholder="Confirm password">
+        </div>                  
+        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign Up</button>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+    <p>Not a member? <a href="#">Sign Up</a></p>
+    <p>Forgot <a href="#">Password?</a></p>
+</div>
+</div>              
+</div>
+</div> <!-- end modal signup-->
+<span class="pull-right">
+  <span class="btn-click hidden visible-xs btn-toogle visible-sm btn-toogle-top-right-menu" data-result=".navbar-right"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
+</span>
+<div class="toogle-box"  style="display: none;">
+  <a class="text-blue"  id="link_login-mb">Đăng nhập</a>
+  Hoặc<a  class="text-blue" id="link_singup-mb">Đăng ký</a>
+  <p>Danh mục Khóa học</p>
+  <ul class="getdt" data-result=".browses-dropdow-data"></ul>
+  <p><a href="">Giảng dạy trên Global</a></p>
+  <p>Ngôn ngữ</p>
+  <ul >
+    <li><a class=" lang-en" href="">English</a>
+    </li>
+    <li>
+      <a class="active lang-vi" href="">Tiếng Việt</a></li>
+  </ul>
+</div>
+</div>
+</div>
+<!-- mega menu courses -->
+<div class="megamenu hidden-xs hidden-sm">
+ <div class="container">
+   <div class="mgpdl">
+     <a class="all-courses" href="">
+       <div class="content">
+         <div class="overlay">
+           <p>Tât cả khóa học</p>
+           <span class="icon-courses icon-benefit-1-2"></span>
+       </div>
+   </div>
+</a>
+<a class="keepbooking" href="">
+   <div class="content">
+     <span class="icon-courses icon-courses-accounting"></span>
+     <p>Kế toán - Tài chính</p>
+ </div>
+</a>
+<a class="sale" href="">
+   <div class="content">
+     <span class="icon-courses icon-courses-marketing"></span>
+     <p>Marketing - Bán hàng</p>
+ </div>
+</a>
+<a class="code" href="">
+   <div class="content">
+     <span class="icon-courses icon-courses-infomation-technology"></span>
+     <p>IT - Web/ Games/ Apps</p>
+ </div>
+</a>
+<a class="founded" href="">
+   <div class="content">
+     <span class="icon-courses icon-courses-manager"></span>
+     <p>Kinh doanh - Khởi nghiệp                                </p>
+ </div>
+</a>
+<a class="digital" href="">
+   <div class="content">
+     <span class="icon-courses icon-courses-designer"></span>
+     <p>Design - Multimedia                                </p>
+ </div>
+</a>
+<a class="en" href="">
+    <div class="content">
+      <span class="icon-courses icon-courses-soft-skills"></span>
+      <p>Ngoại ngữ - Kỹ năng mềm                                </p>
   </div>
+</a>
+<div class="clearfix"></div>
+</div>
+</div>
 </div>
 </header>
 <!-- section content -->
@@ -211,90 +212,90 @@
     <form action="" id="frmAddCart" name="frmAddCart" method="post">
       <input type="hidden" name="sp_id" value="286">
       <input type="hidden" name="so_luong" id="so_luong" value="1">
-    </form>
-    <div class="container">
+  </form>
+  <div class="container">
       <div class="direct-course-detail">
         <a href="#">IT - Web/ Games/ Apps</a> »            
         <a href="#" class="active">Lập trình web </a>
-      </div>
-      <div class="row">
+    </div>
+    <div class="row">
         <div class="col-md-6 col-sm-5">
           <div class="course-detail-img">
             <img src="img/thiet-ke-3.jpg" alt="course details">
             <div class="hidden-xs hidden-lg hidden-md">
               <img src="img/course-detail/case-study-banner-2.jpg">
-            </div>
           </div>
-
-        </div>
-        <div class="col-md-6 col-sm-7">
-          <h1>Học lập trình web front-end sử dụng HTML5 và CSS3</h1>
-          <p class="desc">Trang bị kiến thức cơ bản về một trong những công nghệ cốt lõi và rất mạnh mẽ hiện nay để xây dựng các website: HTML5 và CSS3.</p>
-          <div class="actor">
-            <a href="#" class="text-blue"> laptrinh.io</a>
-            <span></span>
-          </div>
-          <div class="info size12">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="rtcol">
-                  <span class="rticon"></span>
-                  <div class="rttext">
-                    <span class="rating">
-                      <i class="glyphicon glyphicon-star text-yel"></i>
-                      <i class="glyphicon glyphicon-star text-yel"></i>
-                      <i class="glyphicon glyphicon-star text-yel"></i>
-                      <i class="glyphicon glyphicon-star text-yel"></i>
-                      <i class="glyphicon glyphicon-star text-yel"></i>
-                    </span>                                                             
-                  </div>
-                </div>
-                <div class="rtcol">
-                  <span class="rticon icon-cam"></span>
-                  <div class="rttext">
-                    35 Bài giảng <br>
-                    2.7 giờ video chất lượng cao                                                                    
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="rtcol">
-                  <span class="rticon icon-av"></span>
-                  <div class="rttext">
-                    529 học viên
-                    <i class="rticon-cmd"></i>
-                    3 thảo luận                                 
-                  </div>
-                </div>
-                <div class="rtcol">
-                  <span class="rticon icon-dol"></span>
-                  <div class="rttext">
-                    Xem trước miễn phí và cam kết hoàn tiền 100%
-                  </div>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div class="course-btn">
-              <div class="row">
-                <div class="col-md-10 col-xs-9">
-                    <span class="btn border-grey bg-blue required-login" href="#">MIỄN PHÍ</span>
-                    <a href="buy-course.html">
-                        <span class="btn bg-green required-login">ĐĂNG KÝ HỌC NGAY</span>
-                    </a>
-                </div>
-                <a href="#" class="btn border-grey btn-add-wishlist wishlist-286" id="wishlist-286" data-original-title="Add to wishlist">
-                  <span class="icon-eye"></span>
-                  <span>Wishlist</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+
   </div>
-  <div class="course-detail-wraper">
+  <div class="col-md-6 col-sm-7">
+      <h1>Học lập trình web front-end sử dụng HTML5 và CSS3</h1>
+      <p class="desc">Trang bị kiến thức cơ bản về một trong những công nghệ cốt lõi và rất mạnh mẽ hiện nay để xây dựng các website: HTML5 và CSS3.</p>
+      <div class="actor">
+        <a href="#" class="text-blue"> laptrinh.io</a>
+        <span></span>
+    </div>
+    <div class="info size12">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="rtcol">
+              <span class="rticon"></span>
+              <div class="rttext">
+                <span class="rating">
+                  <i class="glyphicon glyphicon-star text-yel"></i>
+                  <i class="glyphicon glyphicon-star text-yel"></i>
+                  <i class="glyphicon glyphicon-star text-yel"></i>
+                  <i class="glyphicon glyphicon-star text-yel"></i>
+                  <i class="glyphicon glyphicon-star text-yel"></i>
+              </span>                                                             
+          </div>
+      </div>
+      <div class="rtcol">
+          <span class="rticon icon-cam"></span>
+          <div class="rttext">
+            35 Bài giảng <br>
+            2.7 giờ video chất lượng cao                                                                    
+        </div>
+    </div>
+</div>
+<div class="col-sm-6">
+    <div class="rtcol">
+      <span class="rticon icon-av"></span>
+      <div class="rttext">
+        529 học viên
+        <i class="rticon-cmd"></i>
+        3 thảo luận                                 
+    </div>
+</div>
+<div class="rtcol">
+  <span class="rticon icon-dol"></span>
+  <div class="rttext">
+    Xem trước miễn phí và cam kết hoàn tiền 100%
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="course-btn">
+  <div class="row">
+    <div class="col-md-10 col-xs-9">
+        <span class="btn border-grey bg-blue required-login" href="#">MIỄN PHÍ</span>
+        <a href="buy-course.html">
+            <span class="btn bg-green required-login">ĐĂNG KÝ HỌC NGAY</span>
+        </a>
+    </div>
+    <a href="#" class="btn border-grey btn-add-wishlist wishlist-286" id="wishlist-286" data-original-title="Add to wishlist">
+      <span class="icon-eye"></span>
+      <span>Wishlist</span>
+  </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="course-detail-wraper">
     <!-- menu ngang ẩn -->
     <div class="course-detail-menu hidden-xs hidden-sm" id="course-detail-menu" style="display: none;">
       <div class="container">
@@ -305,67 +306,69 @@
               <li><a href="#course-contents">Nôi dung khóa học</a></li>
               <li><a href="#course-reviews">Đánh giá</a></li>
               <li><a href="#spy_instructore">Giảng viên</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-4 course-detail-menu-right">                  
-            <span class="grpr">
-              <span class="btn text-strong required-login" onclick="" href="#" data-onclick="">MIỄN PHÍ</span>
-            </span>
-          </div>
-        </div>
+          </ul>
       </div>
-    </div>
-    <!-- giới thiệu về khóa học --> 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 course-about-right-col">
-          <div id="course-description"></div>
-          <h2 class="page-header border-green">Giới thiệu khóa học</h2>
-          <div class="about-course-wraper" style="position: relative;">
-            <div class="wrap">
-              <p>HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung cho World Wide Web và hiện đang là một trong những công nghệ cốt lõi của Internet đã được rất nhiều công ty lớn trên thế giới chấp thuận: Apple, Google, IBM, Microsoft,..</p><p>HTML5 và CSS3 là các chương trình mới nhất cho việc thiết kế web. Các tính năng video của HTML5 – cho phép đơn giản hoá việc thêm một video vào trang web. HTML5 sẽ cho phép bạn xem video mà không cần sử dụng một plugin như Flash hoặc Silverlight. HTML5 và CSS3 cũng làm cho các ứng dụng Web và các trang web hấp dẫn hơn.</p><p>HTML5 có các tính năng mới được thêm vào giúp cho việc xây dựng ứng dụng web dễ dàng hơn rất nhiều. Ví dụ như nhiều màu sắc hơn và hỗ trợ đường cong, việc làm mờ, góc tròn (thay vì ép buộc các nhà thiết kế web sử dụng các hình ảnh để tạo ra các góc tròn), và dĩ nhiên là cả việc lưu trữ offline. Tất cả những điều này là một trang web trở nên dễ nhìn hơn, bắt mắt hơn và làm cho mọi thứ trở nên sát với những gì mà nhà thiết kế tưởng tượng trong đầu hơn.</p><p>Khóa học HTML5 và CSS3 được thiết kế dành cho các bạn học viên hoàn toàn chưa biết gì về thiết kế web và cũng như các bạn muốn tìm hiểu thêm một cách có hệ thống về HTML5 và CSS3 để phục vụ cho công việc.</p><p><strong>Yêu cầu trước khi tham gia khóa học</strong></p><ul><li>Sử dụng thành thạo máy tính và Internet</li><li>Yêu thích lập trình, sáng tạo và chịu khó</li><li>Định hướng nghề nghiệp theo lập trình viên</li></ul><p><strong>Kiến thức mục tiêu</strong></p><ul><li>Trang bị kiến thức cơ bản về một trong những công nghệ cốt lõi và rất mạnh mẽ hiện nay để xây dựng các website: HTML5 và CSS3</li><li>Giúp các bạn thiết kế trang bị nhanh kiến thức &amp; kỹ năng liên quan đến HTML5 &amp; CSS3</li><li>Học viên có thể tự tay thiết kế một website hiện đại với HTML5 &amp; CSS3</li></ul>
-            </div>
-            <!-- session-group-->
-            <div id="course-contents"></div>
-            <div class="session-group">
-              <h4>Nội dung khóa học</h4>
-              <ul class="session-group-list border-gray">
-                <li class="thead lst-section-lecture">
-                  <span class="col-xs-9">
-                    <span class="ss-index">Phần 1</span>
-                    <span class="ss-title">Giới Thiệu</span>
-                  </span>
-                  <span class="col-xs-3 pull-right hidden-xs nopdl text-right"> </span>
-                  <div class="clearfix"></div></li>
-                  <li class="lst-section-lecture">
-                    <a href="#" class=""> <span class="td">
-                      1.1</span> <span class="td col-xs-9 col-sm-7">Giới thiệu về web</span>
-                      <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:15</span>
-                    </span> <span class="btn-item-view">
-                    <span class="strfree"></span>
-                  </span>
-                </span>
-              </a>
-            </li>
-            <li class="lst-section-lecture">
-              <a href="#" class=""> <span class="td">
-                1.2</span> <span class="td col-xs-9 col-sm-7">Công cụ và môi trường</span>
-                <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:50</span>
-              </span> <span class="btn-item-view">
-              <span class="strfree"></span>
-            </span>
-          </span>
-        </a>
-      </li>
-      <li class="lst-section-lecture">
-        <a href="#" class=""> <span class="td">
-          1.3</span> <span class="td col-xs-9 col-sm-7">Tổng quan về một trang web</span>
-          <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:16</span>
-        </span> <span class="btn-item-view">
-        <span class="strfree"></span>
+      <div class="col-sm-4 course-detail-menu-right">                  
+        <span class="grpr">
+          <span class="btn text-strong required-login" onclick="" href="#" data-onclick="">MIỄN PHÍ</span>
       </span>
-    </span>
-  </a>
+  </div>
+</div>
+</div>
+</div>
+<!-- giới thiệu về khóa học --> 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 course-about-right-col">
+      <div id="course-description"></div>
+      <h2 class="page-header border-green">Giới thiệu khóa học</h2>
+      <div class="about-course-wraper" style="position: relative;">
+        <div class="wrap">
+          <p>HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung cho World Wide Web và hiện đang là một trong những công nghệ cốt lõi của Internet đã được rất nhiều công ty lớn trên thế giới chấp thuận: Apple, Google, IBM, Microsoft,..</p><p>HTML5 và CSS3 là các chương trình mới nhất cho việc thiết kế web. Các tính năng video của HTML5 – cho phép đơn giản hoá việc thêm một video vào trang web. HTML5 sẽ cho phép bạn xem video mà không cần sử dụng một plugin như Flash hoặc Silverlight. HTML5 và CSS3 cũng làm cho các ứng dụng Web và các trang web hấp dẫn hơn.</p><p>HTML5 có các tính năng mới được thêm vào giúp cho việc xây dựng ứng dụng web dễ dàng hơn rất nhiều. Ví dụ như nhiều màu sắc hơn và hỗ trợ đường cong, việc làm mờ, góc tròn (thay vì ép buộc các nhà thiết kế web sử dụng các hình ảnh để tạo ra các góc tròn), và dĩ nhiên là cả việc lưu trữ offline. Tất cả những điều này là một trang web trở nên dễ nhìn hơn, bắt mắt hơn và làm cho mọi thứ trở nên sát với những gì mà nhà thiết kế tưởng tượng trong đầu hơn.</p><p>Khóa học HTML5 và CSS3 được thiết kế dành cho các bạn học viên hoàn toàn chưa biết gì về thiết kế web và cũng như các bạn muốn tìm hiểu thêm một cách có hệ thống về HTML5 và CSS3 để phục vụ cho công việc.</p><p><strong>Yêu cầu trước khi tham gia khóa học</strong></p><ul><li>Sử dụng thành thạo máy tính và Internet</li><li>Yêu thích lập trình, sáng tạo và chịu khó</li><li>Định hướng nghề nghiệp theo lập trình viên</li></ul><p><strong>Kiến thức mục tiêu</strong></p><ul><li>Trang bị kiến thức cơ bản về một trong những công nghệ cốt lõi và rất mạnh mẽ hiện nay để xây dựng các website: HTML5 và CSS3</li><li>Giúp các bạn thiết kế trang bị nhanh kiến thức &amp; kỹ năng liên quan đến HTML5 &amp; CSS3</li><li>Học viên có thể tự tay thiết kế một website hiện đại với HTML5 &amp; CSS3</li></ul>
+      </div>
+      <!-- session-group-->
+      <div id="course-contents"></div>
+      <div class="session-group">
+          <h4>Nội dung khóa học</h4>
+          <ul class="session-group-list border-gray">
+            <li class="thead lst-section-lecture">
+              <span class="col-xs-9">
+                <span class="ss-index">Phần 1</span>
+                <span class="ss-title">Giới Thiệu</span>
+            </span>
+            <span class="col-xs-3 pull-right hidden-xs nopdl text-right"> </span>
+            <div class="clearfix"></div></li>
+            <li class="lst-section-lecture">
+                <a href="courses/loadLectureContentPopup/video_demo.html" class="call_pop_lecture_preview"> 
+                    <span class="td">
+                        1.1
+                    </span> <span class="td col-xs-9 col-sm-7">Giới thiệu về web</span>
+                      <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:15</span>
+                  </span> <span class="btn-item-view">
+                  <span class="strfree">free</span>
+              </span>
+          </span>
+      </a>
+  </li>
+  <li class="lst-section-lecture">
+      <a href="#" class=""> <span class="td">
+        1.2</span> <span class="td col-xs-9 col-sm-7">Công cụ và môi trường</span>
+        <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:50</span>
+    </span> <span class="btn-item-view">
+    <span class="strfree"></span>
+</span>
+</span>
+</a>
+</li>
+<li class="lst-section-lecture">
+    <a href="#" class=""> <span class="td">
+      1.3</span> <span class="td col-xs-9 col-sm-7">Tổng quan về một trang web</span>
+      <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:16</span>
+  </span> <span class="btn-item-view">
+  <span class="strfree"></span>
+</span>
+</span>
+</a>
 </li>         
 </ul>
 <ul class="session-group-list border-gray">
@@ -374,14 +377,14 @@
     <span class="ss-title">HTML5</span></span>
     <span class="col-xs-3 pull-right hidden-xs nopdl text-right"></span>
     <div class="clearfix"></div>
-  </li>               
-  <li class="lst-section-lecture">
+</li>               
+<li class="lst-section-lecture">
     <a href="#" class=""> <span class="td">
       2.1</span> <span class="td col-xs-9 col-sm-7">Cấu trúc cơ bản của một file HTML</span>
       <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:27</span>
-    </span> <span class="btn-item-view">
-    <span class="strfree"></span>
-  </span>
+  </span> <span class="btn-item-view">
+  <span class="strfree"></span>
+</span>
 </span>
 </a>
 </li>          
@@ -389,8 +392,8 @@
   <a href="#" class=""> <span class="td">
     2.2</span> <span class="td col-xs-9 col-sm-7">Tiêu đề và nội dung văn bản</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:41</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -399,8 +402,8 @@
   <a href="#" class=""> <span class="td">
     2.3</span> <span class="td col-xs-9 col-sm-7">Định dạng nội dung văn bản</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:21</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -409,8 +412,8 @@
   <a href="#" class=""> <span class="td">
     2.4</span> <span class="td col-xs-9 col-sm-7">Hiển thị kí tự đặc biệt</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:10</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -419,8 +422,8 @@
   <a href="#" class=""> <span class="td">
     2.5</span> <span class="td col-xs-9 col-sm-7">Một số thẻ văn bản khác</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>02:59</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -429,8 +432,8 @@
   <a href="#" class=""> <span class="td">
     2.6</span> <span class="td col-xs-9 col-sm-7">Tạo đường dẫn liên kết</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:34</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -439,8 +442,8 @@
   <a href="#" class=""> <span class="td">
     2.7</span> <span class="td col-xs-9 col-sm-7">Hiển thị ảnh trên web</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:44</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -449,8 +452,8 @@
   <a href="#" class=""> <span class="td">
     2.8</span> <span class="td col-xs-9 col-sm-7">Tạo link liên kết bằng hình ảnh</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:22</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -459,8 +462,8 @@
   <a href="#" class=""> <span class="td">
     2.9</span> <span class="td col-xs-9 col-sm-7">Hiển thị danh sách</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:23</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -469,8 +472,8 @@
   <a href="#" class=""> <span class="td">
     2.10</span> <span class="td col-xs-9 col-sm-7">Thiết kế bảng trong HTML</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>08:05</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -479,8 +482,8 @@
   <a href="#" class=""> <span class="td">
     2.11</span> <span class="td col-xs-9 col-sm-7">Tạo form nhập dữ liệu</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>07:54</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>                
+</span> <span class="btn-item-view">
+<span class="strfree"></span>                
 </span>
 </span>
 </a>
@@ -489,8 +492,8 @@
   <a href="#" class=""> <span class="td">
     2.12</span> <span class="td col-xs-9 col-sm-7">Tổng hợp các kiểu input trong form</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:57</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -499,8 +502,8 @@
   <a href="#" class=""> <span class="td">
     2.13</span> <span class="td col-xs-9 col-sm-7">Tạo danh sách lựa chọn</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:20</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -511,14 +514,14 @@
     <span class="ss-index">Phần 3</span><span class="ss-title">CSS3</span></span>
     <span class="col-xs-3 pull-right hidden-xs nopdl text-right"></span>
     <div class="clearfix"></div>
-  </li>                 
-  <li class="lst-section-lecture">
+</li>                 
+<li class="lst-section-lecture">
     <a href="#" class=""> <span class="td">
       3.1</span> <span class="td col-xs-9 col-sm-7">Giới thiệu về CSS qua inline style</span>
       <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:05</span>
-    </span> <span class="btn-item-view">
-    <span class="strfree"></span>
-  </span>
+  </span> <span class="btn-item-view">
+  <span class="strfree"></span>
+</span>
 </span>
 </a>
 </li>                    
@@ -526,8 +529,8 @@
   <a href="#" class=""> <span class="td">
     3.2</span> <span class="td col-xs-9 col-sm-7">Định dạng CSS qua thẻ style</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:55</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -536,8 +539,8 @@
   <a href="#" class=""> <span class="td">
     3.3</span> <span class="td col-xs-9 col-sm-7">Liên kết tới file CSS</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>01:49</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -546,8 +549,8 @@
   <a href="#" class=""> <span class="td">
     3.4</span> <span class="td col-xs-9 col-sm-7">Thứ tự ưu tiên trong CSS</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:33</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -556,8 +559,8 @@
   <a href="#" class=""> <span class="td">
     3.5</span> <span class="td col-xs-9 col-sm-7">Sử dụng class để định dạng CSS</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:16</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -566,8 +569,8 @@
   <a href="#" class=""> <span class="td">
     3.6</span> <span class="td col-xs-9 col-sm-7">Sử dụng ID để định dạng CSS</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>02:15</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -576,8 +579,8 @@
   <a href="#" class=""> <span class="td">
     3.7</span> <span class="td col-xs-9 col-sm-7">Định dạng CSS qua nested selector</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:56</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -586,8 +589,8 @@
   <a href="#" class=""> <span class="td">
     3.8</span> <span class="td col-xs-9 col-sm-7">Thiết kế background</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>07:53</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -596,8 +599,8 @@
   <a href="#" class=""> <span class="td">
     3.9</span> <span class="td col-xs-9 col-sm-7">Tìm hiểu về màu sắc</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>05:42</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -606,8 +609,8 @@
   <a href="#" class=""> <span class="td">
     3.10</span> <span class="td col-xs-9 col-sm-7">Định dạng cho text</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>03:24</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -618,19 +621,19 @@
     <span class="td col-xs-3"> 
       <span class="lt-type-r"> 
         <span class="glyphicon glyphicon-facetime-video"></span> <span>06:35</span>
-      </span> 
-      <span class="btn-item-view">
+    </span> 
+    <span class="btn-item-view">
         <span class="strfree"></span>
-      </span>
     </span>
-  </a>
+</span>
+</a>
 </li>                   
 <li class="lst-section-lecture">
   <a href="#" class=""> <span class="td">
     3.12</span> <span class="td col-xs-9 col-sm-7">Sử dụng div để bao khung nội dung</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>08:38</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -639,8 +642,8 @@
   <a href="#" class=""> <span class="td">
     3.13</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh vị trí tương quan giữa các thẻ HTML</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>09:18</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -649,8 +652,8 @@
   <a href="#" class=""> <span class="td">
     3.14</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh cách hiển thị cho các thẻ HTML</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>05:25</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -659,8 +662,8 @@
   <a href="#" class=""> <span class="td">
     3.15</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh vị trí hiển thị</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>07:45</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -669,8 +672,8 @@
   <a href="#" class=""> <span class="td">
     3.16</span> <span class="td col-xs-9 col-sm-7">Tuỳ chỉnh CSS cho danh sách UL và OL.</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>04:05</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span>
 </span>
 </a>
@@ -683,12 +686,12 @@
     <span class="td col-xs-3"> 
       <span class="lt-type-r"> 
         <span class="glyphicon glyphicon-facetime-video"></span> <span>06:12</span>
-      </span> 
-      <span class="btn-item-view">
+    </span> 
+    <span class="btn-item-view">
         <span class="strfree"></span>
-      </span>
     </span>
-  </a>
+</span>
+</a>
 </li>
 <li class="lst-section-lecture">
   <a href="#" class=""> <span class="td">
@@ -696,32 +699,32 @@
     <span class="td col-xs-3"> 
       <span class="lt-type-r"> 
         <span class="glyphicon glyphicon-facetime-video"></span> <span>07:22</span>
-      </span> 
-      <span class="btn-item-view">
+    </span> 
+    <span class="btn-item-view">
         <span class="strfree"></span>
-      </span>
     </span>
-  </a>
+</span>
+</a>
 </li>
 <li class="lst-section-lecture">
   <a href="#" class=""> <span class="td">
     3.19</span> <span class="td col-xs-9 col-sm-7">Giới thiệu về float</span>
     <span class="td col-xs-3"> <span class="lt-type-r"> <span class="glyphicon glyphicon-facetime-video"></span> <span>05:03</span>
-  </span> <span class="btn-item-view">
-  <span class="strfree"></span>
+</span> <span class="btn-item-view">
+<span class="strfree"></span>
 </span></span>
 </a>
 </li>                   
 </ul>
 <!-- end section list -->
 <ul class="session-group-list">
- <!-- update 06/11 -->
- <li>
-  <div class="btn-load-all-content">
-    <a href="">
-      <div class="text-blue size22">Xem tất cả nội dung</div>
-      <span class="btn btn-default"><span class="glyphicon glyphicon-menu-down"></span></span>
-    </a>
+   <!-- update 06/11 -->
+   <li>
+      <div class="btn-load-all-content">
+        <a href="">
+          <div class="text-blue size22">Xem tất cả nội dung</div>
+          <span class="btn btn-default"><span class="glyphicon glyphicon-menu-down"></span></span>
+      </a>
   </div>
 </li>
 </ul>
@@ -735,12 +738,12 @@
         <span class="btn border-gray bg-blue required-login" onclick="" href="#" data-onclick="">MIỄN PHÍ</span>
         <span class="btn bg-green" onclick="location.href='buy-course.html'" >MUA KHÓA HỌC NGAY
         </span> 
-      </div>
-      <span class="btn border-gray btn-add-wishlist" title="" data-toggle="tooltip" data-original-title="Add to wishlist"> <span class="icon-eye"></span> <span>Wishlist</span>
-    </span>
+    </div>
+    <span class="btn border-gray btn-add-wishlist" title="" data-toggle="tooltip" data-original-title="Add to wishlist"> <span class="icon-eye"></span> <span>Wishlist</span>
+</span>
 
-    <div class="clearfix"></div>
-  </div>
+<div class="clearfix"></div>
+</div>
 </div>
 <div class="rtcol">
   <span class="rticon icon-dol"></span>
@@ -758,13 +761,13 @@
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.4";
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script> -->
-  <div class="left-scrolling-box hidden-xs" style="position: absolute; top: 0px; left: 0px;">
+}(document, 'script', 'facebook-jssdk'));</script> -->
+<div class="left-scrolling-box hidden-xs" style="position: absolute; top: 0px; left: 0px;">
     <span class="size20">Share</span>
     <div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=58&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=box_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 58px; height: 64px;"><iframe name="f29430ca0aa130c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.4/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FXBwzv5Yrm_1.js%3Fversion%3D42%23cb%3Df21bf5c74c48a18%26domain%3D %26origin%3Dhttps%253A%252F%252F %252Ff1fe2159ef254ec%26relation%3Dparent.parent&amp;container_width=58&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=box_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 58px; height: 64px;" class=""></iframe></span></div>
     <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1501167639705" name="I0_1501167639705" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;size=tall&amp;origin=https%3A%2F%2F &amp;url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.AEm3GP0zM_U.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCNRSnx1VZSSN9zOk6zJeMit_FBhEw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1501167639705&amp;parent=https%3A%2F%2F &amp;pfname=&amp;rpctoken=34331520" data-gapiattached="true" title="G+"></iframe></div>
     <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.b4d0882c4750b56021097fae9667fe03.vi.html#dnt=false&amp;id=twitter-widget-0&amp;lang=vi&amp;original_referer=https%3A%2F%2F %2Fcourse-detail%2FHoc-lap-trinh-web-front-end-su-dung-HTML5-va-CSS3&amp;size=m&amp;text=H%E1%BB%8Dc%20l%E1%BA%ADp%20tr%C3%ACnh%20web%20front-end%20s%E1%BB%AD%20d%E1%BB%A5ng%20HTML5%20v%C3%A0%20CSS3%20%7C%20Globals&amp;time=1501167642637&amp;type=share&amp;url=http%3A%2F%2FGlobals.com%2F" style="position: static; visibility: visible; width: 60px; height:20px;" data-url="http://Globals.com/"></iframe>
-  </div>
+</div>
 </div>
 <!-- end about course -->
 <div id="course-reviews"></div><!-- moi them -->
@@ -778,46 +781,46 @@
           <div class="progress pgmh">
             <div class="progress-bar bg-yel" data-progress-value="0%" style="width: 0%;">
             </div>
-          </div>
         </div>
-        <div class="col-xs-3 text-left">0</div>
-      </div>
-      <div>
-        <div class="col-xs-3 text-right">4 sao</div>
-        <div class="col-xs-6">
-          <div class="progress pgmh">
-            <div class="progress-bar bg-yel" data-progress-value="0%" style="width: 0%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-3 text-left">0</div>
-      </div><div>
-      <div class="col-xs-3 text-right">3 sao</div>
-      <div class="col-xs-6">
-        <div class="progress pgmh">
-          <div class="progress-bar bg-yel" data-progress-value="100%" style="width: 100%;">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-3 text-left">1</div>
-    </div><div>
-    <div class="col-xs-3 text-right">2 sao</div>
+    </div>
+    <div class="col-xs-3 text-left">0</div>
+</div>
+<div>
+    <div class="col-xs-3 text-right">4 sao</div>
     <div class="col-xs-6">
       <div class="progress pgmh">
         <div class="progress-bar bg-yel" data-progress-value="0%" style="width: 0%;">
         </div>
-      </div>
     </div>
-    <div class="col-xs-3 text-left">0</div>
-  </div><div>
-  <div class="col-xs-3 text-right">1 sao</div>
-  <div class="col-xs-6">
+</div>
+<div class="col-xs-3 text-left">0</div>
+</div><div>
+<div class="col-xs-3 text-right">3 sao</div>
+<div class="col-xs-6">
+    <div class="progress pgmh">
+      <div class="progress-bar bg-yel" data-progress-value="100%" style="width: 100%;">
+      </div>
+  </div>
+</div>
+<div class="col-xs-3 text-left">1</div>
+</div><div>
+<div class="col-xs-3 text-right">2 sao</div>
+<div class="col-xs-6">
+  <div class="progress pgmh">
+    <div class="progress-bar bg-yel" data-progress-value="0%" style="width: 0%;">
+    </div>
+</div>
+</div>
+<div class="col-xs-3 text-left">0</div>
+</div><div>
+<div class="col-xs-3 text-right">1 sao</div>
+<div class="col-xs-6">
     <div class="progress pgmh">
       <div class="progress-bar bg-yel" data-progress-value="0%" style="width: 0%;">
       </div>
-    </div>
   </div>
-  <div class="col-xs-3 text-left">0</div>
+</div>
+<div class="col-xs-3 text-left">0</div>
 </div>
 </div>
 </div>
@@ -826,8 +829,8 @@
   <div class="average-rating">
     <p>
       <span class="rating"> <i class="glyphicon glyphicon-star text-yel"></i><i class="glyphicon glyphicon-star text-yel"></i><i class="glyphicon glyphicon-star text-yel"></i><i class="glyphicon glyphicon-star "></i><i class="glyphicon glyphicon-star "></i></span>
-    </p>
-  </div>
+  </p>
+</div>
 </div>
 <div class="clearfix"></div>
 </div>
@@ -842,15 +845,15 @@
         <p class="poster-rating">
           <span class="icon-like"></span> <span class="rating">
           <i class="glyphicon glyphicon-star text-yel"></i><i class="glyphicon glyphicon-star text-yel"></i><i class="glyphicon glyphicon-star text-yel"></i><i class="glyphicon glyphicon-star "></i><i class="glyphicon glyphicon-star "></i></span> <span class="post-time">3 months ago</span>
-        </p>
-      </div>
-    </div>
-    <h4>..</h4>
-    <p class="post-detail">..</p>
+      </p>
   </div>
-  <hr class="line-gray">
-  <hr>
-  <!-- end comments-item -->
+</div>
+<h4>..</h4>
+<p class="post-detail">..</p>
+</div>
+<hr class="line-gray">
+<hr>
+<!-- end comments-item -->
 </div>
 <!-- end  comments -->
 </div>
@@ -861,21 +864,21 @@
     <div class="instructor-desc right-box" id="spy_instructore">
       <header class="avatar">
         <img src="img/ava1.jpg" alt="instructor avatar">
-      </header>
-      <section class="desc">
+    </header>
+    <section class="desc">
         <div class="row text-center">
           <h3>
-           Duy Trần <a class="call-intructor-popup" href="">
-           <span class="glyphicon glyphicon-chevron-down pull-right text-green"></span>
+             Duy Trần <a class="call-intructor-popup" href="">
+             <span class="glyphicon glyphicon-chevron-down pull-right text-green"></span>
          </a>
-       </h3>
-       <hr class="border-top-green">
-     </div>
-     <p></p>
-   </section>
-   <footer>
+     </h3>
+     <hr class="border-top-green">
+ </div>
+ <p></p>
+</section>
+<footer>
     <a class="btn call-intructor-popup" href="info-teacher.html">XEM PROFILE ĐẦY ĐỦ</a>
-  </footer>
+</footer>
 </div>
 <!-- courses-viewed -->
 <!-- end courses-viewed -->
@@ -888,21 +891,21 @@
       <p class="faq1">Tôi có thể truy cập khóa học trong bao lâu?</p>
       <p class="faq2">
         Một khi bạn mua khóa học, bạn sẽ được truy cập trọn đời. Các khóa học trên Globals không bao giờ hết hạn, vì vậy bạn có thể học bất cưa khi nào bạn muốn. <span class="faq-arrow"></span>
-      </p>
-    </div>
-    <div class="faq-item">
-      <p class="faq1">Tôi có thể học ở bất cứ đâu?</p>
-      <p class="faq2">
-        Tất nhiên là bạn có thể. Đây là một trong những tính năng rất hữu ích mà Globals mang đến cho học viên. Chỉ cần đăng nhập vào Globals là bạn có thể học bất cứ đâu và bất cứ khi nào bạn muốn. <span class="faq-arrow"></span>
-      </p>
-    </div>
-    <div class="faq-item">
-      <p class="faq1">Chính sách hoàn tiền như thế nào?</p>
-      <p class="faq2">
-        Tất cả các khóa học trên Globals đều có thể hoàn trả học phí trong vòng 30 ngày, Globals cam kết 100% đảm bảo hoàn trả cho dù lý do gì: có thể do bạn mua nhầm, có thể nội dung khóa học không giống như những gì bạn muốn, hoặc đơn giản là bạn không thích khóa học. Hãy cho chúng tôi biết bằng cách gửi 1 email đến  refund@Globals.com và bạn sẽ được hoàn trả học phí. <a href="mailto:duytrantlu@gmail.com">refund@Globals.com</a> <span class="faq-arrow"></span>
-      </p>
-    </div>
-  </div>
+    </p>
+</div>
+<div class="faq-item">
+  <p class="faq1">Tôi có thể học ở bất cứ đâu?</p>
+  <p class="faq2">
+    Tất nhiên là bạn có thể. Đây là một trong những tính năng rất hữu ích mà Globals mang đến cho học viên. Chỉ cần đăng nhập vào Globals là bạn có thể học bất cứ đâu và bất cứ khi nào bạn muốn. <span class="faq-arrow"></span>
+</p>
+</div>
+<div class="faq-item">
+  <p class="faq1">Chính sách hoàn tiền như thế nào?</p>
+  <p class="faq2">
+    Tất cả các khóa học trên Globals đều có thể hoàn trả học phí trong vòng 30 ngày, Globals cam kết 100% đảm bảo hoàn trả cho dù lý do gì: có thể do bạn mua nhầm, có thể nội dung khóa học không giống như những gì bạn muốn, hoặc đơn giản là bạn không thích khóa học. Hãy cho chúng tôi biết bằng cách gửi 1 email đến  refund@Globals.com và bạn sẽ được hoàn trả học phí. <a href="mailto:duytrantlu@gmail.com">refund@Globals.com</a> <span class="faq-arrow"></span>
+</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -920,54 +923,54 @@
           <div class="text-white">
             <p>16 lectures</p>
             <p>3.3 giờ video</p>
-          </div>
         </div>
-      </a>
-      <div class="course-list-item-status">
-        <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
+    </div>
+</a>
+<div class="course-list-item-status">
+    <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
 
-        </span>
-        <span class="pull-right">MỚI</span>
-      </div>
-      <ul class="actors">
-        <li>
-          <a class="avatar" href="#">
-            <img src="img/ava1.jpg" alt="avatar">
-          </a>
-        </li>
-      </ul>
-    </header>
-    <section class="coures-list-item-body">
-      <h3>
-        <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
-      </h3>
-      <p class="text-muted">Trần Mạnh Duy</p>
-      <p class="text-muted">
-        <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
-      </p>
-    </section>
-    <footer class="course-list-item-footer">
-      <span>
-        <span class="rating">
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-        </span>
-      </span>
-      <span>
-        <span class="glyphicon glyphicon-user">
-        </span>
-        <span>0</span>
-      </span>
-      <span class="text-blue price">
-        <span>100.000đ</span>
-      </span>
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-  <div class="courses-list-item">
+    </span>
+    <span class="pull-right">MỚI</span>
+</div>
+<ul class="actors">
+    <li>
+      <a class="avatar" href="#">
+        <img src="img/ava1.jpg" alt="avatar">
+    </a>
+</li>
+</ul>
+</header>
+<section class="coures-list-item-body">
+  <h3>
+    <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
+</h3>
+<p class="text-muted">Trần Mạnh Duy</p>
+<p class="text-muted">
+    <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
+</p>
+</section>
+<footer class="course-list-item-footer">
+  <span>
+    <span class="rating">
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+  </span>
+</span>
+<span>
+    <span class="glyphicon glyphicon-user">
+    </span>
+    <span>0</span>
+</span>
+<span class="text-blue price">
+    <span>100.000đ</span>
+</span>
+<div class="clearfix"></div>
+</footer>
+</div>
+<div class="courses-list-item">
     <header class="course-list-item-header">
       <a class="course-thumb" href="">
         <img src="img/thiet-ke.jpg">
@@ -975,54 +978,54 @@
           <div class="text-white">
             <p>16 lectures</p>
             <p>3.3 giờ video</p>
-          </div>
         </div>
-      </a>
-      <div class="course-list-item-status">
-        <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
+    </div>
+</a>
+<div class="course-list-item-status">
+    <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
 
-        </span>
-        <span class="pull-right">MỚI</span>
-      </div>
-      <ul class="actors">
-        <li>
-          <a class="avatar" href="#">
-            <img src="img/ava1.jpg" alt="avatar">
-          </a>
-        </li>
-      </ul>
-    </header>
-    <section class="coures-list-item-body">
-      <h3>
-        <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
-      </h3>
-      <p class="text-muted">Trần Mạnh Duy</p>
-      <p class="text-muted">
-        <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
-      </p>
-    </section>
-    <footer class="course-list-item-footer">
-      <span>
-        <span class="rating">
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-        </span>
-      </span>
-      <span>
-        <span class="glyphicon glyphicon-user">
-        </span>
-        <span>0</span>
-      </span>
-      <span class="text-blue price">
-        <span>100.000đ</span>
-      </span>
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-  <div class="courses-list-item">
+    </span>
+    <span class="pull-right">MỚI</span>
+</div>
+<ul class="actors">
+    <li>
+      <a class="avatar" href="#">
+        <img src="img/ava1.jpg" alt="avatar">
+    </a>
+</li>
+</ul>
+</header>
+<section class="coures-list-item-body">
+  <h3>
+    <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
+</h3>
+<p class="text-muted">Trần Mạnh Duy</p>
+<p class="text-muted">
+    <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
+</p>
+</section>
+<footer class="course-list-item-footer">
+  <span>
+    <span class="rating">
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+  </span>
+</span>
+<span>
+    <span class="glyphicon glyphicon-user">
+    </span>
+    <span>0</span>
+</span>
+<span class="text-blue price">
+    <span>100.000đ</span>
+</span>
+<div class="clearfix"></div>
+</footer>
+</div>
+<div class="courses-list-item">
     <header class="course-list-item-header">
       <a class="course-thumb" href="">
         <img src="img/thiet-ke.jpg">
@@ -1030,54 +1033,54 @@
           <div class="text-white">
             <p>16 lectures</p>
             <p>3.3 giờ video</p>
-          </div>
         </div>
-      </a>
-      <div class="course-list-item-status">
-        <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
+    </div>
+</a>
+<div class="course-list-item-status">
+    <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
 
-        </span>
-        <span class="pull-right">MỚI</span>
-      </div>
-      <ul class="actors">
-        <li>
-          <a class="avatar" href="#">
-            <img src="img/ava1.jpg" alt="avatar">
-          </a>
-        </li>
-      </ul>
-    </header>
-    <section class="coures-list-item-body">
-      <h3>
-        <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
-      </h3>
-      <p class="text-muted">Trần Mạnh Duy</p>
-      <p class="text-muted">
-        <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
-      </p>
-    </section>
-    <footer class="course-list-item-footer">
-      <span>
-        <span class="rating">
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-        </span>
-      </span>
-      <span>
-        <span class="glyphicon glyphicon-user">
-        </span>
-        <span>0</span>
-      </span>
-      <span class="text-blue price">
-        <span>100.000đ</span>
-      </span>
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-  <div class="courses-list-item">
+    </span>
+    <span class="pull-right">MỚI</span>
+</div>
+<ul class="actors">
+    <li>
+      <a class="avatar" href="#">
+        <img src="img/ava1.jpg" alt="avatar">
+    </a>
+</li>
+</ul>
+</header>
+<section class="coures-list-item-body">
+  <h3>
+    <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
+</h3>
+<p class="text-muted">Trần Mạnh Duy</p>
+<p class="text-muted">
+    <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
+</p>
+</section>
+<footer class="course-list-item-footer">
+  <span>
+    <span class="rating">
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+  </span>
+</span>
+<span>
+    <span class="glyphicon glyphicon-user">
+    </span>
+    <span>0</span>
+</span>
+<span class="text-blue price">
+    <span>100.000đ</span>
+</span>
+<div class="clearfix"></div>
+</footer>
+</div>
+<div class="courses-list-item">
     <header class="course-list-item-header">
       <a class="course-thumb" href="">
         <img src="img/thiet-ke.jpg">
@@ -1085,54 +1088,54 @@
           <div class="text-white">
             <p>16 lectures</p>
             <p>3.3 giờ video</p>
-          </div>
         </div>
-      </a>
-      <div class="course-list-item-status">
-        <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
+    </div>
+</a>
+<div class="course-list-item-status">
+    <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
 
-        </span>
-        <span class="pull-right">MỚI</span>
-      </div>
-      <ul class="actors">
-        <li>
-          <a class="avatar" href="#">
-            <img src="img/ava1.jpg" alt="avatar">
-          </a>
-        </li>
-      </ul>
-    </header>
-    <section class="coures-list-item-body">
-      <h3>
-        <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
-      </h3>
-      <p class="text-muted">Trần Mạnh Duy</p>
-      <p class="text-muted">
-        <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
-      </p>
-    </section>
-    <footer class="course-list-item-footer">
-      <span>
-        <span class="rating">
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-        </span>
-      </span>
-      <span>
-        <span class="glyphicon glyphicon-user">
-        </span>
-        <span>0</span>
-      </span>
-      <span class="text-blue price">
-        <span>100.000đ</span>
-      </span>
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-  <div class="courses-list-item">
+    </span>
+    <span class="pull-right">MỚI</span>
+</div>
+<ul class="actors">
+    <li>
+      <a class="avatar" href="#">
+        <img src="img/ava1.jpg" alt="avatar">
+    </a>
+</li>
+</ul>
+</header>
+<section class="coures-list-item-body">
+  <h3>
+    <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
+</h3>
+<p class="text-muted">Trần Mạnh Duy</p>
+<p class="text-muted">
+    <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
+</p>
+</section>
+<footer class="course-list-item-footer">
+  <span>
+    <span class="rating">
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+  </span>
+</span>
+<span>
+    <span class="glyphicon glyphicon-user">
+    </span>
+    <span>0</span>
+</span>
+<span class="text-blue price">
+    <span>100.000đ</span>
+</span>
+<div class="clearfix"></div>
+</footer>
+</div>
+<div class="courses-list-item">
     <header class="course-list-item-header">
       <a class="course-thumb" href="">
         <img src="img/thiet-ke.jpg">
@@ -1140,54 +1143,54 @@
           <div class="text-white">
             <p>16 lectures</p>
             <p>3.3 giờ video</p>
-          </div>
         </div>
-      </a>
-      <div class="course-list-item-status">
-        <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
+    </div>
+</a>
+<div class="course-list-item-status">
+    <span class="pull-left glyphicon glyphicon-heart" data-toggle="tooltip" title="Add to wishList">
 
-        </span>
-        <span class="pull-right">MỚI</span>
-      </div>
-      <ul class="actors">
-        <li>
-          <a class="avatar" href="#">
-            <img src="img/ava1.jpg" alt="avatar">
-          </a>
-        </li>
-      </ul>
-    </header>
-    <section class="coures-list-item-body">
-      <h3>
-        <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
-      </h3>
-      <p class="text-muted">Trần Mạnh Duy</p>
-      <p class="text-muted">
-        <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
-      </p>
-    </section>
-    <footer class="course-list-item-footer">
-      <span>
-        <span class="rating">
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-          <i class="glyphicon glyphicon-star "></i>
-        </span>
-      </span>
-      <span>
-        <span class="glyphicon glyphicon-user">
-        </span>
-        <span>0</span>
-      </span>
-      <span class="text-blue price">
-        <span>100.000đ</span>
-      </span>
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-  <!-- end courses list -->
+    </span>
+    <span class="pull-right">MỚI</span>
+</div>
+<ul class="actors">
+    <li>
+      <a class="avatar" href="#">
+        <img src="img/ava1.jpg" alt="avatar">
+    </a>
+</li>
+</ul>
+</header>
+<section class="coures-list-item-body">
+  <h3>
+    <a href="#">Thiết kế Website bằng WordPress cho người mới bắt đầu</a>
+</h3>
+<p class="text-muted">Trần Mạnh Duy</p>
+<p class="text-muted">
+    <small>CEO / Admin Cộng đồng Digital Marketing Việt Nam</small>
+</p>
+</section>
+<footer class="course-list-item-footer">
+  <span>
+    <span class="rating">
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+      <i class="glyphicon glyphicon-star "></i>
+  </span>
+</span>
+<span>
+    <span class="glyphicon glyphicon-user">
+    </span>
+    <span>0</span>
+</span>
+<span class="text-blue price">
+    <span>100.000đ</span>
+</span>
+<div class="clearfix"></div>
+</footer>
+</div>
+<!-- end courses list -->
 </div>
 </div>
 </section>
@@ -1198,80 +1201,82 @@
       <div class="row footer-btns">
         <div class="col-sm-4 chance">
           <a class="footer-btn" href="#">Cơ hội nghề nghiệp</a>
-        </div>
-        <div class="col-sm-4 ">
+      </div>
+      <div class="col-sm-4 ">
           <a class="footer-btn" href="#">SỔ TAY GIẢNG VIÊN</a>
-        </div>
-        <div class="col-sm-4 ">
+      </div>
+      <div class="col-sm-4 ">
           <a class="footer-btn" href="#">TÀI NGUYÊN HỖ TRỢ</a>
-        </div>
       </div>
-      <hr class="footer-line">
-      <div class="row footer-content">
-        <div class="col-md-4 m-b-30">
-          <h2>Về Global</h2>
-          <p class="text-justify">AllCourse.com là nền tảng DẠY và HỌC trực tuyến hàng đầu Việt Nam. Chúng tôi hợp tác với các chuyên gia hàng đầu trong các lĩnh vực Tài chính, Marketing, Công nghệ thông tin, Kinh doanh - Khởi nghiệp... và các tổ chức đào tạo để mang đến cho bạn những khóa học chất lượng và có tính ứng dụng thực tiển cao.<a class="text-blue" href="#">Xem chi tiết</a></p>
-        </div>
-        <div class="col-md-4 m-b-30">
-          <h2>Liên hệ</h2>
-          <address class="text-justify">
-            <div class="address-block">
-              <div class="address-sm">
-                <span class="fa fa-building" aria-hidden="true"></span>
-              </div>
-              <div><strong>Global Co., LTD.</strong></div>
-            </div>
-            <div class="address-block">
-              <div class="address-sm"><span class="fa fa-location-arrow" aria-hidden="true"></span></div>
-              <div>19 Liễu Giai - Ba Đình<br>Hà Nội<br>Việt Nam</div>
-            </div>
-          </address>
-          <p class="made-with-love">Made with <span class="glyphicon glyphicon-heart text-danger"></span> in Viet Nam.</p>
-        </div>
-        <div class="col-md-4 socials m-b-30">
-          <h2>Kết nối với chúng tôi</h2>
-          <p>
-            <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
-            <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-            <a href="https://plus.google.com/" target="_blank" rel="publisher"><span class="fa fa-google-plus-official" aria-hidden="true"></span></a>
-            <a href="https://www.pinterest.com/" target="_blank"><span class="fa fa-pinterest" aria-hidden="true"></span></a>
-            <a href="https://www.youtube.com/" target="_blank"><span class="fa fa-youtube" aria-hidden="true"></span></a>
-          </p>
-        </div>
-      </div>
-    </div>
   </div>
+  <hr class="footer-line">
+  <div class="row footer-content">
+    <div class="col-md-4 m-b-30">
+      <h2>Về Global</h2>
+      <p class="text-justify">AllCourse.com là nền tảng DẠY và HỌC trực tuyến hàng đầu Việt Nam. Chúng tôi hợp tác với các chuyên gia hàng đầu trong các lĩnh vực Tài chính, Marketing, Công nghệ thông tin, Kinh doanh - Khởi nghiệp... và các tổ chức đào tạo để mang đến cho bạn những khóa học chất lượng và có tính ứng dụng thực tiển cao.<a class="text-blue" href="#">Xem chi tiết</a></p>
+  </div>
+  <div class="col-md-4 m-b-30">
+      <h2>Liên hệ</h2>
+      <address class="text-justify">
+        <div class="address-block">
+          <div class="address-sm">
+            <span class="fa fa-building" aria-hidden="true"></span>
+        </div>
+        <div><strong>Global Co., LTD.</strong></div>
+    </div>
+    <div class="address-block">
+      <div class="address-sm"><span class="fa fa-location-arrow" aria-hidden="true"></span></div>
+      <div>19 Liễu Giai - Ba Đình<br>Hà Nội<br>Việt Nam</div>
+  </div>
+</address>
+<p class="made-with-love">Made with <span class="glyphicon glyphicon-heart text-danger"></span> in Viet Nam.</p>
+</div>
+<div class="col-md-4 socials m-b-30">
+  <h2>Kết nối với chúng tôi</h2>
+  <p>
+    <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
+    <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+    <a href="https://plus.google.com/" target="_blank" rel="publisher"><span class="fa fa-google-plus-official" aria-hidden="true"></span></a>
+    <a href="https://www.pinterest.com/" target="_blank"><span class="fa fa-pinterest" aria-hidden="true"></span></a>
+    <a href="https://www.youtube.com/" target="_blank"><span class="fa fa-youtube" aria-hidden="true"></span></a>
+</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="footer-copyright">
   <a class="btn-back-to-top" href="javascript:void(0);" title="Top" style="display: inline;"></a>
   <div class="container text-center">
     © 2017 <a href="#">Global Co., Ltd</a>. All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Điều khoản sử dụng</a> · <a href="#">Chính sách riêng tư</a>
-  </div>
+</div>
 </div>
 </footer>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="fancybox-fr/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="fancybox-fr/jquery.fancybox.js"></script>
 <script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/customer.js"></script>
 <script type="text/javascript">
     //back to top
     $(document).ready(function(){
-     if($(".btn-back-to-top").length > 0){
-      $(window).scroll(function () {
-        var e = $(window).scrollTop();
-        if (e > 300) {
-          $(".btn-back-to-top").show()
-        } else {
-          $(".btn-back-to-top").hide()
-        }
+       if($(".btn-back-to-top").length > 0){
+          $(window).scroll(function () {
+            var e = $(window).scrollTop();
+            if (e > 300) {
+              $(".btn-back-to-top").show()
+          } else {
+              $(".btn-back-to-top").hide()
+          }
       });
-      $(".btn-back-to-top").click(function () {
-        $('body,html').animate({
-          scrollTop: 0
+          $(".btn-back-to-top").click(function () {
+            $('body,html').animate({
+              scrollTop: 0
+          })
         })
-      })
-    }       
+      }       
   });
 </script>
 </body>

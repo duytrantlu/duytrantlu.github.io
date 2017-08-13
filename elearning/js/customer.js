@@ -137,28 +137,8 @@ $(document).ready(function(){
 	    $('#link_login').attr('href', $('#link_login').attr('href') + '?return_url=' + require_login)
 	    $('#link_login').trigger('click');
 	  }
-	//modal login
-	/*$('#link_login').click(function(){
-		$("#login").modal('show');
-	});
-	$('#link_login-mb').click(function(){
-		if ($('.btn-toogle').is('.active'))
-			$('.btn-toogle').removeClass('active');
-		$('.toogle-box').css('display','none'),
-		$("#login").modal('show');
-		
-	});
-	//modal sign up
-	$('#link_signup').click(function(){
-		$("#signup").modal('show');
-	});
-	$('#link_singup-mb').click(function(){
-		if ($('.btn-toogle').is('.active'))
-			$('.btn-toogle').removeClass('active');
-		$('.toogle-box').css('display','none'),
-		$("#signup").modal('show');
-		
-	});*/
+	//popup xem trước 1 video
+	call_pop_lecture_preview();
 	//sử lý thông báo
 	$('.noti-message-btn').click(function(){
 		if($('.prl').is('.open')){
@@ -334,8 +314,7 @@ $('.btn-next-toggle').click(function() {
 	$(this).toggleClass('glyphicon-chevron-up').toggleClass('glyphicon-chevron-down');
 });
 //phần đăng ký đăng nhập popup
-function re_call_regis_modal() {
-	console.log('vao r');
+function re_call_regis_modal() {	
   $('a.get-regis-pop').each(function() {
     if (!$(this).is('[fancy]')) {
       $(this).addClass('fancybox.ajax').fancybox({
@@ -362,4 +341,29 @@ function getParameterByName(name) {
     console.log(results);
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 
+}
+//function xem trước 1 bài học
+function call_pop_lecture_preview() {
+  $('a.call_pop_lecture_preview').each(function() {
+    $(this).removeClass('call_pop_lecture_preview')
+      .addClass('fancybox.ajax')
+      .fancybox({
+        maxWidth: 980,
+        minWidth: 300,
+        minHeight: 400,
+        height: '90%',
+        width: '90%',
+        fitToView: true,
+        autoSize: false,
+        autoHeight: false,
+        closeClick: false,
+        openEffect: 'none',
+        closeEffect: 'elastic',
+        padding: 0,
+        closeBtn: true,
+        tpl: {
+          wrap: '<div class="fancybox-wrap pop-lecture-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
+        }
+      });
+  });
 }

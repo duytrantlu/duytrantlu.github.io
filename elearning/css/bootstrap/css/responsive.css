@@ -580,3 +580,22 @@
 }
 
 /* fancybox style register */
+
+
+/* fancybox style preview one video free */
+.pop-lecture-video {
+    background: black;
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.pop-lecture-video iframe, .pop-lecture-video video, .pop-lecture-text .pop-text {
+    width: 100%;
+}
