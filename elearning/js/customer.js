@@ -140,7 +140,7 @@ $(document).ready(function(){
 	//popup xem trước 1 video
 	call_pop_lecture_preview();
 	//set video mediaelement
-	$('video,audio').css({
+	/*$('video,audio').css({
 	      'width': '100%',
 	      'height': '100%'
 	    })
@@ -148,7 +148,7 @@ $(document).ready(function(){
 	    .mediaelementplayer({
 	      videoWidth: -1,	      
 	      videoHeight: -1
-	    });
+	    });*/
 	//sử lý thông báo
 	$('.noti-message-btn').click(function(){
 		if($('.prl').is('.open')){
