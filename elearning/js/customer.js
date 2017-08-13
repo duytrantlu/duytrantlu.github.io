@@ -146,8 +146,7 @@ $(document).ready(function(){
 	    })
 	    .attr('width', '100%').attr('height', '100%')
 	    .mediaelementplayer({
-	      videoWidth: -1,
-	      // if set, overrides <video height>
+	      videoWidth: -1,	      
 	      videoHeight: -1
 	    });
 	//sử lý thông báo

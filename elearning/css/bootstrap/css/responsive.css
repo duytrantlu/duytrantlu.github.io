@@ -596,6 +596,11 @@
     height: 100%;
     overflow: hidden;
 }
+.pop-lecture-video .lecture-video-yt{
+	height: 100%;
+
+}
 .pop-lecture-video iframe, .pop-lecture-video video, .pop-lecture-text .pop-text {
     width: 100%;
+    height: 100%;
 }
