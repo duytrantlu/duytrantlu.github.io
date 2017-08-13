@@ -60,6 +60,9 @@
 	.page-top .navbar-nav >li >a.mgr15 {
 	    margin-right: 3px;
 	}
+	.login-panel-pop {
+    	width: 370px;
+	}
 }
 @media (min-width: 1200px){
 	.page-top .navbar-nav >li >a.mgr15 {
@@ -468,4 +471,110 @@
 		position: absolute;
 		bottom: 30px;
 	}
+}
+/* fancybox style */
+.fancybox-overlay {
+    z-index: 1000;
+}
+.fancybox-wrap {
+    padding: 30px;
+}
+.fancybox-wrap {
+    padding-left: 0;
+    padding-right: 60px;
+}
+.fancybox-inner {
+    border-radius: 5px;
+}
+.fancybox-inner {
+    position: relative;
+    background-color: white;
+}
+.login-panel-pop {
+    padding: 15px 30px;
+}
+.login-panel-pop .close {
+    margin-top: 8px;
+}
+.login-panel-pop .login-panel-pop-hd {
+    text-transform: uppercase;
+}
+.frm-alert.block-helper {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.frm-alert {
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 3px 12px;
+}
+.alert {
+    border-radius: 0;
+}
+.login-panel-pop input[name] {
+    background: url(../../../img/fancybox_img_icon/text-field-icons.png) no-repeat right 7px;
+    padding-right: 3px;
+}
+.login-panel-pop input[name][type="password"] {
+    background-position: right -79px;
+}
+.labelcheckbox input {
+    float: left;
+    margin-top: 4px;
+}
+.labelcheckbox span {
+    margin-left: 20px;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+}
+.login-panel-pop-bd button.bg-blue {
+    height: 43px;
+}
+.fw {
+    width: 100%;
+}
+.login-panel .btn-fb-share {
+    margin-bottom: 15px;
+}
+.btnopenid .btn {
+    font-size: 80%;
+    padding-left: 2px;
+}
+.btn-fb-share {
+    background: #2B4F8D;
+    margin-right: 15px;
+}
+.btn-fb-share, .btn-gg-share {
+    color: white;
+}
+.btnopenid .btn-gg-share span:before, .btnopenid .btn-fb-share span:before {
+    width: 28px;
+    margin-right: 3px;
+}
+.btn-fb-share span:before {
+    background: url(../../../img/fancybox_img_icon/fb.png) no-repeat center center transparent;
+}
+.btn-gg-share span:before, .btn-fb-share span:before {
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+    content: "";
+    margin-top: -5px;
+    margin-bottom: -10px;
+    margin-right: 10px;
+    background-size: contain;
+}
+.btn-gg-share {
+    background: #DF4A32;
+}
+.login-panel-pop .btn-gg-share {
+    width: 100%;
+}
+.btn-gg-share span:before {
+    background: url(../../../img/fancybox_img_icon/ggpl.png) no-repeat center center transparent;
+}
+.login-panel-pop-ft {
+    padding-top: 15px;
+    border-top: 1px solid #eee;
 }
