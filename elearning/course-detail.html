@@ -1293,8 +1293,30 @@
             closeEffect: 'elastic',
             padding: 0,
             closeBtn: false,
+            afterLoad: function(html) {
+              $('.fancybox-outer>.instructor-avatar').remove();
+              newavatar = $(html.content).find('.instructor-avatar');
+              newavatar.appendTo($('.fancybox-outer'));
+            },
+            helpers: {
+              overlay: {
+                css: {
+                  'background': 'rgba(255,255,255,0.6)'
+                }
+              }
+            },
+            beforeShow: function() {
+              $('.fancybox-wrap').data('animation', 'fadeInDown');
+              runAnim($('.fancybox-wrap'));
+            }
         });
     }
+    function runAnim(obj) {
+        anim = jQuery(obj).data('animation');
+        jQuery(obj).addClass(anim + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        jQuery(this).removeClass('animated').removeClass(anim);
+        });
+    };
 </script>
 </body>
 </html>
