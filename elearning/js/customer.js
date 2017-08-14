@@ -133,10 +133,10 @@ $(document).ready(function(){
 	//popup đăng ký đăng nhập
 	re_call_regis_modal();
 	var require_login = getParameterByName('return_url');
-	 if (require_login != '') {
-	    $('#link_login').attr('href', $('#link_login').attr('href') + '?return_url=' + require_login)
-	    $('#link_login').trigger('click');
-	  }
+	if (require_login != '') {
+		$('#link_login').attr('href', $('#link_login').attr('href') + '?return_url=' + require_login)
+		$('#link_login').trigger('click');
+	}
 	//popup xem trước 1 video
 	call_pop_lecture_preview();
 	//set video mediaelement
@@ -148,18 +148,18 @@ $(document).ready(function(){
 	    .mediaelementplayer({
 	      videoWidth: -1,	      
 	      videoHeight: -1
-	    });*/
+	  });*/
 	//function xem thông tin chi tiết giảng viên
 	//fancybox xử lý phần tin nhắn
 	get_message_board();
 	//re_call_fb_modal()
 	re_call_fb_modal();
 	 //xử lý faqs Down Up
-	$('.faq-item').hover(function() {
-    	$(this).children('.faq2').stop().slideDown();
-  			}, function() {
-    			$(this).children('.faq2').stop().slideUp();
-  		});
+	 $('.faq-item').hover(function() {
+	 	$(this).children('.faq2').stop().slideDown();
+	 }, function() {
+	 	$(this).children('.faq2').stop().slideUp();
+	 });
 	//xử lý thông báo
 	$('.noti-message-btn').click(function(){
 		if($('.prl').is('.open')){
@@ -336,91 +336,115 @@ $('.btn-next-toggle').click(function() {
 });
 //phần đăng ký đăng nhập popup
 function re_call_regis_modal() {	
-  $('a.get-regis-pop').each(function() {
-    if (!$(this).is('[fancy]')) {
-      $(this).addClass('fancybox.ajax').fancybox({
-        maxWidth: 370,
-        minWidth: 300,
-        width: '90%',
-        fitToView: false,
-        autoSize: false,
-        autoHeight: true,
-        closeClick: false,
-        openEffect: 'none',
-        closeEffect: 'elastic',
-        padding: 0,
-        closeBtn: false
-      });
-      $(this).removeClass('get-regis-pop');
-    }
-  });
+	$('a.get-regis-pop').each(function() {
+		if (!$(this).is('[fancy]')) {
+			$(this).addClass('fancybox.ajax').fancybox({
+				maxWidth: 370,
+				minWidth: 300,
+				width: '90%',
+				fitToView: false,
+				autoSize: false,
+				autoHeight: true,
+				closeClick: false,
+				openEffect: 'none',
+				closeEffect: 'elastic',
+				padding: 0,
+				closeBtn: false
+			});
+			$(this).removeClass('get-regis-pop');
+		}
+	});
 }
 function getParameterByName(name) {
-  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    results = regex.exec(location.search);
-    console.log(results);
-  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	results = regex.exec(location.search);
+	console.log(results);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 
 }
 //function xem trước 1 bài học
 function call_pop_lecture_preview() {
-  $('a.call_pop_lecture_preview').each(function() {
-    $(this).removeClass('call_pop_lecture_preview')
-      .addClass('fancybox.ajax')
-      .fancybox({
-        maxWidth: 980,
-        minWidth: 300,
-        minHeight: 400,
-        height: '90%',
-        width: '90%',
-        fitToView: true,
-        autoSize: false,
-        autoHeight: false,
-        closeClick: false,
-        openEffect: 'none',
-        closeEffect: 'elastic',
-        padding: 0,
-        closeBtn: true,
-        tpl: {
-          wrap: '<div class="fancybox-wrap pop-lecture-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
-        }
-      });
-  });
+	$('a.call_pop_lecture_preview').each(function() {
+		$(this).removeClass('call_pop_lecture_preview')
+		.addClass('fancybox.ajax')
+		.fancybox({
+			maxWidth: 980,
+			minWidth: 300,
+			minHeight: 400,
+			height: '90%',
+			width: '90%',
+			fitToView: true,
+			autoSize: false,
+			autoHeight: false,
+			closeClick: false,
+			openEffect: 'none',
+			closeEffect: 'elastic',
+			padding: 0,
+			closeBtn: true,
+			tpl: {
+				wrap: '<div class="fancybox-wrap pop-lecture-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
+			}
+		});
+	});
 }
 //function xử lý get message
 function get_message_board() {
 	$('a.get-message-board').addClass('fancybox.ajax').fancybox({
-	    maxWidth: 550,
-	    minWidth: 300,
-	    width: '90%',
-	    fitToView: false,
-	    autoSize: false,
-	    autoHeight: true,
-	    closeClick: false,
-	    openEffect: 'none',
-	    closeEffect: 'elastic',
-	    padding: 0,
-	    closeBtn: false
-  });	
+		maxWidth: 550,
+		minWidth: 300,
+		width: '90%',
+		fitToView: false,
+		autoSize: false,
+		autoHeight: true,
+		closeClick: false,
+		openEffect: 'none',
+		closeEffect: 'elastic',
+		padding: 0,
+		closeBtn: false
+	});	
 }
 //function gọi lại hàm fb_modal
 function re_call_fb_modal() {	
-  $('a.re_call_fb_modal').each(function() {
-    $(this).addClass('fancybox.ajax').fancybox({
-      maxWidth: 550,
-      minWidth: 250,
-      fitToView: false,
-      autoSize: false,
-      autoHeight: true,
-      closeClick: false,
-      openEffect: 'none',
-      closeEffect: 'elastic',
-      padding: 0,
-      closeBtn: false
-    });
-    $(this).removeClass('re_call_fb_modal');
-  });
+	$('a.re_call_fb_modal').each(function() {
+		$(this).addClass('fancybox.ajax').fancybox({
+			maxWidth: 550,
+			minWidth: 250,
+			fitToView: false,
+			autoSize: false,
+			autoHeight: true,
+			closeClick: false,
+			openEffect: 'none',
+			closeEffect: 'elastic',
+			padding: 0,
+			closeBtn: false
+		});
+		$(this).removeClass('re_call_fb_modal');
+	});
 }
-
+/**function filter_my_courses **/
+function filter_my_courses(obj, flt) {
+	$(obj).parents('ul:eq(0)').find('.active').removeClass('active');
+	$(obj).parent().addClass('active');
+	if (flt == 0) {
+		$('#filter_my_courses [data-courses-status]').removeClass('hidden');
+		if ($('#filter_my_courses [data-courses-status]').length == 0) {
+			$('.courses-null-alert').removeClass('hidden');
+			$('.courses-null-alert>.courses-null-alert-text>div').addClass('hidden');
+			$('.courses-null-alert>.courses-null-alert-text>[data-filter="0"]').removeClass('hidden');
+		} else {
+			$('.courses-null-alert').addClass('hidden');
+		}
+	} else {
+		$('#filter_my_courses [data-courses-status]').addClass('hidden');
+		$('#filter_my_courses [data-courses-status="' + flt + '"]').removeClass('hidden');
+		if ($('#filter_my_courses [data-courses-status="' + flt + '"]').length == 0) {
+			$('.courses-null-alert').removeClass('hidden');
+			$('.courses-null-alert>.courses-null-alert-text>div').addClass('hidden');
+			$('.courses-null-alert>.courses-null-alert-text>[data-filter="' + flt + '"]').removeClass('hidden');
+		} else {
+			$('.courses-null-alert').addClass('hidden');
+		}
+	}
+}
 

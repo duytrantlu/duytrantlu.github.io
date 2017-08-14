@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fancybox-fr/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
@@ -277,23 +278,22 @@
                             <div class="mcgrbtn-gr-2 col-sm-10">
                                 <ul class="courses-filter-type text-center">
                                     <li class="active">
-                                        <a onclick=""> 
+                                        <a onclick="filter_my_courses(this,'current-learning')"> 
                                             <span>đang học</span>
-                                        </a>
-                                        
+                                        </a>  
                                     </li>
                                     <li>
-                                        <a onclick=""> 
+                                        <a onclick="filter_my_courses(this,'note-started')"> 
                                             <span>chưa bắt đầu</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a onclick=""> 
+                                        <a onclick="filter_my_courses(this,'completed')"> 
                                             <span>hoàn thành</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a onclick=""> 
+                                        <a onclick="filter_my_courses(this,0)"> 
                                             <span>tất cả</span>
                                         </a>
                                     </li>
@@ -306,8 +306,8 @@
         </div>
     </div>
     <div><!-- if-course-null -->
-        <div class="container" style="display: none;">
-            <div class="courses-null-alert success">
+        <div class="container">
+            <div class="courses-null-alert success hidden">
                 <div class="courses-null-alert-text ">
                     <div class="hidden" data-filter="current-learning">
                         <p>Bạn không có khóa học nào đang học.</p>
@@ -332,9 +332,9 @@
     <div class="my-course-body">
         <div class="container">
             <div class="couses-filter">
-                <div class="couses-filter-content row">
+                <div class="couses-filter-content row" id="filter_my_courses">
                     <div class="courses-list">
-                        <div class="col-sm-4 col-md-3">
+                        <div class="col-sm-4 col-md-3" data-courses-status="current-learning">
                             <div class="courses-list-item">
                                 <header class="course-list-item-header">
                                     <a class="course-thumb" href="course-learning.html">
@@ -445,6 +445,8 @@
 </div>
 </footer>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="fancybox-fr/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="fancybox-fr/jquery.fancybox.js"></script>
 <script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/customer.js"></script>
