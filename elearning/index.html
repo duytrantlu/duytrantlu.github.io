@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="owl-carousel/assets/owl.theme.green.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/anim.css">
 </head>
 <body>	
 	<header class="page-top">
@@ -74,11 +75,13 @@
 					</ul>
 				</div>				
 				<span class="pull-right">
-					<span class="btn-click hidden visible-xs btn-toogle visible-sm btn-toogle-top-right-menu" data-result=".navbar-right"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
+					<span class="btn-click hidden visible-xs btn-toogle visible-sm btn-toogle-top-right-menu" data-result=".navbar-right" id="dropdown-toggle-mn1">
+						<i class="glyphicon glyphicon-menu-hamburger"></i>
+					</span>
 				</span>
-				<div class="toogle-box"  style="display: none;">
-					<a class="text-blue get-regis-pop"  id="link_login-mb">Đăng nhập</a>
-					Hoặc<a  class="text-blue get-regis-pop" id="link_singup-mb">Đăng ký</a>
+				<div class="toogle-box" data-animation="bounceInDown"  style="display: none;">
+					<a href="user/login.html" class="text-blue get-regis-pop"  onClick="$('#dropdown-toggle-mn1').click()">Đăng nhập</a>
+					Hoặc<a href="user/register.html"  class="text-blue get-regis-pop" onClick="$('#dropdown-toggle-mn1').click()">Đăng ký</a>
 					<p>Danh mục Khóa học</p>
 					<ul class="getdt" data-result=".browses-dropdow-data"></ul>
 					<p><a href="">Giảng dạy trên Global</a></p>
@@ -153,11 +156,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-7">
-							<h1  class="" style="opacity: 1;">HỌC TRỰC TUYẾN CÙNG NHỮNG CHUYÊN GIA HÀNG ĐẦU VIỆT NAM VÀ THẾ GIỚI</h1>
-							<h3 class="txt1" data-animation="fadeInRight" style="opacity: 1;"> Global giúp bạn nâng cao năng lực chuyên môn, thăng tiến nghề nghiệp. </h3>
-							<p class="txt2"  style="opacity: 1;"> 
+							<h1 data-animation="fadeInRight" class="">HỌC TRỰC TUYẾN CÙNG NHỮNG CHUYÊN GIA HÀNG ĐẦU VIỆT NAM VÀ THẾ GIỚI</h1>
+							<h3 class="txt1" data-animation="fadeInRight"> Global giúp bạn nâng cao năng lực chuyên môn, thăng tiến nghề nghiệp. </h3>
+							<p class="txt2" data-animation="fadeInRight"> 
 								<i>Học online mọi lúc, mọi nơi. Học trên mọi thiết bị.</i> </p>
-							<p class="" style="opacity: 1;"> 
+							<p class="" data-animation="fadeInRight"> 
 								<a class="btn bg-yel2 btn-lg" href="all-coures.html">KHÁM PHÁ NGAY</a> 
 							</p>
 						</div>
@@ -969,7 +972,19 @@
 	<script type="text/javascript" src="js/customer.js"></script>
 	<script type="text/javascript" src="js/is_screen_index.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){			
+		$(document).ready(function(){
+			if ($('.bg').length > 0) {				
+			    $('.bg [data-animation]').fadeTo(0, 0).delay(500).fadeTo(0, 1);
+			    $('.bg').find('[data-animation]').each(function() {
+			      runAnim(this);
+			    });
+			}
+			function runAnim(obj) {
+			  	anim = jQuery(obj).data('animation');
+			  	jQuery(obj).addClass(anim + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+			    jQuery(this).removeClass('animated').removeClass(anim);
+			  	});
+			};			
 			//back to top
 			if($(".btn-back-to-top").length > 0){
 				$(window).scroll(function () {
