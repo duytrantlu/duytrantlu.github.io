@@ -1261,6 +1261,7 @@
 <script type="text/javascript">
     //back to top
     $(document).ready(function(){
+        call_intructor_popup();
        if($(".btn-back-to-top").length > 0){
           $(window).scroll(function () {
             var e = $(window).scrollTop();
@@ -1277,6 +1278,23 @@
         })
       }       
   });
+    //function xem chi tiết thông tin giảng viên
+    function call_intructor_popup() {
+      console.log('the hell');
+      $('a.call-intructor-popup').addClass('fancybox.ajax').fancybox({
+          maxWidth: 650,
+          minWidth: 300,
+          width: '90%',
+          fitToView: false,
+          autoSize: false,
+          autoHeight: true,
+          closeClick: false,
+          openEffect: 'none',
+          closeEffect: 'elastic',
+          padding: 0,
+          closeBtn: false,
+      });
+}
 </script>
 </body>
 </html>
