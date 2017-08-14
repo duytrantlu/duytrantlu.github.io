@@ -1,0 +1,45 @@
+<div class="message-board-pop">
+    <div class="ms-hd">
+        <a href="user/Message/getMessage.html" class="re_call_fb_modal">Tin nhắn</a>
+        <span class="glyphicon glyphicon-chevron-right text-small"></span>
+        <span>Mới</span>
+        <button type="button" onclick="$.fancybox.close()" class="close  pull-right" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="ms-ft pd15 bg-f2">
+        <form method="post" action="" name="myForm" id="myForm">
+        <input type="hidden" id="tk_nhan_id" name="tk_nhan_id" value="">
+        <input type="hidden" id="sp_id" name="sp_id" value="">
+            <div class="form-group instructor-popover">
+                <label class="avatar">
+                 <img src="img/Blank-avatar.png" alt="Instructor avatar"  id="show-avatar"/></label>
+                <div class="input-instructor-name"><input id="show-name-instructor" name="name" class="form-control instructor-name" placeholder="Nhập tên người dùng" value=""/></div>
+                <div class="popover bottom">
+                  <div class="arrow"></div>
+                  <ul class="instructors-list" id="instructors-list">                            
+                          </ul>                  
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="tn_noi_dung" rows="5" placeholder="Nhập nội dung ở đây" required="required"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-green">Gửi</button>
+            </div>
+        </form>
+
+        <div class="hidden" id="frm-new-msg-output">
+            <div class="alert alert-success hidden">
+                Tin nhắn đã được gởi thành công! 
+            </div>
+            <div class="alert alert-warning hidden">
+                Lỗi, tin nhắn gởi thất bại.            </div>
+        </div>
+
+    </div>
+</div>
+<style>
+.fancybox-inner{
+    background-color: transparent;
+}
+</style>
+

@@ -150,7 +150,8 @@ $(document).ready(function(){
 	      videoHeight: -1
 	    });*/
 	//function xem thông tin chi tiết giảng viên
-	
+	//fancybox xử lý phần tin nhắn
+	re_call_fb_modal(); 
 	 //xử lý faqs Down Up
 	$('.faq-item').hover(function() {
     	$(this).children('.faq2').stop().slideDown();
@@ -383,6 +384,24 @@ function call_pop_lecture_preview() {
           wrap: '<div class="fancybox-wrap pop-lecture-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
         }
       });
+  });
+}
+//gọi lại modal
+function re_call_fb_modal() {
+  $('a.re_call_fb_modal').each(function() {
+    $(this).addClass('fancybox.ajax').fancybox({
+      maxWidth: 550,
+      minWidth: 250,
+      fitToView: false,
+      autoSize: false,
+      autoHeight: true,
+      closeClick: false,
+      openEffect: 'none',
+      closeEffect: 'elastic',
+      padding: 0,
+      closeBtn: false
+    });
+    $(this).removeClass('re_call_fb_modal');
   });
 }
 

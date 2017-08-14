@@ -658,3 +658,57 @@
     padding-right: 15px;
     padding-left: 15px;
 }
+/* fancybox phần getMessage */
+.message-board-pop .ms-hd {
+    padding: 15px;
+    background: #F3F3F3;
+}
+.message-board-pop .ms-hd .close {
+    margin-left: 15px;
+}
+.message-board-pop .ms-bd {
+    background: #F9F9F9;
+    overflow: auto;
+    max-height: 310px;
+    min-height: 248px;
+    overflow: auto;
+}
+/* fancybox phần createMessage */
+.bg-f2 {
+    background: #f2f2f2;
+}
+.instructor-popover {
+    position: relative;
+}
+.instructor-popover .avatar, .frm-add-instructor .avatar {
+    width: 28px;
+    height: 28px;
+    float: left;
+    border: 1px solid #ccc;
+}
+.instructor-popover .input-instructor-name, .instructor-popover>input.instructor-name, .frm-add-instructor input.instructor-name {
+    margin-left: 30px;
+    display: block;
+}
+.instructor-popover input.instructor-name {
+    height: 28px;
+    line-height: 28px;
+    display: block;
+}
+.instructor-popover .popover {
+    position: absolute;
+    top: 100%;
+    left: 43px;
+    margin-top: -2px;
+    z-index: 2;
+}
+.instructor-popover .popover.bottom>.arrow {
+    left: 30px;
+}
+ul.instructors-list {
+    margin: 0;
+    padding: 0;
+}
+.alert {
+    border-radius: 0;
+}
