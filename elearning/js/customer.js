@@ -385,5 +385,21 @@ function call_pop_lecture_preview() {
       });
   });
 }
-
+//function xem chi tiết thông tin giảng viên
+function call_intructor_popup() {
+	console.log('the hell');
+	$('a.call-intructor-popup').addClass('fancybox.ajax').fancybox({
+	    maxWidth: 650,
+	    minWidth: 300,
+	    width: '90%',
+	    fitToView: false,
+	    autoSize: false,
+	    autoHeight: true,
+	    closeClick: false,
+	    openEffect: 'none',
+	    closeEffect: 'elastic',
+	    padding: 0,
+	    closeBtn: false,
+  	});
+}
 
