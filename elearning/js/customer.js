@@ -405,7 +405,7 @@ function get_message_board() {
   });	
 }
 //function gọi lại hàm fb_modal
-function re_call_fb_modal() {
+function re_call_fb_modal() {	
   $('a.re_call_fb_modal').each(function() {
     $(this).addClass('fancybox.ajax').fancybox({
       maxWidth: 550,
