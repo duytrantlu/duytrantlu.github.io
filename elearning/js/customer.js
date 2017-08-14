@@ -149,7 +149,15 @@ $(document).ready(function(){
 	      videoWidth: -1,	      
 	      videoHeight: -1
 	    });*/
-	//sử lý thông báo
+	//function xem thông tin chi tiết giảng viên
+	call_intructor_popup()
+	 //xử lý faqs Down Up
+	$('.faq-item').hover(function() {
+    	$(this).children('.faq2').stop().slideDown();
+  			}, function() {
+    			$(this).children('.faq2').stop().slideUp();
+  		});
+	//xử lý thông báo
 	$('.noti-message-btn').click(function(){
 		if($('.prl').is('.open')){
 			$('.prl').removeClass('open');
@@ -376,4 +384,36 @@ function call_pop_lecture_preview() {
         }
       });
   });
+}
+//function xem chi tiết thông tin giảng viên
+function call_intructor_popup() {
+	$('a.call-intructor-popup').addClass('fancybox.ajax').fancybox({
+	    maxWidth: 650,
+	    minWidth: 300,
+	    width: '90%',
+	    fitToView: false,
+	    autoSize: false,
+	    autoHeight: true,
+	    closeClick: false,
+	    openEffect: 'none',
+	    closeEffect: 'elastic',
+	    padding: 0,
+	    closeBtn: false,
+	    afterLoad: function(html) {
+	      $('.fancybox-outer>.instructor-avatar').remove();
+	      newavatar = $(html.content).find('.instructor-avatar');
+	      newavatar.appendTo($('.fancybox-outer'));
+	    },
+	    helpers: {
+	      overlay: {
+	        css: {
+	          'background': 'rgba(255,255,255,0.6)'
+	        }
+	      }
+	    },
+	    beforeShow: function() {
+	      $('.fancybox-wrap').data('animation', 'fadeInDown');
+	      runAnim($('.fancybox-wrap'));
+	    }
+	  });
 }
