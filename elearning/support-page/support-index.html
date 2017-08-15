@@ -6,6 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/support.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/responsive_support.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/anim.css">
+	<link rel="stylesheet" type="text/css" href="plugin/js_composer/js_composer.min.css">
+	<link rel="stylesheet" type="text/css" href="plugin/js_composer/js_composer_tta.min.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/anim.css">
 </head>
 <body class="home">
 	<!--Navigation Menu-->
@@ -23,7 +29,7 @@
 					<img src="../img/support/sp-global-logo2.png" class="pull-left custom-nav-logo home-logo-show">
 				</a>
 			</div>
-			<div class="navbar-collapse collapse" id="navbar">
+			<div class="navbar-collapse collapse" aria-expanded="false" id="navbar" style="height: 0;">
 				<ul class="nav navbar-nav" id="menu-main-menu">
 					<li class="menu-item">
 						<a href="#">Khóa Học</a>
@@ -42,17 +48,396 @@
 					</li>
 					<li class="lang-item lang-item-vi">
 						<a href="#">
-							<img src="../img/icon-vie.png" alt="Tiếng Việt">
+							<img src="img/vi.png" alt="Tiếng Việt">
 						</a>
 					</li>
 					<li class="lang-item lang-item-en">
 						<a href="#">
-							<img src="../img/icon-en.png" alt="English">
+							<img src="img/en.png" alt="English">
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	<!-- jumbotron bootstrap -->
+	<div class="jumbotron inner-jumbotron jumbotron-inner-fix noise-break ">
+		<div class="container inner-margin-top">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 text-center">
+					<h1 class="inner-header">
+						Tài Nguyên Hỗ Trợ        
+					</h1>
+					<p class="inner-header-color">
+						Tìm kiếm bài viết của chúng tôi hoặc duyệt theo các chuyên mục dưới đây
+					</p>
+				</div>
+				<div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 search-margin-top">
+					<div class="global-search">
+						<input type="hidden" id="oldplacvalue" value="Have a question? Ask or enter a search term">
+						<form role="search" method="get" id="searchform" class="searchform" action="">
+							<i class="fa fa-search livesearch"></i>
+							<div class="form-group">
+								<input type="text" placeholder="Have a question? Ask or enter a search term" value="" name="s" id="s" class="form-control header-search" autocomplete="off">
+								<!--Advance Search-->								
+								<select class="search-expand-types" name="post_type" id="search_post_type">
+									<option value="">All Site </option> 
+									<option value="post">post</option> 
+									<option value="page">page</option> 
+									<option value="manual_faq">FAQs</option> 
+									<option value="manual_kb">Knowledge Base</option> 
+								</select>    <!--Eof Advance Search-->
+								<input type="submit" class=" button button-custom" value="Search">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- End off jumbotron -->
+	<!-- container support -->
+	<div class="container content-wrapper body-content">
+		<div class="row margin-top-btm-50 mt-35">
+			<div class="col-md-12 col-sm-12">
+				<div class="blog uniquepage" class="page type-page status-publish hentry">
+					<div class="entry-content clearfix">
+						<div  class=" vc-manual-section  vc_row wpb_row section vc_row-fluid  "  style=" " >
+							<div class="container vc-container">
+								<div class="wpb_column vc_column_container vc_col-sm-12">
+									<div class="vc_column-inner ">
+										<div class="wpb_wrapper">
+											<div class="vc_tta-container" data-vc-action="collapse">
+												<div class="vc_general vc_tta vc_tta-tabs vc_tta-color-grey vc_tta-style-classic vc_tta-shape-rounded vc_tta-spacing-1 vc_tta-tabs-position-top vc_tta-controls-align-center">
+													<div class="vc_tta-tabs-container">
+														<ul class="vc_tta-tabs-list">
+															<li class="vc_tta-tab vc_active" data-vc-tab>
+																<a href="#lecturer" data-vc-tabs data-vc-container=".vc_tta">
+																	<i class="vc_tta-icon fa fa-laptop"></i>
+																	<span class="vc_tta-title-text">
+																		DÀNH CHO GIẢNG VIÊN
+																	</span>
+																</a>
+															</li>
+															<li class="vc_tta-tab" data-vc-tab>
+																<a href="#student" data-vc-tabs data-vc-container=".vc_tta">
+																	<i class="vc_tta-icon fa fa-cog"></i>
+																	<span class="vc_tta-title-text">
+																		DÀNH CHO HỌC VIÊN
+																	</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+													<div class="vc_tta-panels-container">
+														<div class="vc_tta-panels">
+															<div class="vc_tta-panel vc_active" id="lecturer" data-vc-content=".vc_tta-panel-body">
+																<div class="vc_tta-panel-heading">
+																	<h4 class="vc_tta-panel-title">
+																		<a href="#lecturer" data-vc-accordion data-vc-container=".vc_tta-container">
+																			<i class="vc_tta-icon fa fa-laptop"></i>
+																			<span class="vc_tta-title-text">
+																				DÀNH CHO GIẢNG VIÊN
+																			</span>
+																		</a>
+																	</h4>
+																</div>
+																<div class="vc_tta-panel-body">
+																	<div class="vc_empty_space"  style="height: 40px" >
+																		<span class="vc_empty_space_inner"></span>
+																	</div>
+																	<div class=" masonry-vc-grid-four body-content">
+																		<div class="col-md-4 masonry-item">
+																			<div class="knowledgebase-body">
+																				<h5>
+																					<a href="#">Quản lý khóa học</a> 
+																				</h5> 
+																				<span class="separator small"></span>
+																				<ul class="kbse">
+																					<li class="cat inner"> 
+																						<a href="#" class="hvr-grow">
+																							Tại sao video của tôi bị lỗi tải video?
+																						</a> 
+																					</li>
+																					<li class="cat inner"> 
+																						<a href="#" class="hvr-grow">
+																							Ai sở hữu nội dung các khóa học của tôi?
+																						</a> 
+																					</li>
+																				</ul>
+																				<div style="padding:10px 0px;"> 
+																					<a href="#" class="custom-link hvr-icon-wobble-horizontal kblnk" >
+																						Hiển thị tất cả 2 
+																					</a>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-md-4 masonry-item">
+																			<div class="knowledgebase-body">
+																				<h5>
+																					<a href="#" class="hvr-grow">
+																						Tạo khóa học trên Global
+																					</a> 
+																				</h5> 
+																				<span class="separator small"></span>
+																				<ul class="kbse">
+																					<li class="cat inner"> 
+																						<a href="#" class="hvr-grow">
+																							Tại sao video của tôi mất nhiều thời gian để xử lý?
+																						</a> 
+																					</li>
+																					<li class="cat inner"> 
+																						<a href="#" class="hvr-grow">
+																							Tôi có thể dạy bằng những ngôn ngữ nào?
+																						</a> 
+																					</li>
+																				</ul>
+																				<div style="padding:10px 0px;"> 
+																					<a href="#" class="custom-link hvr-icon-wobble-horizontal kblnk" >
+																						Hiển thị tất cả 2 
+																					</a>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-md-4 masonry-item">
+																			<div class="knowledgebase-body">
+																				<h5>
+																					<a href="#" class="hvr-grow">
+																						Câu hỏi thường gặp
+																					</a> 
+																				</h5> 
+																				<span class="separator small"></span>
+																				<ul class="kbse">
+																					<li class="cat inner"> 
+																						<a href="#" class="hvr-grow">
+																							Global là gì?
+																						</a> 
+																					</li>
+																					<li class="cat inner"> 
+																						<a href="#" class="hvr-grow">
+																							Global hoạt động như thế nào?
+																						</a> 
+																					</li>
+																					<li class="cat inner" class="hvr-grow"> 
+																						<a href="#" class="hvr-grow">
+																							Giảng viên của Global là ai?
+																						</a> 
+																					</li>
+																					<li class="cat inner" class="hvr-grow"> 
+																						<a href="#" class="hvr-grow">
+																							Làm thế nào để tôi có thể trở thành giảng viên tại Global?
+																						</a> 
+																					</li>
+																					<li class="cat inner" class="hvr-grow"> 
+																						<a href="#" class="hvr-grow">
+																							Tôi muốn hợp tác với Global, tôi phải liên hệ bằng cách nào?
+																						</a> 
+																					</li>
+																				</ul>
+																				<div style="padding:10px 0px;"> 
+																					<a href="#" class="custom-link hvr-icon-wobble-horizontal kblnk" >
+																						Hiển thị tất cả 8 
+																					</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vc_tta-panel" id="student" data-vc-content=".vc_tta-panel-body">
+															<div class="vc_tta-panel-heading">
+																<h4 class="vc_tta-panel-title">
+																	<a href="#student" data-vc-accordion data-vc-container=".vc_tta-container">
+																		<i class="vc_tta-icon fa fa-cog"></i>
+																		<span class="vc_tta-title-text">
+																			DÀNH CHO HỌC VIÊN
+																		</span>
+																	</a>
+																</h4>
+															</div>
+															<div class="vc_tta-panel-body">
+																<div class="vc_empty_space"  style="height: 40px" >
+																	<span class="vc_empty_space_inner"></span>
+																</div>
+																<div class=" masonry-vc-grid-four1 body-content">
+																	<div class="col-md-4 masonry-item">
+																		<div class="knowledgebase-body">
+																			<h5>
+																				<a href="#">
+																					Câu hỏi thường gặp (Học viên)
+																				</a> 
+																			</h5> 
+																			<span class="separator small"></span>
+																			<ul class="kbse">
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Global là gì?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow"> 
+																						Global hoạt động như thế nào?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Giảng viên của Global là ai?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Global có cung cấp chứng chỉ sau khi hoàn thành khóa học không?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Đội ngũ Global là ai?
+																					</a> 
+																				</li>
+																			</ul>
+																			<div style="padding:10px 0px;"> 
+																				<a href="#" class="custom-link hvr-icon-wobble-horizontal kblnk">
+																					Hiển thị tất cả 9 
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-4 masonry-item">
+																		<div class="knowledgebase-body">
+																			<h5>
+																				<a href="#">
+																					Giải quyết các vấn đề kỹ thuật (Học viên)
+																				</a> 
+																			</h5> 
+																			<span class="separator small"></span>
+																			<ul class="kbse">
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow" >
+																						Thay đổi e-mail đăng nhập của bạn
+																					</a> 
+																				</li>
+																				<li class="cat inner" class="hvr-grow"> 
+																					<a href="#" class="hvr-grow"> 
+																						Xóa tài khoản
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Làm thế nào để đăng nhập vào tài khoản Global của tôi?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Thay đổi cài đặt ngôn ngữ
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Thay đổi hoặc cài đặt lại mật khẩu Global
+																					</a> 
+																				</li>
+																			</ul>
+																			<div style="padding:10px 0px;"> 
+																				<a href="#" class="custom-link hvr-icon-wobble-horizontal kblnk" >
+																					Hiển thị tất cả 14 
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-4 masonry-item">
+																		<div class="knowledgebase-body">
+																			<h5>
+																				<a href="#">
+																					Học trên Global thế nào cho hiệu quả (Học viên)
+																				</a> 
+																			</h5> 
+																			<span class="separator small"></span>
+																			<ul class="kbse" class="hvr-grow">
+																				<li class="cat inner">
+																					<a href="#" class="hvr-grow">
+																						Tôi sẽ nhận được phản hồi từ giảng viên cho dự án cuối khóa?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Làm thế nào để tôi có thể liên hệ với giảng viên của mình?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Tôi có thể ghi chú như thế nào?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Tôi sẽ xem tài liệu tham khảo bằng cách nào?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Tôi có thể tương tác với các học viên khác ra sao?
+																					</a> 
+																				</li>
+																			</ul>
+																			<div style="padding:10px 0px;"> 
+																				<a href="#" class="custom-link hvr-icon-wobble-horizontal kblnk" >
+																					Hiển thị tất cả 5 
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-4 masonry-item">
+																		<div class="knowledgebase-body">
+																			<h5>
+																				<a href="#">
+																					Bắt đầu với Global (Học viên)
+																				</a> 
+																			</h5> 
+																			<span class="separator small"></span>
+																			<ul class="kbse">
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Tôi có thể bắt đầu khóa học như thế nào?
+																					</a> 
+																				</li>
+																				<li class="cat inner"> 
+																					<a href="#" class="hvr-grow">
+																						Làm thế nào để tôi có thể tìm kiếm một khóa học?
+																					</a> 
+																				</li>
+																			</ul>
+																			<div style="padding:10px 0px;"> 
+																				<a href="#" class="custom-link hvr-icon-wobble-horizontal kblnk" >
+																					Hiển thị tất cả 2 
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="vc_empty_space"  style="height: 50px" >
+										<span class="vc_empty_space_inner"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/js_composer_front.min.js"></script>
+	<script type="text/javascript" src="js/vc-accordion.min.js"></script>
+	<script type="text/javascript" src="js/vc-tabs.min.js"></script>
+	<script type="text/javascript" src="js/vc-tta-autoplay.min.js"></script>
+	<script type="text/javascript" src="js/support.js"></script>
 </body>
 </html>

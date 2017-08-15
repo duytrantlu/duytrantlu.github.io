@@ -685,6 +685,9 @@ ol, ul {
     margin-top: 10px;
     font-family: Garamond;
 } */
+a, a:hover, a:active, a:visited {
+    text-decoration: none!important;
+}
 /* container */
 section{
 	width: 100%;
