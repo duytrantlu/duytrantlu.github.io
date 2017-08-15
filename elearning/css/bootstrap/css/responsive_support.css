@@ -67,4 +67,7 @@
 	    line-height: 15px;
 	    margin-left: 0px;
 	}
+	select.search-expand-types, label.select-arrow {
+    	display: none;
+	}
 }
