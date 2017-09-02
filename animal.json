@@ -1,0 +1,26 @@
+[
+	{
+		"name":"meowscope",
+		"species":"cat",
+		"food":{
+			"like":["tuna","catnip"],
+			"disklike":["ham","shit"]
+		}
+	},
+	{
+		"name":"Barky",
+		"species":"dog",
+		"food":{
+			"like":["bones","carrots"],
+			"disklike":["tune"]
+		}
+	},
+	{
+		"name":"Purrpaws",
+		"species":"cat",
+		"food":{
+			"like":["mice"],
+			"disklike":["cookies"]
+		}
+	}
+]
